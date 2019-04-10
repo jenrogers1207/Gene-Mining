@@ -5784,7 +5784,7 @@ class $c_Lrender_Inputs$ extends $c_O {
   main__Lorg_scalajs_dom_raw_Node__Lorg_scalajs_dom_raw_Node(target) {
     const this$1 = $m_Lscalatags_JsDom$all$();
     const jsx$1 = this$1.input__Lscalatags_JsDom$TypedTag();
-    const array = [$m_Lscalatags_JsDom$all$().type__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text", $m_Lscalatags_JsDom$all$().stringAttr$1), $m_Lscalatags_JsDom$all$().placeholder__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("Type here!", $m_Lscalatags_JsDom$all$().stringAttr$1)];
+    const array = [$m_Lscalatags_JsDom$all$().type__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text", $m_Lscalatags_JsDom$all$().stringAttr$1), $m_Lscalatags_JsDom$all$().placeholder__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("Search by gene symbol...", $m_Lscalatags_JsDom$all$().stringAttr$1)];
     const box = jsx$1.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array)).render__Lorg_scalajs_dom_raw_Element();
     const this$4 = $m_Lscalatags_JsDom$all$();
     const output = this$4.span__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
@@ -5806,7 +5806,7 @@ class $c_Lrender_Inputs$ extends $c_O {
     const jsx$9 = this$9.div__Lscalatags_JsDom$TypedTag();
     const this$10 = $m_Lscalatags_JsDom$all$();
     const jsx$8 = this$10.h1__Lscalatags_JsDom$TypedTag();
-    const array$2 = [($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T("Search For a Gene"))];
+    const array$2 = [($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T("What's that Gene?"))];
     const jsx$7 = jsx$8.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$2));
     const this$14 = $m_Lscalatags_JsDom$all$();
     const jsx$6 = this$14.div__Lscalatags_JsDom$TypedTag();
@@ -19628,11 +19628,11 @@ class $c_jl_Double$ extends $c_O {
     this.doubleStrHexPat$1 = null;
     this.bitmap$0$1 = 0
   };
-  doubleStrPat__p1__sjs_js_RegExp() {
-    return (((((1 & this.bitmap$0$1) << 24) >> 24) === 0) ? this.doubleStrPat$lzycompute__p1__sjs_js_RegExp() : this.doubleStrPat$1)
-  };
   init___() {
     return this
+  };
+  doubleStrPat__p1__sjs_js_RegExp() {
+    return (((((1 & this.bitmap$0$1) << 24) >> 24) === 0) ? this.doubleStrPat$lzycompute__p1__sjs_js_RegExp() : this.doubleStrPat$1)
   };
   doubleStrPat$lzycompute__p1__sjs_js_RegExp() {
     if (((((1 & this.bitmap$0$1) << 24) >> 24) === 0)) {
@@ -19717,6 +19717,9 @@ class $c_jl_Double$ extends $c_O {
     const r = (((mantissa * correctingPow) * correctingPow) * correctingPow3);
     return ((signStr === "-") ? (-r) : r)
   };
+  doubleStrHexPat__p1__sjs_js_RegExp() {
+    return (((((2 & this.bitmap$0$1) << 24) >> 24) === 0) ? this.doubleStrHexPat$lzycompute__p1__sjs_js_RegExp() : this.doubleStrHexPat$1)
+  };
   parseDouble__T__D(s) {
     const match1 = this.doubleStrPat__p1__sjs_js_RegExp().exec(s);
     if ((match1 !== null)) {
@@ -19734,9 +19737,6 @@ class $c_jl_Double$ extends $c_O {
       const match2 = this.doubleStrHexPat__p1__sjs_js_RegExp().exec(s);
       return ((match2 !== null) ? this.parseHexDoubleImpl$1__p1__sjs_js_RegExp$ExecResult__T__D(match2, s) : this.fail$1__p1__T__sr_Nothing$(s))
     }
-  };
-  doubleStrHexPat__p1__sjs_js_RegExp() {
-    return (((((2 & this.bitmap$0$1) << 24) >> 24) === 0) ? this.doubleStrHexPat$lzycompute__p1__sjs_js_RegExp() : this.doubleStrHexPat$1)
   };
 }
 const $d_jl_Double$ = new $TypeData().initClass({
@@ -30597,6 +30597,9 @@ class $c_s_util_Failure extends $c_s_util_Try {
   productArity__I() {
     return 1
   };
+  map__F1__s_util_Try(f) {
+    return this
+  };
   equals__O__Z(x$1) {
     if ((this === x$1)) {
       return true
@@ -30608,9 +30611,6 @@ class $c_s_util_Failure extends $c_s_util_Try {
     } else {
       return false
     }
-  };
-  map__F1__s_util_Try(f) {
-    return this
   };
   productElement__I__O(x$1) {
     switch (x$1) {
@@ -41636,19 +41636,6 @@ class $c_Lscalatags_JsDom$all$ extends $c_O {
     $f_Lscalatags_JsDom$Aggregate__$$init$__V(this);
     return this
   };
-  span$lzycompute__p1__Lscalatags_JsDom$TypedTag() {
-    const b = this.bitmap$0$1;
-    const hi = (256 & b.hi$2);
-    if ((hi === 0)) {
-      const ns = $m_Lscalatags_generic_Namespace$().htmlNamespaceConfig$1;
-      this.span$1 = $as_Lscalatags_JsDom$TypedTag($f_Lscalatags_jsdom_TagFactory__typedTag__T__Z__Lscalatags_generic_Namespace__Lscalatags_generic_TypedTag(this, "span", false, ns));
-      const b$1 = this.bitmap$0$1;
-      const lo = b$1.lo$2;
-      const hi$1 = (256 | b$1.hi$2);
-      this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo, hi$1)
-    };
-    return this.span$1
-  };
   h1$lzycompute__p1__Lscalatags_JsDom$TypedTag() {
     const b = this.bitmap$0$1;
     const lo = (128 & b.lo$2);
@@ -41661,6 +41648,19 @@ class $c_Lscalatags_JsDom$all$ extends $c_O {
       this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
     };
     return this.h1$1
+  };
+  span$lzycompute__p1__Lscalatags_JsDom$TypedTag() {
+    const b = this.bitmap$0$1;
+    const hi = (256 & b.hi$2);
+    if ((hi === 0)) {
+      const ns = $m_Lscalatags_generic_Namespace$().htmlNamespaceConfig$1;
+      this.span$1 = $as_Lscalatags_JsDom$TypedTag($f_Lscalatags_jsdom_TagFactory__typedTag__T__Z__Lscalatags_generic_Namespace__Lscalatags_generic_TypedTag(this, "span", false, ns));
+      const b$1 = this.bitmap$0$1;
+      const lo = b$1.lo$2;
+      const hi$1 = (256 | b$1.hi$2);
+      this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo, hi$1)
+    };
+    return this.span$1
   };
   div$lzycompute__p1__Lscalatags_JsDom$TypedTag() {
     const b = this.bitmap$0$1;
@@ -45958,11 +45958,11 @@ class $c_sci_HashMap$HashTrieMap extends $c_sci_HashMap {
       return new $c_sci_HashMap$HashTrieMap().init___I__Asci_HashMap__I(bitmap1, elems1, rs)
     }
   };
-  size__I() {
-    return this.size0$6
-  };
   iterator__sc_Iterator() {
     return new $c_sci_HashMap$HashTrieMap$$anon$3().init___sci_HashMap$HashTrieMap(this)
+  };
+  size__I() {
+    return this.size0$6
   };
   init___I__Asci_HashMap__I(bitmap, elems, size0) {
     this.bitmap$6 = bitmap;

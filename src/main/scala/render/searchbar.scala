@@ -24,7 +24,7 @@ object Inputs extends{
   def main(target: Node) = {
     val box = input(
       `type`:="text",
-      placeholder:="Type here!"
+      placeholder:="Search by gene symbol..."
     ).render
 
     val output = span.render
@@ -36,7 +36,6 @@ object Inputs extends{
     }
 
     val searchB =  button("GO").render
-  //searchB.textContent = "Go"
 
     searchB.onclick = (e: dom.Event) => {
       textmine.GetUrlContent.requestFile(box.value)
@@ -44,7 +43,7 @@ object Inputs extends{
 
     target.appendChild(
       div(
-        h1("Search For a Gene"),
+        h1("What's that Gene?"),
        // div(),
         div(box, searchB),
         div(output)
