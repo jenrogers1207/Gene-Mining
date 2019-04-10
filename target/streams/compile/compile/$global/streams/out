@@ -1,4 +1,5 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\jjohn\Documents\GitHub\Gene-Mining\src\main\scala\textmine\apiGetter.scala:31:40: missing parameter type[0m
-[0m[[0m[31merror[0m] [0m[0m        val test = resultList.forEach((d)=> {[0m
-[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\jjohn\Documents\GitHub\Gene-Mining\src\main\scala\render\searchbar.scala:21:2: @JSExport on objects is deprecated and will be removed in 1.0.0. Use @JSExportTopLevel instead. Note that it exports the object itself (rather than a 0-arg function returning the object), so the calling JavaScript code must be adapted.[0m
+[0m[[0m[33mwarn[0m] [0m[0m  (you can suppress this warning in 0.6.x by passing the option `-P:scalajs:suppressExportDeprecations` to scalac)[0m
+[0m[[0m[33mwarn[0m] [0m[0m@JSExport[0m
+[0m[[0m[33mwarn[0m] [0m[0m ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

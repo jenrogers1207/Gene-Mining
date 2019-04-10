@@ -1245,6 +1245,18 @@ const $isArrayOf_Lscalatags_generic_Modifier = (function(obj, depth) {
 const $asArrayOf_Lscalatags_generic_Modifier = (function(obj, depth) {
   return (($isArrayOf_Lscalatags_generic_Modifier(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscalatags.generic.Modifier;", depth))
 });
+const $is_Lscalatags_generic_Namespace = (function(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lscalatags_generic_Namespace)))
+});
+const $as_Lscalatags_generic_Namespace = (function(obj) {
+  return (($is_Lscalatags_generic_Namespace(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "scalatags.generic.Namespace"))
+});
+const $isArrayOf_Lscalatags_generic_Namespace = (function(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lscalatags_generic_Namespace)))
+});
+const $asArrayOf_Lscalatags_generic_Namespace = (function(obj, depth) {
+  return (($isArrayOf_Lscalatags_generic_Namespace(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscalatags.generic.Namespace;", depth))
+});
 const $f_Lujson_CharBasedParser__parseStringComplex__I__I__Z__T2 = (function($thiz, pre, i, key) {
   const sb = $thiz.ujson$CharBasedParser$$charBuilder$3.reset__Lujson_util_CharBuilder();
   sb.extend__jl_CharSequence__V($as_Lujson_Parser($thiz).at__I__I__jl_CharSequence(pre, i));
@@ -3242,7 +3254,9 @@ class $c_Lmy_Main$ extends $c_O {
     return this
   };
   main__AT__V(args) {
-    $m_Ltextmine_GetUrlContent$().requestFile__T__V("GJB2")
+    const div = $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createElement("div");
+    const searchDiv = $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().getElementById("main").appendChild(div);
+    $m_Lrender_Inputs$().main__Lorg_scalajs_dom_raw_Node__Lorg_scalajs_dom_raw_Node(searchDiv)
   };
 }
 const $d_Lmy_Main$ = new $TypeData().initClass({
@@ -5759,276 +5773,79 @@ const $m_Lorg_scalajs_testinterface_internal_TaskInfoBuilder$ = (function() {
   };
   return $n_Lorg_scalajs_testinterface_internal_TaskInfoBuilder$
 });
-class $c_Lrender_ScalaJSExample$ extends $c_O {
-  constructor() {
-    super();
-    this.thingsToDo$1 = null;
-    this.addDesc$1 = null;
-    this.addTime$1 = null;
-    this.addButton$1 = null;
-    this.timeSummary$1 = null;
-    this.addForm$1 = null
-  };
-  render$ScalaJSExample$$$anonfun$createDeleteButton$1__Lorg_scalajs_dom_raw_MouseEvent__Lrender_Task__Lorg_scalajs_dom_raw_HTMLDivElement__V(x$2, it$1, target$3) {
-    const jsx$1 = $m_Lrender_ScalaJSExample$();
-    const this$1 = $m_Lrender_ScalaJSExample$().thingsToDo$1;
-    $m_sci_List$();
-    const b = new $c_scm_ListBuffer().init___();
-    let these = this$1;
-    while ((!these.isEmpty__Z())) {
-      const arg1 = these.head__O();
-      const x$3 = $as_Lrender_Task(arg1);
-      if ((((x$3 === null) ? (it$1 === null) : x$3.equals__O__Z(it$1)) !== true)) {
-        b.$$plus$eq__O__scm_ListBuffer(arg1)
-      };
-      these = $as_sci_List(these.tail__O())
-    };
-    jsx$1.thingsToDo$1 = b.toList__sci_List();
-    $m_Lrender_ScalaJSExample$().refreshScreen__Lorg_scalajs_dom_raw_HTMLDivElement__V(target$3)
-  };
-  main__Lorg_scalajs_dom_raw_HTMLDivElement__V(target) {
-    const this$2 = $m_s_Console$();
-    const this$3 = $as_Ljava_io_PrintStream(this$2.outVar$2.v$1);
-    this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V("main\n");
-    this.addButton$1.onclick = (function(target$1) {
-      return (function(arg1$2) {
-        $m_Lrender_ScalaJSExample$().render$ScalaJSExample$$$anonfun$main$1__Lorg_scalajs_dom_raw_MouseEvent__Lorg_scalajs_dom_raw_HTMLDivElement__V(arg1$2, target$1)
-      })
-    })(target);
-    this.refreshScreen__Lorg_scalajs_dom_raw_HTMLDivElement__V(target)
-  };
+class $c_Lrender_Inputs$ extends $c_O {
   init___() {
-    $n_Lrender_ScalaJSExample$ = this;
-    $m_sci_List$();
-    const array = [new $c_Lrender_Task().init___T__I("Task1", 30), new $c_Lrender_Task().init___T__I("Task2", 45)];
-    let i = (((-1) + $uI(array.length)) | 0);
-    let result = $m_sci_Nil$();
-    while ((i >= 0)) {
-      const this$4 = result;
-      const index = i;
-      const x = array[index];
-      result = new $c_sci_$colon$colon().init___O__sci_List(x, this$4);
-      i = (((-1) + i) | 0)
-    };
-    this.thingsToDo$1 = result;
-    const this$5 = $m_Lscalatags_JsDom$all$();
-    const jsx$1 = this$5.input__Lscalatags_JsDom$TypedTag();
-    const array$1 = [($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T("New Task"))];
-    this.addDesc$1 = jsx$1.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1)).render__Lorg_scalajs_dom_raw_Element();
-    const this$9 = $m_Lscalatags_JsDom$all$();
-    const jsx$2 = this$9.input__Lscalatags_JsDom$TypedTag();
-    const array$2 = [($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T("0"))];
-    this.addTime$1 = jsx$2.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$2)).render__Lorg_scalajs_dom_raw_Element();
-    const this$13 = $m_Lscalatags_JsDom$all$();
-    const jsx$3 = this$13.button__Lscalatags_JsDom$TypedTag();
-    const array$3 = [($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T("Add a new task"))];
-    this.addButton$1 = jsx$3.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$3)).render__Lorg_scalajs_dom_raw_Element();
-    const this$17 = $m_Lscalatags_JsDom$all$();
-    this.timeSummary$1 = this$17.div__Lscalatags_JsDom$TypedTag().apply__sc_Seq__Lscalatags_JsDom$TypedTag($m_sci_Nil$()).render__Lorg_scalajs_dom_raw_Element();
-    const this$18 = $m_Lscalatags_JsDom$all$();
-    const jsx$7 = this$18.div__Lscalatags_JsDom$TypedTag();
-    const this$19 = $m_Lscalatags_JsDom$all$();
-    const e = this.addDesc$1;
-    const jsx$6 = new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$19, e);
-    const this$20 = $m_Lscalatags_JsDom$all$();
-    const e$1 = this.addTime$1;
-    const array$4 = [jsx$6, new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$20, e$1)];
-    const jsx$5 = jsx$7.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$4));
-    const this$23 = $m_Lscalatags_JsDom$all$();
-    const jsx$4 = this$23.div__Lscalatags_JsDom$TypedTag();
-    const this$24 = $m_Lscalatags_JsDom$all$();
-    const e$2 = this.addButton$1;
-    const array$5 = [new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$24, e$2)];
-    const array$6 = [jsx$5, jsx$4.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$5))];
-    const xs = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$6);
-    const len = $uI(xs.array$6.length);
-    const array$7 = $newArrayObject($d_Lscalatags_JsDom$TypedTag.getArrayOf(), [len]);
-    let elem$1 = 0;
-    elem$1 = 0;
-    const this$32 = new $c_sc_IndexedSeqLike$Elements().init___sc_IndexedSeqLike__I__I(xs, 0, $uI(xs.array$6.length));
-    while (this$32.hasNext__Z()) {
-      const arg1 = this$32.next__O();
-      array$7.set(elem$1, arg1);
-      elem$1 = ((1 + elem$1) | 0)
-    };
-    this.addForm$1 = array$7;
     return this
   };
-  render$ScalaJSExample$$$anonfun$main$1__Lorg_scalajs_dom_raw_MouseEvent__Lorg_scalajs_dom_raw_HTMLDivElement__V(x, target$1) {
-    const desc = $as_T($m_Lrender_ScalaJSExample$().addDesc$1.value);
-    let jsx$1;
-    try {
-      const x$1 = $as_T($m_Lrender_ScalaJSExample$().addTime$1.value);
-      const this$3 = new $c_sci_StringOps().init___T(x$1);
-      const this$5 = $m_jl_Integer$();
-      const $$this = this$3.repr$1;
-      jsx$1 = new $c_s_util_Success().init___O(this$5.parseInt__T__I__I($$this, 10))
-    } catch (e) {
-      const e$2 = $m_sjsr_package$().wrapJavaScriptException__O__jl_Throwable(e);
-      if ((e$2 !== null)) {
-        matchEnd8: {
-          const o11 = $m_s_util_control_NonFatal$().unapply__jl_Throwable__s_Option(e$2);
-          if ((!o11.isEmpty__Z())) {
-            const e$3 = $as_jl_Throwable(o11.get__O());
-            jsx$1 = new $c_s_util_Failure().init___jl_Throwable(e$3);
-            break matchEnd8
-          };
-          throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(e$2)
-        }
-      } else {
-        throw e
-      }
-    };
-    const this$6 = jsx$1.toOption__s_Option();
-    const time = $uI((this$6.isEmpty__Z() ? 0 : this$6.get__O()));
-    const x$2 = ((("Adding " + desc) + "/") + time);
-    const this$8 = $m_s_Console$();
-    const this$9 = $as_Ljava_io_PrintStream(this$8.outVar$2.v$1);
-    this$9.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x$2 + "\n"));
-    const jsx$2 = $m_Lrender_ScalaJSExample$();
-    const x$1$1 = new $c_Lrender_Task().init___T__I(desc, time);
-    const this$10 = $m_Lrender_ScalaJSExample$().thingsToDo$1;
-    jsx$2.thingsToDo$1 = new $c_sci_$colon$colon().init___O__sci_List(x$1$1, this$10);
-    $m_Lrender_ScalaJSExample$().refreshScreen__Lorg_scalajs_dom_raw_HTMLDivElement__V(target$1)
+  render$Inputs$$$anonfun$main$1__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_HTMLSpanElement__Lorg_scalajs_dom_raw_HTMLInputElement__V(e, output$1, box$1) {
+    const thiz = $as_T(box$1.value);
+    output$1.textContent = $as_T(thiz.toUpperCase())
   };
-  createDeleteButton__Lorg_scalajs_dom_raw_HTMLDivElement__Lrender_Task__Lorg_scalajs_dom_raw_HTMLButtonElement(target, it) {
+  main__Lorg_scalajs_dom_raw_Node__Lorg_scalajs_dom_raw_Node(target) {
     const this$1 = $m_Lscalatags_JsDom$all$();
-    const jsx$1 = this$1.button__Lscalatags_JsDom$TypedTag();
-    const array = [($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T("X"))];
-    const b = jsx$1.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array)).render__Lorg_scalajs_dom_raw_Element();
-    b.onclick = (function(it$1, target$3) {
+    const jsx$1 = this$1.input__Lscalatags_JsDom$TypedTag();
+    const array = [$m_Lscalatags_JsDom$all$().type__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text", $m_Lscalatags_JsDom$all$().stringAttr$1), $m_Lscalatags_JsDom$all$().placeholder__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("Type here!", $m_Lscalatags_JsDom$all$().stringAttr$1)];
+    const box = jsx$1.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array)).render__Lorg_scalajs_dom_raw_Element();
+    const this$4 = $m_Lscalatags_JsDom$all$();
+    const output = this$4.span__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
+    box.onkeyup = (function(output$1, box$1) {
       return (function(arg1$2) {
-        $m_Lrender_ScalaJSExample$().render$ScalaJSExample$$$anonfun$createDeleteButton$1__Lorg_scalajs_dom_raw_MouseEvent__Lrender_Task__Lorg_scalajs_dom_raw_HTMLDivElement__V(arg1$2, it$1, target$3)
+        $m_Lrender_Inputs$().render$Inputs$$$anonfun$main$1__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_HTMLSpanElement__Lorg_scalajs_dom_raw_HTMLInputElement__V(arg1$2, output$1, box$1)
       })
-    })(it, target);
-    return b
-  };
-  refreshScreen__Lorg_scalajs_dom_raw_HTMLDivElement__V(target) {
-    target.innerHTML = "";
-    target.appendChild(this.rebuildUI__Lorg_scalajs_dom_raw_HTMLDivElement__Lorg_scalajs_dom_raw_HTMLInputElement__Lorg_scalajs_dom_raw_HTMLInputElement__Lorg_scalajs_dom_raw_HTMLButtonElement__Lorg_scalajs_dom_raw_HTMLDivElement(target, this.addDesc$1, this.addTime$1, this.addButton$1));
-    this.refreshTimeSummary__Lorg_scalajs_dom_raw_HTMLDivElement__V(target)
-  };
-  format__sjs_js_Date__T(d) {
-    return (($uI(d.getHours()) + ":") + $uI(d.getMinutes()))
-  };
-  refreshTimeSummary__Lorg_scalajs_dom_raw_HTMLDivElement__V(target) {
-    const x = ("Refresh " + new $g.Date());
-    const this$2 = $m_s_Console$();
-    const this$3 = $as_Ljava_io_PrintStream(this$2.outVar$2.v$1);
-    this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"));
-    const this$4 = this.thingsToDo$1;
-    let acc = 0;
-    let these = this$4;
-    while ((!these.isEmpty__Z())) {
-      const arg1 = acc;
-      const arg2 = these.head__O();
-      const x$1 = $uI(arg1);
-      const y = $as_Lrender_Task(arg2);
-      acc = ((x$1 + y.time$1) | 0);
-      these = $as_sc_LinearSeqOptimized(these.tail__O())
-    };
-    const timeNeeded = $uI(acc);
-    const now = new $g.Date();
-    const endDate = new $g.Date(($uD(now.getTime()) + $imul(60000, timeNeeded)));
-    this.timeSummary$1.innerHTML = ((((this.format__sjs_js_Date__T(now) + " + ") + timeNeeded) + " minutes on tasks = ") + this.format__sjs_js_Date__T(endDate));
-    const this$5 = this.thingsToDo$1;
-    if (($f_sc_LinearSeqOptimized__length__I(this$5) > 5)) {
-      this.timeSummary$1.style.backgroundColor = "red"
-    }
-  };
-  rebuildUI__Lorg_scalajs_dom_raw_HTMLDivElement__Lorg_scalajs_dom_raw_HTMLInputElement__Lorg_scalajs_dom_raw_HTMLInputElement__Lorg_scalajs_dom_raw_HTMLButtonElement__Lorg_scalajs_dom_raw_HTMLDivElement(target, addDesc, addTime, addButton) {
-    const this$1 = $m_Lscalatags_JsDom$all$();
-    const jsx$10 = this$1.div__Lscalatags_JsDom$TypedTag();
-    const this$2 = $m_Lscalatags_JsDom$all$();
-    const jsx$9 = this$2.h1__Lscalatags_JsDom$TypedTag();
-    const array = [($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T("Scala.js organizer"))];
-    const jsx$8 = jsx$9.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array));
-    const this$6 = $m_Lscalatags_JsDom$all$();
-    const jsx$7 = this$6.ul__Lscalatags_JsDom$TypedTag();
-    const this$17 = $m_Lscalatags_JsDom$all$();
-    const this$16 = this.thingsToDo$1;
-    const f = (function($this, target$1) {
-      return (function(it$2) {
-        const it = $as_Lrender_Task(it$2);
-        const this$7 = $m_Lscalatags_JsDom$all$();
-        const jsx$5 = this$7.li__Lscalatags_JsDom$TypedTag();
-        const this$8 = $m_Lscalatags_JsDom$all$();
-        const jsx$4 = this$8.div__Lscalatags_JsDom$TypedTag();
-        $m_Lscalatags_JsDom$all$();
-        const v = (((it.desc$1 + " takes ") + it.time$1) + " minutes");
-        const jsx$3 = new $c_Lscalatags_JsDom$StringFrag().init___T(v);
-        const this$10 = $m_Lscalatags_JsDom$all$();
-        const e = $m_Lrender_ScalaJSExample$().createDeleteButton__Lorg_scalajs_dom_raw_HTMLDivElement__Lrender_Task__Lorg_scalajs_dom_raw_HTMLButtonElement(target$1, it);
-        const array$1 = [jsx$3, new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$10, e)];
-        const array$2 = [jsx$4.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1))];
-        return jsx$5.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$2))
+    })(output, box);
+    const this$5 = $m_Lscalatags_JsDom$all$();
+    const jsx$2 = this$5.button__Lscalatags_JsDom$TypedTag();
+    const array$1 = [($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T("GO"))];
+    const searchB = jsx$2.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1)).render__Lorg_scalajs_dom_raw_Element();
+    searchB.onclick = (function(box$1$1) {
+      return (function(arg1$2$1) {
+        $m_Lrender_Inputs$().render$Inputs$$$anonfun$main$3__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_HTMLInputElement__V(arg1$2$1, box$1$1)
       })
-    })(this, target);
-    const this$15 = $m_sci_List$();
-    const bf = this$15.ReusableCBFInstance$2;
-    let jsx$6;
-    if ((bf === $m_sci_List$().ReusableCBFInstance$2)) {
-      if ((this$16 === $m_sci_Nil$())) {
-        jsx$6 = $m_sci_Nil$()
-      } else {
-        const arg1 = this$16.head__O();
-        const h = new $c_sci_$colon$colon().init___O__sci_List(f(arg1), $m_sci_Nil$());
-        let t = h;
-        let rest = $as_sci_List(this$16.tail__O());
-        while ((rest !== $m_sci_Nil$())) {
-          const arg1$1 = rest.head__O();
-          const nx = new $c_sci_$colon$colon().init___O__sci_List(f(arg1$1), $m_sci_Nil$());
-          t.tl$5 = nx;
-          t = nx;
-          rest = $as_sci_List(rest.tail__O())
-        };
-        jsx$6 = h
-      }
-    } else {
-      const b = $f_sc_TraversableLike__builder$1__psc_TraversableLike__scg_CanBuildFrom__scm_Builder(this$16, bf);
-      let these = this$16;
-      while ((!these.isEmpty__Z())) {
-        const arg1$2 = these.head__O();
-        b.$$plus$eq__O__scm_Builder(f(arg1$2));
-        these = $as_sci_List(these.tail__O())
-      };
-      jsx$6 = b.result__O()
-    };
-    const xs = $as_sc_Seq(jsx$6);
-    const ev = $m_s_Predef$().singleton$und$less$colon$less$2;
-    const array$3 = [new $c_Lscalatags_JsDom$Cap$SeqFrag().init___Lscalatags_JsDom$Cap__sc_Seq__F1(this$17, xs, ev)];
-    const jsx$2 = jsx$7.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$3));
+    })(box);
+    const this$9 = $m_Lscalatags_JsDom$all$();
+    const jsx$9 = this$9.div__Lscalatags_JsDom$TypedTag();
+    const this$10 = $m_Lscalatags_JsDom$all$();
+    const jsx$8 = this$10.h1__Lscalatags_JsDom$TypedTag();
+    const array$2 = [($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T("Search For a Gene"))];
+    const jsx$7 = jsx$8.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$2));
+    const this$14 = $m_Lscalatags_JsDom$all$();
+    const jsx$6 = this$14.div__Lscalatags_JsDom$TypedTag();
+    const this$15 = $m_Lscalatags_JsDom$all$();
+    const jsx$5 = new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$15, box);
+    const this$16 = $m_Lscalatags_JsDom$all$();
+    const array$3 = [jsx$5, new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$16, searchB)];
+    const jsx$4 = jsx$6.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$3));
+    const this$19 = $m_Lscalatags_JsDom$all$();
+    const jsx$3 = this$19.div__Lscalatags_JsDom$TypedTag();
     const this$20 = $m_Lscalatags_JsDom$all$();
-    const xs$1 = this.addForm$1;
-    const ev$1 = $m_s_Predef$().singleton$und$less$colon$less$2;
-    const this$21 = $m_s_Predef$().genericArrayOps__O__scm_ArrayOps(xs$1);
-    const jsx$1 = new $c_Lscalatags_generic_Util$SeqNode().init___Lscalatags_generic_Util__sc_Seq__F1(this$20, this$21.thisCollection__sc_Seq(), ev$1);
-    const this$22 = $m_Lscalatags_JsDom$all$();
-    const e$1 = this.timeSummary$1;
-    const array$4 = [jsx$8, jsx$2, jsx$1, new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$22, e$1)];
-    return jsx$10.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$4)).render__Lorg_scalajs_dom_raw_Element()
+    const array$4 = [new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$20, output)];
+    const array$5 = [jsx$7, jsx$4, jsx$3.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$4))];
+    return target.appendChild(jsx$9.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$5)).render__Lorg_scalajs_dom_raw_Element())
   };
-  $$js$exported$meth$main__Lorg_scalajs_dom_raw_HTMLDivElement__O(target) {
-    this.main__Lorg_scalajs_dom_raw_HTMLDivElement__V(target)
+  render$Inputs$$$anonfun$main$3__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_HTMLInputElement__V(e, box$1) {
+    $m_Ltextmine_GetUrlContent$().requestFile__T__V($as_T(box$1.value))
+  };
+  $$js$exported$meth$main__Lorg_scalajs_dom_raw_Node__O(target) {
+    return this.main__Lorg_scalajs_dom_raw_Node__Lorg_scalajs_dom_raw_Node(target)
   };
   "main"(arg$1) {
     const prep0 = arg$1;
-    return this.$$js$exported$meth$main__Lorg_scalajs_dom_raw_HTMLDivElement__O(prep0)
+    return this.$$js$exported$meth$main__Lorg_scalajs_dom_raw_Node__O(prep0)
   };
 }
-const $d_Lrender_ScalaJSExample$ = new $TypeData().initClass({
-  Lrender_ScalaJSExample$: 0
-}, false, "render.ScalaJSExample$", {
-  Lrender_ScalaJSExample$: 1,
+const $d_Lrender_Inputs$ = new $TypeData().initClass({
+  Lrender_Inputs$: 0
+}, false, "render.Inputs$", {
+  Lrender_Inputs$: 1,
   O: 1
 });
-$c_Lrender_ScalaJSExample$.prototype.$classData = $d_Lrender_ScalaJSExample$;
-let $n_Lrender_ScalaJSExample$ = (void 0);
-const $m_Lrender_ScalaJSExample$ = (function() {
-  if ((!$n_Lrender_ScalaJSExample$)) {
-    $n_Lrender_ScalaJSExample$ = new $c_Lrender_ScalaJSExample$().init___()
+$c_Lrender_Inputs$.prototype.$classData = $d_Lrender_Inputs$;
+let $n_Lrender_Inputs$ = (void 0);
+const $m_Lrender_Inputs$ = (function() {
+  if ((!$n_Lrender_Inputs$)) {
+    $n_Lrender_Inputs$ = new $c_Lrender_Inputs$().init___()
   };
-  return $n_Lrender_ScalaJSExample$
+  return $n_Lrender_Inputs$
 });
 const $is_Lsbt_testing_AnnotatedFingerprint = (function(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lsbt_testing_AnnotatedFingerprint)))
@@ -6195,6 +6012,9 @@ const $f_Lscalatags_generic_Util__attr__T__Lscalatags_generic_Namespace__Z__Lsca
   return new $c_Lscalatags_generic_Attr().init___T__s_Option__Z(s, $m_s_Option$().apply__O__s_Option(ns), raw)
 });
 class $c_Ltextmine_GetUrlContent$ extends $c_O {
+  init___() {
+    return this
+  };
   requestFile__T__V(queryVal) {
     const xhr = new $g.XMLHttpRequest();
     xhr.open("GET", (("https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=" + queryVal) + "&format=json"));
@@ -6204,9 +6024,6 @@ class $c_Ltextmine_GetUrlContent$ extends $c_O {
       })
     })(xhr);
     xhr.send()
-  };
-  init___() {
-    return this
   };
   textmine$GetUrlContent$$$anonfun$requestFile$1__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__O(e, xhr$1) {
     if (($uI(xhr$1.status) === 200)) {
@@ -14872,6 +14689,26 @@ class $c_Lscalatags_JsDom$GenericAttr extends $c_O {
   init___() {
     return this
   };
+  apply__Lorg_scalajs_dom_raw_Element__Lscalatags_generic_Attr__O__V(t, a, v) {
+    const x1 = a.namespace$1;
+    const x = $m_s_None$();
+    if ((x === x1)) {
+      if ((!a.raw$1)) {
+        t.setAttribute(a.name$1, $objectToString(v))
+      } else {
+        const tmpElm = $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createElement("p");
+        tmpElm.innerHTML = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["<p ", "=\"", "\"><p>"])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array([a.name$1, $objectToString(v)]));
+        const newAttr = tmpElm.children[0].attributes[0].cloneNode(true);
+        t.setAttributeNode(newAttr)
+      }
+    } else if ($is_s_Some(x1)) {
+      const x2 = $as_s_Some(x1);
+      const namespace = $as_Lscalatags_generic_Namespace(x2.value$2);
+      t.setAttributeNS(namespace.uri__T(), a.name$1, $objectToString(v))
+    } else {
+      throw new $c_s_MatchError().init___O(x1)
+    }
+  };
 }
 const $d_Lscalatags_JsDom$GenericAttr = new $TypeData().initClass({
   Lscalatags_JsDom$GenericAttr: 0
@@ -15008,42 +14845,6 @@ const $f_Lscalatags_generic_TypedTag__build__O__V = (function($thiz, b) {
     }
   }
 });
-class $c_Lscalatags_generic_Util$SeqNode extends $c_O {
-  constructor() {
-    super();
-    this.xs$1 = null;
-    this.ev$1 = null;
-    this.$$outer$1 = null
-  };
-  init___Lscalatags_generic_Util__sc_Seq__F1($$outer, xs, ev) {
-    this.xs$1 = xs;
-    this.ev$1 = ev;
-    if (($$outer === null)) {
-      throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(null)
-    } else {
-      this.$$outer$1 = $$outer
-    };
-    if ((xs === null)) {
-      throw new $c_jl_NullPointerException().init___()
-    };
-    return this
-  };
-  applyTo__O__V(t) {
-    this.xs$1.foreach__F1__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, t$1) {
-      return (function(x$1$2) {
-        $as_Lscalatags_generic_Modifier($this.ev$1.apply__O__O(x$1$2)).applyTo__O__V(t$1)
-      })
-    })(this, t)))
-  };
-}
-const $d_Lscalatags_generic_Util$SeqNode = new $TypeData().initClass({
-  Lscalatags_generic_Util$SeqNode: 0
-}, false, "scalatags.generic.Util$SeqNode", {
-  Lscalatags_generic_Util$SeqNode: 1,
-  O: 1,
-  Lscalatags_generic_Modifier: 1
-});
-$c_Lscalatags_generic_Util$SeqNode.prototype.$classData = $d_Lscalatags_generic_Util$SeqNode;
 const $f_Lscalatags_jsdom_Frag__applyTo__Lorg_scalajs_dom_raw_Element__V = (function($thiz, b) {
   b.appendChild($thiz.render__Lorg_scalajs_dom_raw_Node())
 });
@@ -18353,46 +18154,6 @@ const $m_Lsbt_testing_Status$ = (function() {
   };
   return $n_Lsbt_testing_Status$
 });
-class $c_Lscalatags_JsDom$Cap$SeqFrag extends $c_O {
-  constructor() {
-    super();
-    this.xs$1 = null;
-    this.ev$1 = null;
-    this.$$outer$1 = null
-  };
-  applyTo__Lorg_scalajs_dom_raw_Element__V(t) {
-    this.xs$1.foreach__F1__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, t$1) {
-      return (function(x$3$2) {
-        $as_Lscalatags_generic_Modifier($this.ev$1.apply__O__O(x$3$2)).applyTo__O__V(t$1)
-      })
-    })(this, t)))
-  };
-  applyTo__O__V(t) {
-    this.applyTo__Lorg_scalajs_dom_raw_Element__V(t)
-  };
-  init___Lscalatags_JsDom$Cap__sc_Seq__F1($$outer, xs, ev) {
-    this.xs$1 = xs;
-    this.ev$1 = ev;
-    if (($$outer === null)) {
-      throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(null)
-    } else {
-      this.$$outer$1 = $$outer
-    };
-    if ((xs === null)) {
-      throw new $c_jl_NullPointerException().init___()
-    };
-    return this
-  };
-}
-const $d_Lscalatags_JsDom$Cap$SeqFrag = new $TypeData().initClass({
-  Lscalatags_JsDom$Cap$SeqFrag: 0
-}, false, "scalatags.JsDom$Cap$SeqFrag", {
-  Lscalatags_JsDom$Cap$SeqFrag: 1,
-  O: 1,
-  Lscalatags_generic_Frag: 1,
-  Lscalatags_generic_Modifier: 1
-});
-$c_Lscalatags_JsDom$Cap$SeqFrag.prototype.$classData = $d_Lscalatags_JsDom$Cap$SeqFrag;
 class $c_Lscalatags_JsDom$TypedTag$ extends $c_O {
   init___() {
     return this
@@ -25277,84 +25038,6 @@ const $d_Ljava_nio_BufferUnderflowException = new $TypeData().initClass({
 $c_Ljava_nio_BufferUnderflowException.prototype.$classData = $d_Ljava_nio_BufferUnderflowException;
 class $c_Ljava_nio_charset_CharacterCodingException extends $c_Ljava_io_IOException {
 }
-class $c_Lrender_Task extends $c_O {
-  constructor() {
-    super();
-    this.desc$1 = null;
-    this.time$1 = 0
-  };
-  productPrefix__T() {
-    return "Task"
-  };
-  productArity__I() {
-    return 2
-  };
-  equals__O__Z(x$1) {
-    if ((this === x$1)) {
-      return true
-    } else if ($is_Lrender_Task(x$1)) {
-      const Task$1 = $as_Lrender_Task(x$1);
-      return ((this.desc$1 === Task$1.desc$1) && (this.time$1 === Task$1.time$1))
-    } else {
-      return false
-    }
-  };
-  productElement__I__O(x$1) {
-    switch (x$1) {
-      case 0: {
-        return this.desc$1;
-        break
-      }
-      case 1: {
-        return this.time$1;
-        break
-      }
-      default: {
-        throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
-      }
-    }
-  };
-  toString__T() {
-    return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
-  };
-  init___T__I(desc, time) {
-    this.desc$1 = desc;
-    this.time$1 = time;
-    return this
-  };
-  hashCode__I() {
-    let acc = (-889275714);
-    acc = $m_sr_Statics$().mix__I__I__I(acc, $m_sr_Statics$().anyHash__O__I(this.desc$1));
-    acc = $m_sr_Statics$().mix__I__I__I(acc, this.time$1);
-    return $m_sr_Statics$().finalizeHash__I__I__I(acc, 2)
-  };
-  productIterator__sc_Iterator() {
-    return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
-  };
-}
-const $is_Lrender_Task = (function(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lrender_Task)))
-});
-const $as_Lrender_Task = (function(obj) {
-  return (($is_Lrender_Task(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "render.Task"))
-});
-const $isArrayOf_Lrender_Task = (function(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lrender_Task)))
-});
-const $asArrayOf_Lrender_Task = (function(obj, depth) {
-  return (($isArrayOf_Lrender_Task(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lrender.Task;", depth))
-});
-const $d_Lrender_Task = new $TypeData().initClass({
-  Lrender_Task: 0
-}, false, "render.Task", {
-  Lrender_Task: 1,
-  O: 1,
-  s_Product: 1,
-  s_Equals: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_Lrender_Task.prototype.$classData = $d_Lrender_Task;
 class $c_Lscalatags_JsDom$RawFrag$ extends $c_O {
   init___() {
     return this
@@ -25450,15 +25133,6 @@ class $c_Lscalatags_generic_Attr extends $c_O {
       return false
     }
   };
-  init___T__s_Option__Z(name, namespace, raw) {
-    this.name$1 = name;
-    this.namespace$1 = namespace;
-    this.raw$1 = raw;
-    if (((!raw) && (!$m_Lscalatags_Escaping$().validAttrName__T__Z(name)))) {
-      throw new $c_jl_IllegalArgumentException().init___T(new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["Illegal attribute name: ", " is not a valid XML attribute name"])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array([name])))
-    };
-    return this
-  };
   productElement__I__O(x$1) {
     switch (x$1) {
       case 0: {
@@ -25478,8 +25152,23 @@ class $c_Lscalatags_generic_Attr extends $c_O {
       }
     }
   };
+  init___T__s_Option__Z(name, namespace, raw) {
+    this.name$1 = name;
+    this.namespace$1 = namespace;
+    this.raw$1 = raw;
+    if (((!raw) && (!$m_Lscalatags_Escaping$().validAttrName__T__Z(name)))) {
+      throw new $c_jl_IllegalArgumentException().init___T(new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["Illegal attribute name: ", " is not a valid XML attribute name"])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array([name])))
+    };
+    return this
+  };
   toString__T() {
     return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+  };
+  $$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(v, ev) {
+    if ((v === null)) {
+      throw new $c_jl_NullPointerException().init___()
+    };
+    return new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this, v, ev)
   };
   hashCode__I() {
     let acc = (-889275714);
@@ -29488,6 +29177,103 @@ const $d_Lscalatags_JsDom$RawFrag = new $TypeData().initClass({
   Ljava_io_Serializable: 1
 });
 $c_Lscalatags_JsDom$RawFrag.prototype.$classData = $d_Lscalatags_JsDom$RawFrag;
+class $c_Lscalatags_generic_AttrPair extends $c_O {
+  constructor() {
+    super();
+    this.a$1 = null;
+    this.v$1 = null;
+    this.ev$1 = null
+  };
+  productPrefix__T() {
+    return "AttrPair"
+  };
+  productArity__I() {
+    return 3
+  };
+  equals__O__Z(x$1) {
+    if ((this === x$1)) {
+      return true
+    } else if ($is_Lscalatags_generic_AttrPair(x$1)) {
+      const AttrPair$1 = $as_Lscalatags_generic_AttrPair(x$1);
+      const x = this.a$1;
+      const x$2 = AttrPair$1.a$1;
+      if ((((x === null) ? (x$2 === null) : x.equals__O__Z(x$2)) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.v$1, AttrPair$1.v$1))) {
+        const x$3 = this.ev$1;
+        const x$4 = AttrPair$1.ev$1;
+        return (x$3 === x$4)
+      } else {
+        return false
+      }
+    } else {
+      return false
+    }
+  };
+  productElement__I__O(x$1) {
+    switch (x$1) {
+      case 0: {
+        return this.a$1;
+        break
+      }
+      case 1: {
+        return this.v$1;
+        break
+      }
+      case 2: {
+        return this.ev$1;
+        break
+      }
+      default: {
+        throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+      }
+    }
+  };
+  init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(a, v, ev) {
+    this.a$1 = a;
+    this.v$1 = v;
+    this.ev$1 = ev;
+    return this
+  };
+  toString__T() {
+    return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+  };
+  applyTo__O__V(t) {
+    const this$1 = this.ev$1;
+    const a = this.a$1;
+    const v = this.v$1;
+    this$1.apply__Lorg_scalajs_dom_raw_Element__Lscalatags_generic_Attr__O__V(t, a, v)
+  };
+  hashCode__I() {
+    const this$2 = $m_s_util_hashing_MurmurHash3$();
+    return this$2.productHash__s_Product__I__I(this, (-889275714))
+  };
+  productIterator__sc_Iterator() {
+    return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+  };
+}
+const $is_Lscalatags_generic_AttrPair = (function(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lscalatags_generic_AttrPair)))
+});
+const $as_Lscalatags_generic_AttrPair = (function(obj) {
+  return (($is_Lscalatags_generic_AttrPair(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "scalatags.generic.AttrPair"))
+});
+const $isArrayOf_Lscalatags_generic_AttrPair = (function(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lscalatags_generic_AttrPair)))
+});
+const $asArrayOf_Lscalatags_generic_AttrPair = (function(obj, depth) {
+  return (($isArrayOf_Lscalatags_generic_AttrPair(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscalatags.generic.AttrPair;", depth))
+});
+const $d_Lscalatags_generic_AttrPair = new $TypeData().initClass({
+  Lscalatags_generic_AttrPair: 0
+}, false, "scalatags.generic.AttrPair", {
+  Lscalatags_generic_AttrPair: 1,
+  O: 1,
+  Lscalatags_generic_Modifier: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lscalatags_generic_AttrPair.prototype.$classData = $d_Lscalatags_generic_AttrPair;
 class $c_Lujson_Parser$$anonfun$1 extends $c_sr_AbstractPartialFunction {
   isDefinedAt__jl_Throwable__Z(x1) {
     return $is_jl_IndexOutOfBoundsException(x1)
@@ -30860,9 +30646,6 @@ class $c_s_util_Failure extends $c_s_util_Try {
   productIterator__sc_Iterator() {
     return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
   };
-  toOption__s_Option() {
-    return $m_s_None$()
-  };
   recover__s_PartialFunction__s_util_Try(pf) {
     try {
       return (pf.isDefinedAt__O__Z(this.exception$2) ? new $c_s_util_Success().init___O(pf.apply__O__O(this.exception$2)) : this)
@@ -31118,9 +30901,6 @@ class $c_s_util_Success extends $c_s_util_Try {
   };
   productIterator__sc_Iterator() {
     return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
-  };
-  toOption__s_Option() {
-    return new $c_s_Some().init___O(this.value$2)
   };
   recover__s_PartialFunction__s_util_Try(pf) {
     return this
@@ -41827,6 +41607,15 @@ class $c_Lscalatags_JsDom$all$ extends $c_O {
     this.bitmap$3$1 = $m_sjsr_RuntimeLong$().Zero__sjsr_RuntimeLong();
     this.bitmap$4$1 = $m_sjsr_RuntimeLong$().Zero__sjsr_RuntimeLong()
   };
+  placeholder__Lscalatags_generic_Attr() {
+    const b = this.bitmap$4$1;
+    const lo = (8192 & b.lo$2);
+    if ((lo === 0)) {
+      return this.placeholder$lzycompute__p1__Lscalatags_generic_Attr()
+    } else {
+      return this.placeholder$1
+    }
+  };
   input$lzycompute__p1__Lscalatags_JsDom$TypedTag() {
     const b = this.bitmap$1$1;
     const lo = (128 & b.lo$2);
@@ -41846,6 +41635,19 @@ class $c_Lscalatags_JsDom$all$ extends $c_O {
     $f_Lscalatags_generic_Aggregate__$$init$__V(this);
     $f_Lscalatags_JsDom$Aggregate__$$init$__V(this);
     return this
+  };
+  span$lzycompute__p1__Lscalatags_JsDom$TypedTag() {
+    const b = this.bitmap$0$1;
+    const hi = (256 & b.hi$2);
+    if ((hi === 0)) {
+      const ns = $m_Lscalatags_generic_Namespace$().htmlNamespaceConfig$1;
+      this.span$1 = $as_Lscalatags_JsDom$TypedTag($f_Lscalatags_jsdom_TagFactory__typedTag__T__Z__Lscalatags_generic_Namespace__Lscalatags_generic_TypedTag(this, "span", false, ns));
+      const b$1 = this.bitmap$0$1;
+      const lo = b$1.lo$2;
+      const hi$1 = (256 | b$1.hi$2);
+      this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo, hi$1)
+    };
+    return this.span$1
   };
   h1$lzycompute__p1__Lscalatags_JsDom$TypedTag() {
     const b = this.bitmap$0$1;
@@ -41882,6 +41684,18 @@ class $c_Lscalatags_JsDom$all$ extends $c_O {
       return this.div$1
     }
   };
+  type$lzycompute__p1__Lscalatags_generic_Attr() {
+    const b = this.bitmap$4$1;
+    const lo = (524288 & b.lo$2);
+    if ((lo === 0)) {
+      this.type$1 = $f_Lscalatags_generic_Util__attr__T__Lscalatags_generic_Namespace__Z__Lscalatags_generic_Attr(this, "type", null, false);
+      const b$1 = this.bitmap$4$1;
+      const lo$1 = (524288 | b$1.lo$2);
+      const hi = b$1.hi$2;
+      this.bitmap$4$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
+    };
+    return this.type$1
+  };
   button__Lscalatags_JsDom$TypedTag() {
     const b = this.bitmap$1$1;
     const lo = (256 & b.lo$2);
@@ -41891,36 +41705,26 @@ class $c_Lscalatags_JsDom$all$ extends $c_O {
       return this.button$1
     }
   };
-  ul$lzycompute__p1__Lscalatags_JsDom$TypedTag() {
+  span__Lscalatags_JsDom$TypedTag() {
     const b = this.bitmap$0$1;
-    const lo = (1048576 & b.lo$2);
+    const hi = (256 & b.hi$2);
+    if ((hi === 0)) {
+      return this.span$lzycompute__p1__Lscalatags_JsDom$TypedTag()
+    } else {
+      return this.span$1
+    }
+  };
+  placeholder$lzycompute__p1__Lscalatags_generic_Attr() {
+    const b = this.bitmap$4$1;
+    const lo = (8192 & b.lo$2);
     if ((lo === 0)) {
-      const ns = $m_Lscalatags_generic_Namespace$().htmlNamespaceConfig$1;
-      this.ul$1 = $as_Lscalatags_JsDom$TypedTag($f_Lscalatags_jsdom_TagFactory__typedTag__T__Z__Lscalatags_generic_Namespace__Lscalatags_generic_TypedTag(this, "ul", false, ns));
-      const b$1 = this.bitmap$0$1;
-      const lo$1 = (1048576 | b$1.lo$2);
+      this.placeholder$1 = $f_Lscalatags_generic_Util__attr__T__Lscalatags_generic_Namespace__Z__Lscalatags_generic_Attr(this, "placeholder", null, false);
+      const b$1 = this.bitmap$4$1;
+      const lo$1 = (8192 | b$1.lo$2);
       const hi = b$1.hi$2;
-      this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
+      this.bitmap$4$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
     };
-    return this.ul$1
-  };
-  ul__Lscalatags_JsDom$TypedTag() {
-    const b = this.bitmap$0$1;
-    const lo = (1048576 & b.lo$2);
-    if ((lo === 0)) {
-      return this.ul$lzycompute__p1__Lscalatags_JsDom$TypedTag()
-    } else {
-      return this.ul$1
-    }
-  };
-  li__Lscalatags_JsDom$TypedTag() {
-    const b = this.bitmap$0$1;
-    const lo = (2097152 & b.lo$2);
-    if ((lo === 0)) {
-      return this.li$lzycompute__p1__Lscalatags_JsDom$TypedTag()
-    } else {
-      return this.li$1
-    }
+    return this.placeholder$1
   };
   button$lzycompute__p1__Lscalatags_JsDom$TypedTag() {
     const b = this.bitmap$1$1;
@@ -41944,19 +41748,6 @@ class $c_Lscalatags_JsDom$all$ extends $c_O {
       return this.input$1
     }
   };
-  li$lzycompute__p1__Lscalatags_JsDom$TypedTag() {
-    const b = this.bitmap$0$1;
-    const lo = (2097152 & b.lo$2);
-    if ((lo === 0)) {
-      const ns = $m_Lscalatags_generic_Namespace$().htmlNamespaceConfig$1;
-      this.li$1 = $as_Lscalatags_JsDom$TypedTag($f_Lscalatags_jsdom_TagFactory__typedTag__T__Z__Lscalatags_generic_Namespace__Lscalatags_generic_TypedTag(this, "li", false, ns));
-      const b$1 = this.bitmap$0$1;
-      const lo$1 = (2097152 | b$1.lo$2);
-      const hi = b$1.hi$2;
-      this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
-    };
-    return this.li$1
-  };
   h1__Lscalatags_JsDom$TypedTag() {
     const b = this.bitmap$0$1;
     const lo = (128 & b.lo$2);
@@ -41964,6 +41755,15 @@ class $c_Lscalatags_JsDom$all$ extends $c_O {
       return this.h1$lzycompute__p1__Lscalatags_JsDom$TypedTag()
     } else {
       return this.h1$1
+    }
+  };
+  type__Lscalatags_generic_Attr() {
+    const b = this.bitmap$4$1;
+    const lo = (524288 & b.lo$2);
+    if ((lo === 0)) {
+      return this.type$lzycompute__p1__Lscalatags_generic_Attr()
+    } else {
+      return this.type$1
     }
   };
 }
@@ -51559,7 +51359,7 @@ $e.org.scalajs.testinterface.internal.startBridge = (function() {
   $m_Lorg_scalajs_testinterface_internal_Bridge$().start__V()
 });
 $e.render = ($e.render || {});
-$e.render.ScalaJSExample = $m_Lrender_ScalaJSExample$;
+$e.render.Inputs = $m_Lrender_Inputs$;
 $m_Lmy_Main$().main__AT__V($makeNativeArrayWrapper($d_T.getArrayOf(), []));
 }).call(this);
 //# sourceMappingURL=gene-mining-fastopt.js.map

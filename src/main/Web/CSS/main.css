@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+body{
+    font-family: "Lato";
+}
 h1 {
     font-family: "Lato";
     font-weight: 700;
@@ -17,88 +20,8 @@ a{
     text-decoration: none;
 }
 
-.tile{
-    width: 130px;
-    height:185px;
-    margin:3px;
-    display: inline-block;
-    float:left;
-    font-family: "Lato";
-    font-weight: 700;
-    color: #666666;
-    padding: auto;
-}
 
-.tileWrapper{
-    width: 680px;
-    height: 960px;
-   /* border: 1px solid #666666;*/
-}
 
-.tile .level-zero{
-    width: 130px;
-    height:185px;
-    background-size: contain;
-    border: 1px solid azure;
-}
 
-.tile .level-one{
-    width: 130px;
-    height:185px;
-    background-image: url("http://localhost:63342/Scala%20Starter/src/main/Web/one-layer.png?_ijt=ff15tcl2cmif785dgb2cj1n0nc");
-    background-size: contain;
-    border: 1px solid azure;
-}
 
-.level-two{
-    width: 130px;
-    height:185px;
-    background-image: url("http://localhost:63342/Scala%20Starter/src/main/Web/two-layer.png?_ijt=ff15tcl2cmif785dgb2cj1n0nc");
-    background-size: contain;
-    border: 1px solid azure;
-}
 
-.level-three{
-      width: 130px;
-      height:185px;
-      background-image: url("http://localhost:63342/Scala%20Starter/src/main/Web/three-layer.png?_ijt=ff15tcl2cmif785dgb2cj1n0nc");
-    background-size: contain;
-    border: 1px solid azure;
-  }
-
-.level-four{
-    width: 130px;
-    height:185px;
-    background-image: url("http://localhost:63342/Scala%20Starter/src/main/Web/four-layer.png?_ijt=ff15tcl2cmif785dgb2cj1n0nc");
-    background-size: contain;
-    border: 1px solid azure;
-}
-
-.player-1{
-     width: 130px;
-     height: 185px;
-     background-color: coral;
-     opacity: .4;
-     margin:auto;
-     text-align: center;
- }
-
-.player-2{
-    width: 130px;
-    height: 185px;
-    background-color: aquamarine;
-    opacity: .4;
-    margin:auto;
-    text-align: center;
-    font-size: large;
-}
-
-.move{
-    width: 127px;
-    height: 182px;
-    opacity: .4;
-    margin:auto;
-    text-align: center;
-    font-size: large;
-    border: 3px solid red;
-}
