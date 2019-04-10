@@ -1,0 +1,16 @@
+[0m[[0m[0minfo[0m] [0m[0mFast optimizing C:\Users\jjohn\Documents\GitHub\Gene-Mining\target\scala-2.12\gene-mining-fastopt.js[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Compute reachability: 218629 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Assemble LinkedClasses: 49804 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mBasic Linking: 275489 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Batch mode: false[0m
+[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Incremental part: 11037 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Optimizing 5 methods.[0m
+[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Optimizer part: 9470 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: 28609 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Compute reachability: 142068 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Assemble LinkedClasses: 6050 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: 148299 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Class tree cache stats: reused: 1634 -- invalidated: 2[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Method tree cache stats: resued: 4693 -- invalidated: 3[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter (write output): 85770 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mGlobal IR cache stats: reused: 84 -- invalidated: 21 -- trees read: 2[0m

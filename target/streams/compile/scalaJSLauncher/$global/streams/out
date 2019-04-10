@@ -1,0 +1,2 @@
+[0m[[0m[31merror[0m] [0m[0mThe main class my.HelloWorld uses the new style with an Array[String] argument, but scalaJSUseMainModuleInitializer is false. Did you forget to specify `scalaJSUseMainModuleInitializer := true` in your project settings?[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mscalaJSLauncher[0m) The main class my.HelloWorld uses the new style with an Array[String] argument, but scalaJSUseMainModuleInitializer is false. Did you forget to specify `scalaJSUseMainModuleInitializer := true` in your project settings?[0m

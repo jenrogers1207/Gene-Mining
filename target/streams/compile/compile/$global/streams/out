@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\jjohn\Documents\GitHub\Gene-Mining\src\main\scala\textmine\apiGetter.scala:31:40: missing parameter type[0m
+[0m[[0m[31merror[0m] [0m[0m        val test = resultList.forEach((d)=> {[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
