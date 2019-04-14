@@ -1,16 +1,16 @@
 [0m[[0m[0minfo[0m] [0m[0mFast optimizing C:\Users\jjohn\Documents\GitHub\Gene-Mining\target\scala-2.12\gene-mining-fastopt.js[0m
-[0m[[0m[0mdebug[0m] [0m[0mLinker: Compute reachability: 325987 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mLinker: Assemble LinkedClasses: 494375 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mBasic Linking: 854867 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Batch mode: true[0m
-[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Incremental part: 260369 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Optimizing 10142 methods.[0m
-[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Optimizer part: 1520900 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: 1798713 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mRefiner: Compute reachability: 152566 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mRefiner: Assemble LinkedClasses: 18938 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mRefiner: 174206 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mEmitter: Class tree cache stats: reused: 809 -- invalidated: 825[0m
-[0m[[0m[0mdebug[0m] [0m[0mEmitter: Method tree cache stats: resued: 0 -- invalidated: 4689[0m
-[0m[[0m[0mdebug[0m] [0m[0mEmitter (write output): 1044135 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mGlobal IR cache stats: reused: 102 -- invalidated: 1 -- trees read: 969[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Compute reachability: 160448 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Assemble LinkedClasses: 36988 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mBasic Linking: 202162 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Batch mode: false[0m
+[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Incremental part: 26202 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Optimizing 4 methods.[0m
+[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Optimizer part: 5334 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: 35698 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Compute reachability: 138062 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Assemble LinkedClasses: 6608 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: 144858 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Class tree cache stats: reused: 1499 -- invalidated: 2[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Method tree cache stats: resued: 4346 -- invalidated: 3[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter (write output): 90884 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mGlobal IR cache stats: reused: 82 -- invalidated: 3 -- trees read: 2[0m

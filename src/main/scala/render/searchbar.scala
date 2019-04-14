@@ -12,7 +12,7 @@ import org.scalajs.dom.raw.MouseEvent
 import scala.util.Try
 import scalajs.js.annotation.JSExport
 import scalatags.JsDom.all._
-import textmine.GetUrlContent
+import textmine._
 import org.scalajs.dom
 import dom.html
 import scalajs.js.annotation.JSExport
@@ -30,7 +30,6 @@ object Inputs extends{
     val output = span.render
 
     box.onkeyup = (e: dom.Event) => {
-      //println("e",e)
       output.textContent =
         box.value.toUpperCase
     }
@@ -38,13 +37,13 @@ object Inputs extends{
     val searchB =  button("GO").render
 
     searchB.onclick = (e: dom.Event) => {
+//println(box.value)
       textmine.GetUrlContent.requestFile(box.value)
     }
 
     target.appendChild(
       div(
         h1("What's that Gene?"),
-       // div(),
         div(box, searchB),
         div(output)
       ).render
