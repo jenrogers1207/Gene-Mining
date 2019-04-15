@@ -5561,7 +5561,7 @@ class $c_Lrender_Inputs$ extends $c_O {
   main__Lorg_scalajs_dom_raw_Node__Lorg_scalajs_dom_raw_Node(target) {
     const this$1 = $m_Lscalatags_JsDom$all$();
     const jsx$1 = this$1.input__Lscalatags_JsDom$TypedTag();
-    const array = [$m_Lscalatags_JsDom$all$().type__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text", $m_Lscalatags_JsDom$all$().stringAttr$1), $m_Lscalatags_JsDom$all$().placeholder__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("Search by gene symbol...", $m_Lscalatags_JsDom$all$().stringAttr$1)];
+    const array = [$m_Lscalatags_JsDom$all$().type__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text", $m_Lscalatags_JsDom$all$().stringAttr$1), $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("form-control", $m_Lscalatags_JsDom$all$().stringAttr$1), $m_Lscalatags_JsDom$all$().placeholder__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("Search by gene symbol or variant id...", $m_Lscalatags_JsDom$all$().stringAttr$1)];
     const box = jsx$1.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array)).render__Lorg_scalajs_dom_raw_Element();
     const this$4 = $m_Lscalatags_JsDom$all$();
     const output = this$4.span__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
@@ -5572,7 +5572,7 @@ class $c_Lrender_Inputs$ extends $c_O {
     })(output, box);
     const this$5 = $m_Lscalatags_JsDom$all$();
     const jsx$2 = this$5.button__Lscalatags_JsDom$TypedTag();
-    const array$1 = [($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T("GO"))];
+    const array$1 = [$m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("btn btn-outline-secondary", $m_Lscalatags_JsDom$all$().stringAttr$1), ($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T("GO"))];
     const searchB = jsx$2.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1)).render__Lorg_scalajs_dom_raw_Element();
     searchB.onclick = (function(box$1$1) {
       return (function(arg1$2$1) {
@@ -5580,24 +5580,25 @@ class $c_Lrender_Inputs$ extends $c_O {
       })
     })(box);
     const this$9 = $m_Lscalatags_JsDom$all$();
-    const jsx$9 = this$9.div__Lscalatags_JsDom$TypedTag();
+    const jsx$10 = this$9.div__Lscalatags_JsDom$TypedTag();
     const this$10 = $m_Lscalatags_JsDom$all$();
-    const jsx$8 = this$10.h1__Lscalatags_JsDom$TypedTag();
+    const jsx$9 = this$10.h1__Lscalatags_JsDom$TypedTag();
     const array$2 = [($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T("What's that Gene?"))];
-    const jsx$7 = jsx$8.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$2));
+    const jsx$8 = jsx$9.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$2));
     const this$14 = $m_Lscalatags_JsDom$all$();
-    const jsx$6 = this$14.div__Lscalatags_JsDom$TypedTag();
+    const jsx$7 = this$14.div__Lscalatags_JsDom$TypedTag();
+    const jsx$6 = $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("input-group mb-3", $m_Lscalatags_JsDom$all$().stringAttr$1);
     const this$15 = $m_Lscalatags_JsDom$all$();
     const jsx$5 = new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$15, box);
     const this$16 = $m_Lscalatags_JsDom$all$();
-    const array$3 = [jsx$5, new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$16, searchB)];
-    const jsx$4 = jsx$6.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$3));
+    const array$3 = [jsx$6, jsx$5, new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$16, searchB)];
+    const jsx$4 = jsx$7.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$3));
     const this$19 = $m_Lscalatags_JsDom$all$();
     const jsx$3 = this$19.div__Lscalatags_JsDom$TypedTag();
     const this$20 = $m_Lscalatags_JsDom$all$();
     const array$4 = [new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$20, output)];
-    const array$5 = [jsx$7, jsx$4, jsx$3.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$4))];
-    return target.appendChild(jsx$9.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$5)).render__Lorg_scalajs_dom_raw_Element())
+    const array$5 = [jsx$8, jsx$4, jsx$3.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$4))];
+    return target.appendChild(jsx$10.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$5)).render__Lorg_scalajs_dom_raw_Element())
   };
   render$Inputs$$$anonfun$main$3__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_HTMLInputElement__V(e, box$1) {
     $m_Ltextmine_GetUrlContent$().requestFile__T__V($as_T(box$1.value))
@@ -5838,10 +5839,9 @@ class $c_Ltextmine_Parser$ extends $c_O {
   };
   textmine$Parser$$$anonfun$parseFile$4__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__O(e, xhr$1) {
     if (($uI(xhr$1.status) === 200)) {
-      const x = new $c_T2().init___O__O("papes", $as_T(xhr$1.responseText));
-      const this$2 = $m_s_Console$();
-      const this$3 = $as_Ljava_io_PrintStream(this$2.outVar$2.v$1);
-      this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"));
+      const xml = xhr$1.responseXML;
+      xml.getElementsByTagName("article-title");
+      xml.getElementsByTagName("body");
       return (void 0)
     } else {
       return (void 0)
@@ -37711,6 +37711,18 @@ class $c_Lscalatags_JsDom$all$ extends $c_O {
       return this.div$1
     }
   };
+  class$lzycompute__p1__Lscalatags_generic_Attr() {
+    const b = this.bitmap$4$1;
+    const lo = (16777216 & b.lo$2);
+    if ((lo === 0)) {
+      this.class$1 = $f_Lscalatags_generic_Util__attr__T__Lscalatags_generic_Namespace__Z__Lscalatags_generic_Attr(this, "class", null, false);
+      const b$1 = this.bitmap$4$1;
+      const lo$1 = (16777216 | b$1.lo$2);
+      const hi = b$1.hi$2;
+      this.bitmap$4$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
+    };
+    return this.class$1
+  };
   type$lzycompute__p1__Lscalatags_generic_Attr() {
     const b = this.bitmap$4$1;
     const lo = (524288 & b.lo$2);
@@ -37730,6 +37742,15 @@ class $c_Lscalatags_JsDom$all$ extends $c_O {
       return this.button$lzycompute__p1__Lscalatags_JsDom$TypedTag()
     } else {
       return this.button$1
+    }
+  };
+  $class__Lscalatags_generic_Attr() {
+    const b = this.bitmap$4$1;
+    const lo = (16777216 & b.lo$2);
+    if ((lo === 0)) {
+      return this.class$lzycompute__p1__Lscalatags_generic_Attr()
+    } else {
+      return this.class$1
     }
   };
   span__Lscalatags_JsDom$TypedTag() {

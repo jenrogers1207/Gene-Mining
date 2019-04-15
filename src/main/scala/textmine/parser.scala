@@ -8,6 +8,12 @@ import upickle.default.{macroRW, ReadWriter => RW}
 import ujson.Js
 import scala.scalajs.js._
 import scala.scalajs.js.{Dictionary, JSON}
+import ProcessorMachine._
+import org.clulab.processors.corenlp.CoreNLPProcessor
+import org.clulab.processors.shallownlp.ShallowNLPProcessor
+import org.clulab.serialization.DocumentSerializer
+import org.clulab.processors.{Document, Processor}
+import org.clulab.struct.DirectedGraphEdgeIterator
 
 object Parser {
 
@@ -40,9 +46,21 @@ object Parser {
       xhr.open("GET", url)
       xhr.onload = { (e: dom.Event) =>
         if (xhr.status == 200) {
+          var xml = xhr.responseXML
 
-          println("papes", xhr.responseText.text)
+          var title = xml.getElementsByTagName("article-title")
+          var body = xml.getElementsByTagName("body")
 
+          //println("papes", xml.getElementsByTagName("article-title"))
+
+        //  println(title(0).textContent)
+        //  println("body", body(0).textContent)
+        //  ProcessorMachine.processMain(body(0).textContent)
+        //  val proc:Processor = new CoreNLPProcessor(withDiscourse = ShallowNLPProcessor.WITH_DISCOURSE)
+
+         // val doc = proc.annotate(body(0).textContent)
+
+         // println(doc)
         }
       }
       xhr.send()

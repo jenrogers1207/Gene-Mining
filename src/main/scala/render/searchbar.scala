@@ -24,7 +24,8 @@ object Inputs extends{
   def main(target: Node) = {
     val box = input(
       `type`:="text",
-      placeholder:="Search by gene symbol..."
+      `class`:="form-control",
+      placeholder:="Search by gene symbol or variant id..."
     ).render
 
     val output = span.render
@@ -34,17 +35,21 @@ object Inputs extends{
         box.value.toUpperCase
     }
 
-    val searchB =  button("GO").render
+    val searchB =  button(
+      `class`:="btn btn-outline-secondary",
+      "GO"
+    ).render
 
     searchB.onclick = (e: dom.Event) => {
-//println(box.value)
       textmine.GetUrlContent.requestFile(box.value)
     }
 
     target.appendChild(
       div(
         h1("What's that Gene?"),
-        div(box, searchB),
+        div(
+          `class`:= "input-group mb-3",
+          box, searchB),
         div(output)
       ).render
     )

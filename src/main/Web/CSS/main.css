@@ -25,10 +25,12 @@ a{
 
 }
 
+
 #main div div {
     margin:auto;
     padding:20px;
     text-align: center;
+    width:70%;
 }
 
 
