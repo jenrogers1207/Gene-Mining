@@ -10,7 +10,7 @@ scalaJSLinkerConfig ~= { _.withOutputMode(OutputMode.ECMAScript2015) }
 scalaJSUseMainModuleInitializer := true
 mainClass := Some("my.Main")
 jsEnv := new org.scalajs.jsenv.jsdomnodejs.JSDOMNodeJSEnv()
-resolvers += "jitpack" at "https://jitpack.io"
+resolvers ++= Seq("jitpack" at "https://jitpack.io", "hmil" at "maven")
 
 libraryDependencies ++= {
   val procVer = "7.4.2"
@@ -25,12 +25,16 @@ libraryDependencies ++= {
     "com.github.fdietze" % "scala-js-d3v4" % "master-SNAPSHOT",
     "com.lihaoyi" %%% "upickle" % "0.7.1",
     "com.lihaoyi" %%% "scalatags" % "0.6.7",
-    "com.lihaoyi" %% "requests" % "0.1.7"
+    "com.lihaoyi" %% "requests" % "0.1.7",
+  //  "fr.hmil" %%% "roshttp" % "2.2.4"
   )
 }
 
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 dependencyOverrides += "org.scala-lang" % "scala-compiler" % scalaVersion.value
+
+//Resolver.bintrayIvyRepo("hmil", "maven")
+
 
 lazy val root = project.
   enablePlugins(ScalaJSPlugin)

@@ -1,29 +1,29 @@
 [0m[[0m[0minfo[0m] [0m[0mUpdating root...[0m
-[0m[[0m[0mdebug[0m] [0m[0m:: resolving dependencies :: root#root_sjs0.6_2.12;7-b798c63e+20190415-2052[0m
+[0m[[0m[0mdebug[0m] [0m[0m:: resolving dependencies :: root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135[0m
 [0m[[0m[0mdebug[0m] [0m[0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool, phantom-js-jetty][0m
 [0m[[0m[0mdebug[0m] [0m[0m	validate = true[0m
 [0m[[0m[0mdebug[0m] [0m[0m	refresh = false[0m
 [0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'compile'[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 [compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 [compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.12.7[0m
 [0m[[0m[0mdebug[0m] [0m[0m	found org.scala-lang#scala-library;2.12.7 in sbt-chain[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[2.12.7] org.scala-lang#scala-library;2.12.7[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [compile->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [compile->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [compile->master][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-library_2.12;0.6.25 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-library_2.12;0.6.25 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: org.scala-js#scalajs-library_2.12;0.6.25 {compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: module revision found in cache: org.scala-js#scalajs-library_2.12;0.6.25[0m
 [0m[[0m[0mdebug[0m] [0m[0m	found org.scala-js#scalajs-library_2.12;0.6.25 in sbt-chain[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[0.6.25] org.scala-js#scalajs-library_2.12;0.6.25[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-library_2.12;0.6.25 [compile->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-library_2.12;0.6.25 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-library_2.12;0.6.25 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-library_2.12;0.6.25 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-library_2.12;0.6.25->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
@@ -44,29 +44,29 @@
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-library_2.12;0.6.25->org.scala-lang#scala-library;2.12.7 [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-library_2.12;0.6.25->org.scala-lang#scala-library;2.12.7 [runtime->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-library_2.12;0.6.25 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-library_2.12;0.6.25 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'runtime'[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 [runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 [compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 [runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 [compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [compile->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [compile->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [compile->master][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-library_2.12;0.6.25 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-library_2.12;0.6.25 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-library_2.12;0.6.25 [compile->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-library_2.12;0.6.25 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-library_2.12;0.6.25 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-library_2.12;0.6.25 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-library_2.12;0.6.25->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
@@ -85,34 +85,34 @@
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-library_2.12;0.6.25->org.scala-lang#scala-library;2.12.7 [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-library_2.12;0.6.25->org.scala-lang#scala-library;2.12.7 [runtime->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-library_2.12;0.6.25 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-library_2.12;0.6.25 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'test'[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 [test][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 [runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 [compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 [test][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 [runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 [compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [compile->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [compile->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [compile->master][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-library_2.12;0.6.25 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-library_2.12;0.6.25 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-library_2.12;0.6.25 [compile->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-library_2.12;0.6.25 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-library_2.12;0.6.25 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-library_2.12;0.6.25 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-library_2.12;0.6.25->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
@@ -131,12 +131,12 @@
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-library_2.12;0.6.25->org.scala-lang#scala-library;2.12.7 [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-library_2.12;0.6.25->org.scala-lang#scala-library;2.12.7 [runtime->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-library_2.12;0.6.25 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-library_2.12;0.6.25 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-test-interface_2.12;0.6.25 [test->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-test-interface_2.12;0.6.25 [test->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
@@ -147,8 +147,8 @@
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: module revision found in cache: org.scala-js#scalajs-test-interface_2.12;0.6.25[0m
 [0m[[0m[0mdebug[0m] [0m[0m	found org.scala-js#scalajs-test-interface_2.12;0.6.25 in sbt-chain[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[0.6.25] org.scala-js#scalajs-test-interface_2.12;0.6.25[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-test-interface_2.12;0.6.25 [test->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-test-interface_2.12;0.6.25 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-test-interface_2.12;0.6.25 [test->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-test-interface_2.12;0.6.25 [test->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-test-interface_2.12;0.6.25->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -171,17 +171,17 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-test-interface_2.12;0.6.25->org.scala-lang#scala-library;2.12.7 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-test-interface_2.12;0.6.25->org.scala-js#scalajs-library_2.12;0.6.25 [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-test-interface_2.12;0.6.25->org.scala-js#scalajs-library_2.12;0.6.25 [runtime->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-test-interface_2.12;0.6.25 [test->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-test-interface_2.12;0.6.25 [test->master][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'provided'[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 [provided][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 [provided][0m
 [0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'optional'[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 [optional][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 [optional][0m
 [0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'compile-internal'[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 [compile-internal][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 [compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 [compile-internal][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 [compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
@@ -190,10 +190,10 @@
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [compile->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [compile->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [compile->master][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-library_2.12;0.6.25 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-library_2.12;0.6.25 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
@@ -202,8 +202,8 @@
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-library_2.12;0.6.25 [compile->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-library_2.12;0.6.25 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-library_2.12;0.6.25 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-library_2.12;0.6.25 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-library_2.12;0.6.25->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
@@ -222,18 +222,18 @@
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-library_2.12;0.6.25->org.scala-lang#scala-library;2.12.7 [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-library_2.12;0.6.25->org.scala-lang#scala-library;2.12.7 [runtime->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-library_2.12;0.6.25 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-library_2.12;0.6.25 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 [optional][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 [provided][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 [optional][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 [provided][0m
 [0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'runtime-internal'[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 [runtime-internal][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 [runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 [compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 [runtime-internal][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 [runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 [compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
@@ -242,10 +242,10 @@
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [compile->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [compile->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [compile->master][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-library_2.12;0.6.25 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-library_2.12;0.6.25 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
@@ -254,8 +254,8 @@
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-library_2.12;0.6.25 [compile->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-library_2.12;0.6.25 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-library_2.12;0.6.25 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-library_2.12;0.6.25 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-library_2.12;0.6.25->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
@@ -274,18 +274,18 @@
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-library_2.12;0.6.25->org.scala-lang#scala-library;2.12.7 [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-library_2.12;0.6.25->org.scala-lang#scala-library;2.12.7 [runtime->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-library_2.12;0.6.25 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-library_2.12;0.6.25 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 [optional][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 [optional][0m
 [0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'test-internal'[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 [test-internal][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 [test][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 [runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 [compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 [test-internal][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 [test][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 [runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 [compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
@@ -298,10 +298,10 @@
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [compile->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [compile->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [compile->master][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-library_2.12;0.6.25 [compile->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-library_2.12;0.6.25 [compile->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
@@ -314,8 +314,8 @@
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-library_2.12;0.6.25 [compile->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-library_2.12;0.6.25 [compile->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-library_2.12;0.6.25 [compile->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-library_2.12;0.6.25 [compile->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-library_2.12;0.6.25->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
@@ -334,12 +334,12 @@
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-library_2.12;0.6.25->org.scala-lang#scala-library;2.12.7 [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-library_2.12;0.6.25->org.scala-lang#scala-library;2.12.7 [runtime->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-library_2.12;0.6.25 [compile->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-library_2.12;0.6.25 [compile->master][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.6 {provided=[compile(*), provided(*), runtime(*), master(compile)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {provided=[compile(*), provided(*), runtime(*), master(compile)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-test-interface_2.12;0.6.25 [test->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-test-interface_2.12;0.6.25 [test->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
@@ -352,8 +352,8 @@
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-test-interface_2.12;0.6.25 [test->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-test-interface_2.12;0.6.25 [test->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-test-interface_2.12;0.6.25 [test->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-test-interface_2.12;0.6.25 [test->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-test-interface_2.12;0.6.25->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -374,22 +374,22 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-test-interface_2.12;0.6.25->org.scala-lang#scala-library;2.12.7 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-test-interface_2.12;0.6.25->org.scala-js#scalajs-library_2.12;0.6.25 [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-test-interface_2.12;0.6.25->org.scala-js#scalajs-library_2.12;0.6.25 [runtime->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-test-interface_2.12;0.6.25 [test->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-test-interface_2.12;0.6.25 [test->master][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 [optional][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 [provided][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 [optional][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 [provided][0m
 [0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'plugin'[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 [plugin][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-compiler_2.12.7;0.6.25 [plugin->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 [plugin][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-compiler_2.12.7;0.6.25 [plugin->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: org.scala-js#scalajs-compiler_2.12.7;0.6.25 {plugin=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: module revision found in cache: org.scala-js#scalajs-compiler_2.12.7;0.6.25[0m
 [0m[[0m[0mdebug[0m] [0m[0m	found org.scala-js#scalajs-compiler_2.12.7;0.6.25 in sbt-chain[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[0.6.25] org.scala-js#scalajs-compiler_2.12.7;0.6.25[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-compiler_2.12.7;0.6.25 [plugin->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-compiler_2.12.7;0.6.25 [plugin->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-compiler_2.12.7;0.6.25 [plugin->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-compiler_2.12.7;0.6.25 [plugin->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -568,7 +568,7 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-compiler_2.12.7;0.6.25->org.scala-lang#scala-library;2.12.7 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-compiler_2.12.7;0.6.25->org.scala-lang#scala-reflect;2.12.7 [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-js#scalajs-compiler_2.12.7;0.6.25->org.scala-lang#scala-reflect;2.12.7 [runtime->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-js#scalajs-compiler_2.12.7;0.6.25 [plugin->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-js#scalajs-compiler_2.12.7;0.6.25 [plugin->master][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -576,14 +576,14 @@
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'pom'[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 [pom][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 [pom][0m
 [0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'scala-tool'[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 [scala-tool][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-compiler;2.12.7 [scala-tool->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 [scala-tool][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-compiler;2.12.7 [scala-tool->default][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-compiler;2.12.7 [scala-tool->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-compiler;2.12.7 [scala-tool->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-compiler;2.12.7 [scala-tool->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-compiler;2.12.7 [scala-tool->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->org.scala-lang#scala-library;2.12.7 [compile->master(compile)][0m
@@ -673,12 +673,12 @@
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.0.6->org.scala-lang#scala-library;2.12.7 [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.0.6->org.scala-lang#scala-library;2.12.7 [runtime->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-compiler;2.12.7 [scala-tool->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-compiler;2.12.7 [scala-tool->master][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-compiler;2.12.7 [scala-tool->optional(default)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-compiler;2.12.7 [scala-tool->optional(default)][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-reflect;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-reflect;2.12.7 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->jline#jline;2.14.6 [optional->master(compile)][0m
@@ -700,21 +700,21 @@
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: module revision found in cache: jline#jline;2.14.6[0m
 [0m[[0m[0mdebug[0m] [0m[0m	found jline#jline;2.14.6 in sbt-chain[0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.scala-lang#scala-compiler;2.12.7->jline#jline;2.14.6 [optional->compile(*)][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [scala-tool->default][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [scala-tool->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [scala-tool->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [scala-tool->master][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.scala-lang#scala-library;2.12.7 [scala-tool->optional(default)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [scala-tool->default][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [scala-tool->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [scala-tool->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [scala-tool->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.scala-lang#scala-library;2.12.7 [scala-tool->optional(default)][0m
 [0m[[0m[0mdebug[0m] [0m[0mresolving dependencies for configuration 'phantom-js-jetty'[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 [phantom-js-jetty][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.eclipse.jetty#jetty-websocket;8.1.16.v20140903 [phantom-js-jetty->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 [phantom-js-jetty][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.eclipse.jetty#jetty-websocket;8.1.16.v20140903 [phantom-js-jetty->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: org.eclipse.jetty#jetty-websocket;8.1.16.v20140903 {phantom-js-jetty=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: module revision found in cache: org.eclipse.jetty#jetty-websocket;8.1.16.v20140903[0m
 [0m[[0m[0mdebug[0m] [0m[0m	found org.eclipse.jetty#jetty-websocket;8.1.16.v20140903 in sbt-chain[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.eclipse.jetty#jetty-websocket;8.1.16.v20140903 [phantom-js-jetty->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.eclipse.jetty#jetty-websocket;8.1.16.v20140903 [phantom-js-jetty->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.eclipse.jetty#jetty-websocket;8.1.16.v20140903 [phantom-js-jetty->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.eclipse.jetty#jetty-websocket;8.1.16.v20140903 [phantom-js-jetty->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.eclipse.jetty#jetty-websocket;8.1.16.v20140903->org.eclipse.jetty#jetty-util;8.1.16.v20140903 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
@@ -756,15 +756,15 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.eclipse.jetty#jetty-websocket;8.1.16.v20140903->org.eclipse.jetty#jetty-io;8.1.16.v20140903 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.eclipse.jetty#jetty-websocket;8.1.16.v20140903->org.eclipse.jetty#jetty-http;8.1.16.v20140903 [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.eclipse.jetty#jetty-websocket;8.1.16.v20140903->org.eclipse.jetty#jetty-http;8.1.16.v20140903 [runtime->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.eclipse.jetty#jetty-websocket;8.1.16.v20140903 [phantom-js-jetty->master][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.eclipse.jetty#jetty-server;8.1.16.v20140903 [phantom-js-jetty->default(compile)][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.eclipse.jetty#jetty-websocket;8.1.16.v20140903 [phantom-js-jetty->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.eclipse.jetty#jetty-server;8.1.16.v20140903 [phantom-js-jetty->default(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: Checking cache for: dependency: org.eclipse.jetty#jetty-server;8.1.16.v20140903 {phantom-js-jetty=[default(compile)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0msbt-chain: module revision found in cache: org.eclipse.jetty#jetty-server;8.1.16.v20140903[0m
 [0m[[0m[0mdebug[0m] [0m[0m	found org.eclipse.jetty#jetty-server;8.1.16.v20140903 in sbt-chain[0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.eclipse.jetty#jetty-server;8.1.16.v20140903 [phantom-js-jetty->runtime][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.eclipse.jetty#jetty-server;8.1.16.v20140903 [phantom-js-jetty->compile][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.eclipse.jetty#jetty-server;8.1.16.v20140903 [phantom-js-jetty->runtime][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.eclipse.jetty#jetty-server;8.1.16.v20140903 [phantom-js-jetty->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.eclipse.jetty#jetty-server;8.1.16.v20140903->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [compile->master(compile)][0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.7 {scala-tool=[default, optional(default)]}[0m
 [0m[[0m[0mdebug[0m] [0m[0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.7 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.7 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
@@ -791,21 +791,21 @@
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.eclipse.jetty#jetty-server;8.1.16.v20140903->org.eclipse.jetty#jetty-continuation;8.1.16.v20140903 [runtime->compile][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.eclipse.jetty#jetty-server;8.1.16.v20140903->org.eclipse.jetty#jetty-http;8.1.16.v20140903 [runtime->runtime(*)][0m
 [0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies org.eclipse.jetty#jetty-server;8.1.16.v20140903->org.eclipse.jetty#jetty-http;8.1.16.v20140903 [runtime->compile][0m
-[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;7-b798c63e+20190415-2052->org.eclipse.jetty#jetty-server;8.1.16.v20140903 [phantom-js-jetty->master][0m
+[0m[[0m[0mdebug[0m] [0m[0m== resolving dependencies root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135->org.eclipse.jetty#jetty-server;8.1.16.v20140903 [phantom-js-jetty->master][0m
 [0m[[0m[0mdebug[0m] [0m[0mignoring unhandled DependencyDescriptorMediator: class sbt.internal.librarymanagement.IvyScalaUtil$OverrideScalaMediator[0m
 [0m[[0m[0mdebug[0m] [0m[0m	resolved ivy file produced in cache[0m
 [0m[[0m[0mdebug[0m] [0m[0m:: downloading artifacts ::[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-js#scalajs-compiler_2.12.7;0.6.25!scalajs-compiler_2.12.7.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-js#scalajs-library_2.12;0.6.25!scalajs-library_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-js#scalajs-test-interface_2.12;0.6.25!scalajs-test-interface_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-library;2.12.7!scala-library.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to C:\Users\jjohn\.ivy2[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.7!scala-reflect.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to C:\Users\jjohn\.ivy2[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-js#scalajs-library_2.12;0.6.25!scalajs-library_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to C:\Users\jjohn\.ivy2[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-js#scalajs-test-interface_2.12;0.6.25!scalajs-test-interface_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-js#scalajs-compiler_2.12.7;0.6.25!scalajs-compiler_2.12.7.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to C:\Users\jjohn\.ivy2[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.7!scala-compiler.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to C:\Users\jjohn\.ivy2[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.7!scala-reflect.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to C:\Users\jjohn\.ivy2[0m
 [0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to C:\Users\jjohn\.ivy2[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
@@ -815,50 +815,44 @@
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to C:\Users\jjohn\.ivy2\cache[0m
 [0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to C:\Users\jjohn\.ivy2\cache[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to C:\Users\jjohn\.ivy2\cache[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to C:\Users\jjohn\.ivy2\cache[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to C:\Users\jjohn\.ivy2\cache[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to C:\Users\jjohn\.ivy2\cache[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to C:\Users\jjohn\.ivy2\cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to C:\Users\jjohn\.ivy2\cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to C:\Users\jjohn\.ivy2\cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (69ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (50ms)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default cache: C:\Users\jjohn\.ivy2\cache[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
 [0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (71ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default cache: C:\Users\jjohn\.ivy2\cache[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
-[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
-[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
-[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
 [0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (84ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (56ms)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default cache: C:\Users\jjohn\.ivy2\cache[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
@@ -867,9 +861,7 @@
 [0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
 [0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
 [0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (96ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (56ms)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default cache: C:\Users\jjohn\.ivy2\cache[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
@@ -878,26 +870,28 @@
 [0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
 [0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
 [0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (89ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default cache: C:\Users\jjohn\.ivy2\cache[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
-[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
-[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
-[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] jline#jline;2.14.6!jline.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/C:/Users/jjohn/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty#jetty-util;8.1.16.v20140903!jetty-util.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty#jetty-server;8.1.16.v20140903!jetty-server.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty#jetty-io;8.1.16.v20140903!jetty-io.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty#jetty-websocket;8.1.16.v20140903!jetty-websocket.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016!javax.servlet.jar(orbit)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty#jetty-http;8.1.16.v20140903!jetty-http.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty#jetty-continuation;8.1.16.v20140903!jetty-continuation.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (114ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (54ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (54ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	default cache: C:\Users\jjohn\.ivy2\cache[0m
+[0m[[0m[0mdebug[0m] [0m[0m	default cache: C:\Users\jjohn\.ivy2\cache[0m
+[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
+[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] jline#jline;2.14.6!jline.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
+[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
+[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
+[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
+[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
+[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
+[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
+[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
+[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
+[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty#jetty-websocket;8.1.16.v20140903!jetty-websocket.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (58ms)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default cache: C:\Users\jjohn\.ivy2\cache[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
@@ -905,19 +899,25 @@
 [0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
 [0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
 [0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty#jetty-server;8.1.16.v20140903!jetty-server.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m:: resolution report :: resolve 802ms :: artifacts dl 147ms[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 compile produced in C:\Users\jjohn\Documents\GitHub\Gene-Mining\root\target\scala-2.12\resolution-cache\reports\root-root_sjs0.6_2.12-compile.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 runtime produced in C:\Users\jjohn\Documents\GitHub\Gene-Mining\root\target\scala-2.12\resolution-cache\reports\root-root_sjs0.6_2.12-runtime.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 test produced in C:\Users\jjohn\Documents\GitHub\Gene-Mining\root\target\scala-2.12\resolution-cache\reports\root-root_sjs0.6_2.12-test.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 provided produced in C:\Users\jjohn\Documents\GitHub\Gene-Mining\root\target\scala-2.12\resolution-cache\reports\root-root_sjs0.6_2.12-provided.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 optional produced in C:\Users\jjohn\Documents\GitHub\Gene-Mining\root\target\scala-2.12\resolution-cache\reports\root-root_sjs0.6_2.12-optional.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 compile-internal produced in C:\Users\jjohn\Documents\GitHub\Gene-Mining\root\target\scala-2.12\resolution-cache\reports\root-root_sjs0.6_2.12-compile-internal.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 runtime-internal produced in C:\Users\jjohn\Documents\GitHub\Gene-Mining\root\target\scala-2.12\resolution-cache\reports\root-root_sjs0.6_2.12-runtime-internal.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 test-internal produced in C:\Users\jjohn\Documents\GitHub\Gene-Mining\root\target\scala-2.12\resolution-cache\reports\root-root_sjs0.6_2.12-test-internal.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 plugin produced in C:\Users\jjohn\Documents\GitHub\Gene-Mining\root\target\scala-2.12\resolution-cache\reports\root-root_sjs0.6_2.12-plugin.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 pom produced in C:\Users\jjohn\Documents\GitHub\Gene-Mining\root\target\scala-2.12\resolution-cache\reports\root-root_sjs0.6_2.12-pom.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 scala-tool produced in C:\Users\jjohn\Documents\GitHub\Gene-Mining\root\target\scala-2.12\resolution-cache\reports\root-root_sjs0.6_2.12-scala-tool.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for root#root_sjs0.6_2.12;7-b798c63e+20190415-2052 phantom-js-jetty produced in C:\Users\jjohn\Documents\GitHub\Gene-Mining\root\target\scala-2.12\resolution-cache\reports\root-root_sjs0.6_2.12-phantom-js-jetty.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	resolve done (802ms resolve - 147ms download)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty#jetty-util;8.1.16.v20140903!jetty-util.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty#jetty-io;8.1.16.v20140903!jetty-io.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty#jetty-http;8.1.16.v20140903!jetty-http.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016!javax.servlet.jar(orbit)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty#jetty-continuation;8.1.16.v20140903!jetty-continuation.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m:: resolution report :: resolve 570ms :: artifacts dl 84ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 compile produced in C:\Users\jjohn\Documents\GitHub\Gene-Mining\root\target\scala-2.12\resolution-cache\reports\root-root_sjs0.6_2.12-compile.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 runtime produced in C:\Users\jjohn\Documents\GitHub\Gene-Mining\root\target\scala-2.12\resolution-cache\reports\root-root_sjs0.6_2.12-runtime.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 test produced in C:\Users\jjohn\Documents\GitHub\Gene-Mining\root\target\scala-2.12\resolution-cache\reports\root-root_sjs0.6_2.12-test.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 provided produced in C:\Users\jjohn\Documents\GitHub\Gene-Mining\root\target\scala-2.12\resolution-cache\reports\root-root_sjs0.6_2.12-provided.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 optional produced in C:\Users\jjohn\Documents\GitHub\Gene-Mining\root\target\scala-2.12\resolution-cache\reports\root-root_sjs0.6_2.12-optional.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 compile-internal produced in C:\Users\jjohn\Documents\GitHub\Gene-Mining\root\target\scala-2.12\resolution-cache\reports\root-root_sjs0.6_2.12-compile-internal.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 runtime-internal produced in C:\Users\jjohn\Documents\GitHub\Gene-Mining\root\target\scala-2.12\resolution-cache\reports\root-root_sjs0.6_2.12-runtime-internal.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 test-internal produced in C:\Users\jjohn\Documents\GitHub\Gene-Mining\root\target\scala-2.12\resolution-cache\reports\root-root_sjs0.6_2.12-test-internal.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 plugin produced in C:\Users\jjohn\Documents\GitHub\Gene-Mining\root\target\scala-2.12\resolution-cache\reports\root-root_sjs0.6_2.12-plugin.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 pom produced in C:\Users\jjohn\Documents\GitHub\Gene-Mining\root\target\scala-2.12\resolution-cache\reports\root-root_sjs0.6_2.12-pom.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 scala-tool produced in C:\Users\jjohn\Documents\GitHub\Gene-Mining\root\target\scala-2.12\resolution-cache\reports\root-root_sjs0.6_2.12-scala-tool.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for root#root_sjs0.6_2.12;8-ff94fc45+20190416-1135 phantom-js-jetty produced in C:\Users\jjohn\Documents\GitHub\Gene-Mining\root\target\scala-2.12\resolution-cache\reports\root-root_sjs0.6_2.12-phantom-js-jetty.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resolve done (570ms resolve - 84ms download)[0m
 [0m[[0m[0minfo[0m] [0m[0mDone updating.[0m

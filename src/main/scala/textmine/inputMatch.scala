@@ -13,6 +13,7 @@ object inputMatch{
       case x if x startsWith "rs" =>
         GetUrlContent.searchVariant()
       case _ =>
+
         GetUrlContent.searchGene(query)
     }
   }

@@ -3050,6 +3050,62 @@ const $m_Lmy_Main$ = (function() {
   };
   return $n_Lmy_Main$
 });
+class $c_Lorg_scalajs_dom_ext_Ajax$ extends $c_O {
+  init___() {
+    return this
+  };
+  org$scalajs$dom$ext$Ajax$$$anonfun$apply$1__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__s_concurrent_Promise__O(e, req$1, promise$1) {
+    if (($uI(req$1.readyState) === 4)) {
+      if (((($uI(req$1.status) >= 200) && ($uI(req$1.status) < 300)) || ($uI(req$1.status) === 304))) {
+        return $f_s_concurrent_Promise__success__O__s_concurrent_Promise(promise$1, req$1)
+      } else {
+        const cause = new $c_Lorg_scalajs_dom_ext_AjaxException().init___Lorg_scalajs_dom_raw_XMLHttpRequest(req$1);
+        return $f_s_concurrent_Promise__failure__jl_Throwable__s_concurrent_Promise(promise$1, cause)
+      }
+    } else {
+      return (void 0)
+    }
+  };
+  apply__T__T__Lorg_scalajs_dom_ext_Ajax$InputData__I__sci_Map__Z__T__s_concurrent_Future(method, url, data, timeout, headers, withCredentials, responseType) {
+    const req = new $g.XMLHttpRequest();
+    const promise = new $c_s_concurrent_impl_Promise$DefaultPromise().init___();
+    req.onreadystatechange = (function(req$1, promise$1) {
+      return (function(arg1$2) {
+        return $m_Lorg_scalajs_dom_ext_Ajax$().org$scalajs$dom$ext$Ajax$$$anonfun$apply$1__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__s_concurrent_Promise__O(arg1$2, req$1, promise$1)
+      })
+    })(req, promise);
+    req.open(method, url);
+    req.responseType = responseType;
+    req.timeout = timeout;
+    req.withCredentials = withCredentials;
+    headers.foreach__F1__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, req$2) {
+      return (function(x$2) {
+        const x = $as_T2(x$2);
+        req$2.setRequestHeader($as_T(x.$$und1__O()), $as_T(x.$$und2__O()))
+      })
+    })(this, req)));
+    if ((data === null)) {
+      req.send()
+    } else {
+      req.send(data)
+    };
+    return promise
+  };
+}
+const $d_Lorg_scalajs_dom_ext_Ajax$ = new $TypeData().initClass({
+  Lorg_scalajs_dom_ext_Ajax$: 0
+}, false, "org.scalajs.dom.ext.Ajax$", {
+  Lorg_scalajs_dom_ext_Ajax$: 1,
+  O: 1
+});
+$c_Lorg_scalajs_dom_ext_Ajax$.prototype.$classData = $d_Lorg_scalajs_dom_ext_Ajax$;
+let $n_Lorg_scalajs_dom_ext_Ajax$ = (void 0);
+const $m_Lorg_scalajs_dom_ext_Ajax$ = (function() {
+  if ((!$n_Lorg_scalajs_dom_ext_Ajax$)) {
+    $n_Lorg_scalajs_dom_ext_Ajax$ = new $c_Lorg_scalajs_dom_ext_Ajax$().init___()
+  };
+  return $n_Lorg_scalajs_dom_ext_Ajax$
+});
 class $c_Lorg_scalajs_dom_package$ extends $c_O {
   constructor() {
     super();
@@ -3088,6 +3144,13 @@ class $c_Lorg_scalajs_dom_package$ extends $c_O {
   init___() {
     return this
   };
+  console$lzycompute__p1__Lorg_scalajs_dom_raw_Console() {
+    if (((536870912 & this.bitmap$0$1) === 0)) {
+      this.console$1 = this.window__Lorg_scalajs_dom_raw_Window().console;
+      this.bitmap$0$1 = (536870912 | this.bitmap$0$1)
+    };
+    return this.console$1
+  };
   document__Lorg_scalajs_dom_raw_HTMLDocument() {
     return (((268435456 & this.bitmap$0$1) === 0) ? this.document$lzycompute__p1__Lorg_scalajs_dom_raw_HTMLDocument() : this.document$1)
   };
@@ -3107,6 +3170,9 @@ class $c_Lorg_scalajs_dom_package$ extends $c_O {
       this.bitmap$0$1 = (268435456 | this.bitmap$0$1)
     };
     return this.document$1
+  };
+  console__Lorg_scalajs_dom_raw_Console() {
+    return (((536870912 & this.bitmap$0$1) === 0) ? this.console$lzycompute__p1__Lorg_scalajs_dom_raw_Console() : this.console$1)
   };
 }
 const $d_Lorg_scalajs_dom_package$ = new $TypeData().initClass({
@@ -5790,8 +5856,91 @@ const $f_Lscalatags_generic_Util__attr__T__Lscalatags_generic_Namespace__Z__Lsca
   return new $c_Lscalatags_generic_Attr().init___T__s_Option__Z(s, $m_s_Option$().apply__O__s_Option(ns), raw)
 });
 class $c_Ltextmine_Gene extends $c_O {
+  constructor() {
+    super();
+    this.entrezgene$1 = null
+  };
+  requestPub__T__V(qvalue) {
+    const url = (("https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=" + qvalue) + "&format=json");
+    const this$3 = $m_Lorg_scalajs_dom_ext_Ajax$();
+    const headers = $m_sci_Map$EmptyMap$();
+    const f = this$3.apply__T__T__Lorg_scalajs_dom_ext_Ajax$InputData__I__sci_Map__Z__T__s_concurrent_Future("GET", url, null, 0, headers, false, "");
+    f.onComplete__F1__s_concurrent_ExecutionContext__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+      return (function(x0$1$2) {
+        const x0$1 = $as_s_util_Try(x0$1$2);
+        if ($is_s_util_Success(x0$1)) {
+          const x2 = $as_s_util_Success(x0$1);
+          const xhd = x2.value$2;
+          const json = $g.JSON.parse($as_T(xhd.responseText));
+          $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console().log(json)
+        } else if ($is_s_util_Failure(x0$1)) {
+          const x3 = $as_s_util_Failure(x0$1);
+          const e = x3.exception$2;
+          const x = e.toString__T();
+          const this$5 = $m_s_Console$();
+          const this$6 = $as_Ljava_io_PrintStream(this$5.outVar$2.v$1);
+          this$6.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"))
+        } else {
+          throw new $c_s_MatchError().init___O(x0$1)
+        }
+      })
+    })(this)), $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1)
+  };
   init___T__T__T__T(name, entrezgene, symbol, taxid) {
+    this.entrezgene$1 = entrezgene;
     return this
+  };
+  idToMim__F1__V(callback) {
+    const url = (("http://mygene.info/v2/gene/" + this.entrezgene$1) + "?fields=MIM");
+    const this$3 = $m_Lorg_scalajs_dom_ext_Ajax$();
+    const headers = $m_sci_Map$EmptyMap$();
+    const f = this$3.apply__T__T__Lorg_scalajs_dom_ext_Ajax$InputData__I__sci_Map__Z__T__s_concurrent_Future("GET", url, null, 0, headers, false, "");
+    f.onComplete__F1__s_concurrent_ExecutionContext__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, callback$1) {
+      return (function(x0$1$2) {
+        const x0$1 = $as_s_util_Try(x0$1$2);
+        if ($is_s_util_Success(x0$1)) {
+          const x2 = $as_s_util_Success(x0$1);
+          const xhd = x2.value$2;
+          const json = $g.JSON.parse($as_T(xhd.responseText));
+          $asUnit(callback$1.apply__O__O($objectToString(json.MIM)))
+        } else if ($is_s_util_Failure(x0$1)) {
+          const x3 = $as_s_util_Failure(x0$1);
+          const e = x3.exception$2;
+          const x = e.toString__T();
+          const this$5 = $m_s_Console$();
+          const this$6 = $as_Ljava_io_PrintStream(this$5.outVar$2.v$1);
+          this$6.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"))
+        } else {
+          throw new $c_s_MatchError().init___O(x0$1)
+        }
+      })
+    })(this, callback)), $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1)
+  };
+  findReactomePathways__T__V(urlVal) {
+    const url = (("https://reactome.org/ContentService/data/mapping/OMIM/" + urlVal) + "/pathways?species=9606");
+    const this$3 = $m_Lorg_scalajs_dom_ext_Ajax$();
+    const headers = $m_sci_Map$EmptyMap$();
+    const f = this$3.apply__T__T__Lorg_scalajs_dom_ext_Ajax$InputData__I__sci_Map__Z__T__s_concurrent_Future("GET", url, null, 0, headers, false, "");
+    f.onComplete__F1__s_concurrent_ExecutionContext__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+      return (function(x0$1$2) {
+        const x0$1 = $as_s_util_Try(x0$1$2);
+        if ($is_s_util_Success(x0$1)) {
+          const x2 = $as_s_util_Success(x0$1);
+          const xhd = x2.value$2;
+          const json = $g.JSON.parse($as_T(xhd.responseText));
+          $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console().log(json)
+        } else if ($is_s_util_Failure(x0$1)) {
+          const x3 = $as_s_util_Failure(x0$1);
+          const e = x3.exception$2;
+          const x = e.toString__T();
+          const this$5 = $m_s_Console$();
+          const this$6 = $as_Ljava_io_PrintStream(this$5.outVar$2.v$1);
+          this$6.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"))
+        } else {
+          throw new $c_s_MatchError().init___O(x0$1)
+        }
+      })
+    })(this)), $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1)
   };
 }
 const $d_Ltextmine_Gene = new $TypeData().initClass({
@@ -5805,69 +5954,58 @@ class $c_Ltextmine_GetUrlContent$ extends $c_O {
   init___() {
     return this
   };
-  neo4jTest__V() {
-    const xhr = new $g.XMLHttpRequest();
-    xhr.open("GET", "http://localhost:7474/db/data");
-    xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
-    xhr.onload = (function(xhr$3) {
-      return (function(arg1$2) {
-        return $m_Ltextmine_GetUrlContent$().textmine$GetUrlContent$$$anonfun$neo4jTest$1__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__O(arg1$2, xhr$3)
-      })
-    })(xhr);
-    xhr.send()
-  };
   searchGene__T__V(query) {
     const url = ("http://mygene.info/v3/query?q=" + query);
-    const xhr = new $g.XMLHttpRequest();
-    const text = new $c_sr_ObjectRef().init___O("");
-    xhr.open("GET", url);
-    xhr.onload = (function(xhr$2, text$1) {
-      return (function(arg1$2) {
-        return $m_Ltextmine_GetUrlContent$().textmine$GetUrlContent$$$anonfun$searchGene$1__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__sr_ObjectRef__O(arg1$2, xhr$2, text$1)
+    const this$3 = $m_Lorg_scalajs_dom_ext_Ajax$();
+    const headers = $m_sci_Map$EmptyMap$();
+    const f = this$3.apply__T__T__Lorg_scalajs_dom_ext_Ajax$InputData__I__sci_Map__Z__T__s_concurrent_Future("GET", url, null, 0, headers, false, "");
+    f.onComplete__F1__s_concurrent_ExecutionContext__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+      return (function(x0$1$2) {
+        const x0$1 = $as_s_util_Try(x0$1$2);
+        if ($is_s_util_Success(x0$1)) {
+          const x2 = $as_s_util_Success(x0$1);
+          const xhd = x2.value$2;
+          const json = $g.JSON.parse($as_T(xhd.responseText));
+          const hits = json.hits;
+          const ob = hits[0];
+          if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(ob, "name")))) {
+            throw new $c_ju_NoSuchElementException().init___T("key not found: name")
+          };
+          const jsx$3 = $objectToString(ob.name);
+          if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(ob, "entrezgene")))) {
+            throw new $c_ju_NoSuchElementException().init___T("key not found: entrezgene")
+          };
+          const jsx$2 = $objectToString(ob.entrezgene);
+          if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(ob, "symbol")))) {
+            throw new $c_ju_NoSuchElementException().init___T("key not found: symbol")
+          };
+          const jsx$1 = $objectToString(ob.symbol);
+          if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(ob, "taxid")))) {
+            throw new $c_ju_NoSuchElementException().init___T("key not found: taxid")
+          };
+          const geneQuery = new $c_Ltextmine_Gene().init___T__T__T__T(jsx$3, jsx$2, jsx$1, $objectToString(ob.taxid));
+          geneQuery.idToMim__F1__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$1, geneQuery$1) {
+            return (function(urlVal$2) {
+              const urlVal = $as_T(urlVal$2);
+              geneQuery$1.findReactomePathways__T__V(urlVal)
+            })
+          })($this, geneQuery)));
+          if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(ob, "symbol")))) {
+            throw new $c_ju_NoSuchElementException().init___T("key not found: symbol")
+          };
+          geneQuery.requestPub__T__V($objectToString(ob.symbol))
+        } else if ($is_s_util_Failure(x0$1)) {
+          const x3 = $as_s_util_Failure(x0$1);
+          const e = x3.exception$2;
+          const x = e.toString__T();
+          const this$15 = $m_s_Console$();
+          const this$16 = $as_Ljava_io_PrintStream(this$15.outVar$2.v$1);
+          this$16.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"))
+        } else {
+          throw new $c_s_MatchError().init___O(x0$1)
+        }
       })
-    })(xhr, text);
-    xhr.send();
-    this.neo4jTest__V()
-  };
-  textmine$GetUrlContent$$$anonfun$neo4jTest$1__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__O(e, xhr$3) {
-    if (($uI(xhr$3.status) === 200)) {
-      const this$2 = $m_s_Console$();
-      const this$3 = $as_Ljava_io_PrintStream(this$2.outVar$2.v$1);
-      this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V((xhr$3 + "\n"));
-      return (void 0)
-    } else {
-      return (void 0)
-    }
-  };
-  textmine$GetUrlContent$$$anonfun$searchGene$1__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__sr_ObjectRef__O(e, xhr$2, text$1) {
-    if (($uI(xhr$2.status) === 200)) {
-      text$1.elem$1 = (("" + $as_T(text$1.elem$1)) + $as_T(xhr$2.responseText));
-      const test = $g.JSON.parse($as_T(xhr$2.responseText));
-      const hits = test.hits;
-      const ob = hits[0];
-      if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(ob, "name")))) {
-        throw new $c_ju_NoSuchElementException().init___T("key not found: name")
-      };
-      const jsx$3 = $as_T(ob.name);
-      if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(ob, "entrezgene")))) {
-        throw new $c_ju_NoSuchElementException().init___T("key not found: entrezgene")
-      };
-      const jsx$2 = $as_T(ob.entrezgene);
-      if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(ob, "symbol")))) {
-        throw new $c_ju_NoSuchElementException().init___T("key not found: symbol")
-      };
-      const jsx$1 = $as_T(ob.symbol);
-      if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(ob, "taxid")))) {
-        throw new $c_ju_NoSuchElementException().init___T("key not found: taxid")
-      };
-      const g = new $c_Ltextmine_Gene().init___T__T__T__T(jsx$3, jsx$2, jsx$1, $as_T(ob.taxid));
-      const this$10 = $m_s_Console$();
-      const this$11 = $as_Ljava_io_PrintStream(this$10.outVar$2.v$1);
-      this$11.java$lang$JSConsoleBasedPrintStream$$printString__T__V((g + "\n"));
-      return (void 0)
-    } else {
-      return (void 0)
-    }
+    })(this)), $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1)
   };
 }
 const $d_Ltextmine_GetUrlContent$ = new $TypeData().initClass({
@@ -10336,6 +10474,33 @@ const $m_sjs_concurrent_JSExecutionContext$ = (function() {
     $n_sjs_concurrent_JSExecutionContext$ = new $c_sjs_concurrent_JSExecutionContext$().init___()
   };
   return $n_sjs_concurrent_JSExecutionContext$
+});
+class $c_sjs_concurrent_JSExecutionContext$Implicits$ extends $c_O {
+  constructor() {
+    super();
+    this.runNow$1 = null;
+    this.queue$1 = null
+  };
+  init___() {
+    $n_sjs_concurrent_JSExecutionContext$Implicits$ = this;
+    this.runNow$1 = $m_sjs_concurrent_RunNowExecutionContext$();
+    this.queue$1 = $m_sjs_concurrent_JSExecutionContext$().queue$1;
+    return this
+  };
+}
+const $d_sjs_concurrent_JSExecutionContext$Implicits$ = new $TypeData().initClass({
+  sjs_concurrent_JSExecutionContext$Implicits$: 0
+}, false, "scala.scalajs.concurrent.JSExecutionContext$Implicits$", {
+  sjs_concurrent_JSExecutionContext$Implicits$: 1,
+  O: 1
+});
+$c_sjs_concurrent_JSExecutionContext$Implicits$.prototype.$classData = $d_sjs_concurrent_JSExecutionContext$Implicits$;
+let $n_sjs_concurrent_JSExecutionContext$Implicits$ = (void 0);
+const $m_sjs_concurrent_JSExecutionContext$Implicits$ = (function() {
+  if ((!$n_sjs_concurrent_JSExecutionContext$Implicits$)) {
+    $n_sjs_concurrent_JSExecutionContext$Implicits$ = new $c_sjs_concurrent_JSExecutionContext$Implicits$().init___()
+  };
+  return $n_sjs_concurrent_JSExecutionContext$Implicits$
 });
 class $c_sjs_concurrent_QueueExecutionContext$ extends $c_O {
   init___() {
@@ -28746,6 +28911,76 @@ const $d_Ljava_nio_StringCharBuffer = new $TypeData().initClass({
   jl_Readable: 1
 });
 $c_Ljava_nio_StringCharBuffer.prototype.$classData = $d_Ljava_nio_StringCharBuffer;
+class $c_Lorg_scalajs_dom_ext_AjaxException extends $c_jl_Exception {
+  constructor() {
+    super();
+    this.xhr$3 = null
+  };
+  productPrefix__T() {
+    return "AjaxException"
+  };
+  productArity__I() {
+    return 1
+  };
+  equals__O__Z(x$1) {
+    if ((this === x$1)) {
+      return true
+    } else if ($is_Lorg_scalajs_dom_ext_AjaxException(x$1)) {
+      const AjaxException$1 = $as_Lorg_scalajs_dom_ext_AjaxException(x$1);
+      return $m_sr_BoxesRunTime$().equals__O__O__Z(this.xhr$3, AjaxException$1.xhr$3)
+    } else {
+      return false
+    }
+  };
+  productElement__I__O(x$1) {
+    switch (x$1) {
+      case 0: {
+        return this.xhr$3;
+        break
+      }
+      default: {
+        throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+      }
+    }
+  };
+  init___Lorg_scalajs_dom_raw_XMLHttpRequest(xhr) {
+    this.xhr$3 = xhr;
+    $c_jl_Throwable.prototype.init___T__jl_Throwable__Z__Z.call(this, null, null, true, true);
+    return this
+  };
+  hashCode__I() {
+    const this$2 = $m_s_util_hashing_MurmurHash3$();
+    return this$2.productHash__s_Product__I__I(this, (-889275714))
+  };
+  productIterator__sc_Iterator() {
+    return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+  };
+}
+const $is_Lorg_scalajs_dom_ext_AjaxException = (function(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lorg_scalajs_dom_ext_AjaxException)))
+});
+const $as_Lorg_scalajs_dom_ext_AjaxException = (function(obj) {
+  return (($is_Lorg_scalajs_dom_ext_AjaxException(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "org.scalajs.dom.ext.AjaxException"))
+});
+const $isArrayOf_Lorg_scalajs_dom_ext_AjaxException = (function(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lorg_scalajs_dom_ext_AjaxException)))
+});
+const $asArrayOf_Lorg_scalajs_dom_ext_AjaxException = (function(obj, depth) {
+  return (($isArrayOf_Lorg_scalajs_dom_ext_AjaxException(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lorg.scalajs.dom.ext.AjaxException;", depth))
+});
+const $d_Lorg_scalajs_dom_ext_AjaxException = new $TypeData().initClass({
+  Lorg_scalajs_dom_ext_AjaxException: 0
+}, false, "org.scalajs.dom.ext.AjaxException", {
+  Lorg_scalajs_dom_ext_AjaxException: 1,
+  jl_Exception: 1,
+  jl_Throwable: 1,
+  O: 1,
+  Ljava_io_Serializable: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1
+});
+$c_Lorg_scalajs_dom_ext_AjaxException.prototype.$classData = $d_Lorg_scalajs_dom_ext_AjaxException;
 class $c_Lutest_NoSuchTestException extends $c_jl_Exception {
   constructor() {
     super();
