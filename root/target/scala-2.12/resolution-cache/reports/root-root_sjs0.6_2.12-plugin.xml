@@ -4,18 +4,18 @@
 	<info
 		organisation="root"
 		module="root_sjs0.6_2.12"
-		revision="6-3959ceb9+20190415-1935"
+		revision="7-b798c63e+20190415-2052"
 		conf="plugin"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool, phantom-js-jetty"
-		date="20190415193524"/>
+		date="20190415205301"/>
 	<dependencies>
 		<module organisation="org.scala-js" name="scalajs-compiler_2.12.7">
-			<revision name="0.6.25" status="release" pubdate="20180927091431" resolver="public" artresolver="public" homepage="http://scala-js.org/" extra-info.apiURL="http://www.scala-js.org/api/scalajs-compiler/0.6.25/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+			<revision name="0.6.25" status="release" pubdate="20180927091431" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scala-js.org/" extra-info.apiURL="http://www.scala-js.org/api/scalajs-compiler/0.6.25/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
 				<license name="BSD New" url="https://github.com/scala-js/scala-js/blob/master/LICENSE"/>
-				<metadata-artifact status="successful" details="" size="2583" time="117" location="C:\Users\jjohn\.ivy2\cache\org.scala-js\scalajs-compiler_2.12.7\ivy-0.6.25.xml" searched="true" original-local-location="C:\Users\jjohn\.ivy2\cache\org.scala-js\scalajs-compiler_2.12.7\ivy-0.6.25.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-js/scalajs-compiler_2.12.7/0.6.25/scalajs-compiler_2.12.7-0.6.25.pom"/>
-				<caller organisation="root" name="root_sjs0.6_2.12" conf="plugin" rev="0.6.25" rev-constraint-default="0.6.25" rev-constraint-dynamic="0.6.25" callerrev="6-3959ceb9+20190415-1935"/>
+				<metadata-artifact status="no" details="" size="3308" time="0" location="C:\Users\jjohn\.ivy2\cache\org.scala-js\scalajs-compiler_2.12.7\ivy-0.6.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-js/scalajs-compiler_2.12.7/0.6.25/scalajs-compiler_2.12.7-0.6.25.pom"/>
+				<caller organisation="root" name="root_sjs0.6_2.12" conf="plugin" rev="0.6.25" rev-constraint-default="0.6.25" rev-constraint-dynamic="0.6.25" callerrev="7-b798c63e+20190415-2052"/>
 				<artifacts>
-					<artifact name="scalajs-compiler_2.12.7" type="jar" ext="jar" status="successful" details="" size="1062439" time="317" location="C:\Users\jjohn\.ivy2\cache\org.scala-js\scalajs-compiler_2.12.7\jars\scalajs-compiler_2.12.7-0.6.25.jar">
+					<artifact name="scalajs-compiler_2.12.7" type="jar" ext="jar" status="no" details="" size="1062439" time="0" location="C:\Users\jjohn\.ivy2\cache\org.scala-js\scalajs-compiler_2.12.7\jars\scalajs-compiler_2.12.7-0.6.25.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-js/scalajs-compiler_2.12.7/0.6.25/scalajs-compiler_2.12.7-0.6.25.jar"/>
 					</artifact>
 				</artifacts>

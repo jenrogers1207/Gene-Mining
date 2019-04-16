@@ -5789,39 +5789,85 @@ const $m_Lscalatags_generic_Namespace$ = (function() {
 const $f_Lscalatags_generic_Util__attr__T__Lscalatags_generic_Namespace__Z__Lscalatags_generic_Attr = (function($thiz, s, ns, raw) {
   return new $c_Lscalatags_generic_Attr().init___T__s_Option__Z(s, $m_s_Option$().apply__O__s_Option(ns), raw)
 });
+class $c_Ltextmine_Gene extends $c_O {
+  init___T__T__T__T(name, entrezgene, symbol, taxid) {
+    return this
+  };
+}
+const $d_Ltextmine_Gene = new $TypeData().initClass({
+  Ltextmine_Gene: 0
+}, false, "textmine.Gene", {
+  Ltextmine_Gene: 1,
+  O: 1
+});
+$c_Ltextmine_Gene.prototype.$classData = $d_Ltextmine_Gene;
 class $c_Ltextmine_GetUrlContent$ extends $c_O {
   init___() {
     return this
   };
-  textmine$GetUrlContent$$$anonfun$searchTest$1__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__sr_ObjectRef__O(e, xhr$2, text$1) {
-    if (($uI(xhr$2.status) === 200)) {
-      text$1.elem$1 = (("" + $as_T(text$1.elem$1)) + $as_T(xhr$2.responseText));
-      return (void 0)
-    } else {
-      return (void 0)
-    }
+  neo4jTest__V() {
+    const xhr = new $g.XMLHttpRequest();
+    xhr.open("GET", "http://localhost:7474/db/data");
+    xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+    xhr.onload = (function(xhr$3) {
+      return (function(arg1$2) {
+        return $m_Ltextmine_GetUrlContent$().textmine$GetUrlContent$$$anonfun$neo4jTest$1__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__O(arg1$2, xhr$3)
+      })
+    })(xhr);
+    xhr.send()
   };
-  searchTest__T__T(test) {
-    const url = ("http://mygene.info/v3/query?q=" + test);
+  searchGene__T__V(query) {
+    const url = ("http://mygene.info/v3/query?q=" + query);
     const xhr = new $g.XMLHttpRequest();
     const text = new $c_sr_ObjectRef().init___O("");
     xhr.open("GET", url);
     xhr.onload = (function(xhr$2, text$1) {
       return (function(arg1$2) {
-        return $m_Ltextmine_GetUrlContent$().textmine$GetUrlContent$$$anonfun$searchTest$1__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__sr_ObjectRef__O(arg1$2, xhr$2, text$1)
+        return $m_Ltextmine_GetUrlContent$().textmine$GetUrlContent$$$anonfun$searchGene$1__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__sr_ObjectRef__O(arg1$2, xhr$2, text$1)
       })
     })(xhr, text);
     xhr.send();
-    return $as_T(text.elem$1)
+    this.neo4jTest__V()
   };
-  searchGene__T__V(query) {
-    const this$2 = $m_s_Console$();
-    const this$3 = $as_Ljava_io_PrintStream(this$2.outVar$2.v$1);
-    this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V("Gene\n");
-    const test = this.searchTest__T__T(query);
-    const this$5 = $m_s_Console$();
-    const this$6 = $as_Ljava_io_PrintStream(this$5.outVar$2.v$1);
-    this$6.java$lang$JSConsoleBasedPrintStream$$printString__T__V((test + "\n"))
+  textmine$GetUrlContent$$$anonfun$neo4jTest$1__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__O(e, xhr$3) {
+    if (($uI(xhr$3.status) === 200)) {
+      const this$2 = $m_s_Console$();
+      const this$3 = $as_Ljava_io_PrintStream(this$2.outVar$2.v$1);
+      this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V((xhr$3 + "\n"));
+      return (void 0)
+    } else {
+      return (void 0)
+    }
+  };
+  textmine$GetUrlContent$$$anonfun$searchGene$1__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__sr_ObjectRef__O(e, xhr$2, text$1) {
+    if (($uI(xhr$2.status) === 200)) {
+      text$1.elem$1 = (("" + $as_T(text$1.elem$1)) + $as_T(xhr$2.responseText));
+      const test = $g.JSON.parse($as_T(xhr$2.responseText));
+      const hits = test.hits;
+      const ob = hits[0];
+      if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(ob, "name")))) {
+        throw new $c_ju_NoSuchElementException().init___T("key not found: name")
+      };
+      const jsx$3 = $as_T(ob.name);
+      if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(ob, "entrezgene")))) {
+        throw new $c_ju_NoSuchElementException().init___T("key not found: entrezgene")
+      };
+      const jsx$2 = $as_T(ob.entrezgene);
+      if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(ob, "symbol")))) {
+        throw new $c_ju_NoSuchElementException().init___T("key not found: symbol")
+      };
+      const jsx$1 = $as_T(ob.symbol);
+      if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(ob, "taxid")))) {
+        throw new $c_ju_NoSuchElementException().init___T("key not found: taxid")
+      };
+      const g = new $c_Ltextmine_Gene().init___T__T__T__T(jsx$3, jsx$2, jsx$1, $as_T(ob.taxid));
+      const this$10 = $m_s_Console$();
+      const this$11 = $as_Ljava_io_PrintStream(this$10.outVar$2.v$1);
+      this$11.java$lang$JSConsoleBasedPrintStream$$printString__T__V((g + "\n"));
+      return (void 0)
+    } else {
+      return (void 0)
+    }
   };
 }
 const $d_Ltextmine_GetUrlContent$ = new $TypeData().initClass({

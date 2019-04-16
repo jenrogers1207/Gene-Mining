@@ -11,6 +11,10 @@ import scala.scalajs.js.{Dictionary, JSON}
 import scala.util.Random
 import requests._
 
+class Gene(name:String, entrezgene:String, symbol:String, taxid:String){
+
+}
+
 
 object GetUrlContent {
 
@@ -30,11 +34,51 @@ object GetUrlContent {
   }
 
   def searchGene(query:String) = {
-    println("Gene")
-    val test = searchTest(query)
 
-    println(test)
+    var url = "http://mygene.info/v3/query?q="+query
+    // val r = requests.get(url)
+    val xhr = new dom.XMLHttpRequest()
+    var text = ""
+    xhr.open("GET", url)
+    xhr.onload = { (e: dom.Event) =>
+      if (xhr.status == 200) {
+        //  Parser.parseFile(xhr.responseText)
+        text = text + xhr.responseText
+       // println(xhr.responseText)
+        val test = JSON.parse(xhr.responseText)
+        val hits = test.hits.asInstanceOf[Array[Unit]]
+        val ob = hits(0).asInstanceOf[Dictionary[String]]
+        //println(ob("symbol"))
+        val g = new Gene(ob("name"), ob("entrezgene"), ob("symbol"), ob("taxid").toString)
+        println(g)
 
+      }
+    }
+    xhr.send()
+
+    neo4jTest()
+
+
+  }
+  def neo4jTest(): Unit ={
+
+ //   GET /db/data/ HTTP/1.1
+   // Host: localhost:7474
+  //  Accept: application/json; charset=UTF-8
+   // cache-control: no-cache
+
+    val xhr = new dom.XMLHttpRequest()
+
+    xhr.open("GET", "http://localhost:7474/db/data")
+     // xhr.setRequestHeader("content-type", "JSON")
+    xhr.setRequestHeader("Access-Control-Allow-Origin", "*")
+    xhr.onload = { (e: dom.Event) =>
+      if (xhr.status == 200) {
+        //  Parser.parseFile(xhr.responseText)
+        println(xhr)
+      }
+    }
+    xhr.send()
   }
 
   def searchTest(test:String):String = {
