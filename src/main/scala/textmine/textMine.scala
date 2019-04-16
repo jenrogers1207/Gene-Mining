@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.JSExportTopLevel
   * Date: 3/28/13
   */
 object ProcessorMachine {
-  def processMain(docVal:String) {
+  def processMain() {
 
     // create the processor
     val proc:Processor = new CoreNLPProcessor(withDiscourse = ShallowNLPProcessor.WITH_DISCOURSE)
@@ -31,8 +31,8 @@ object ProcessorMachine {
     // CluProcessor - similar to FastNLPProcessor, but using tools licensed under the Apache license
 
     // the actual work is done here
-   // val doc = proc.annotate("John Smith went to China. He visited Beijing, on January 10th, 2013.")
-    val doc = proc.annotate(docVal)
+    val doc = proc.annotate("John Smith went to China. He visited Beijing, on January 10th, 2013.")
+   // val doc = proc.annotate(docVal)
     // you are basically done. the rest of this code simply prints out the annotations
     printDoc(doc)
 

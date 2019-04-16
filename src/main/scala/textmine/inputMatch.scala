@@ -9,11 +9,14 @@ object inputMatch{
 
   def matching(query:String) = {
 
-    match{
-      case Variant(query) if query.startsWith("rs") =>
-        GetUrlContent
-      case Gene(query) if
+    query match{
+      case x if x startsWith "rs" =>
+        GetUrlContent.searchVariant()
+      case _ =>
+        GetUrlContent.searchGene(query)
     }
   }
+
+
 
 }

@@ -10,5 +10,10 @@
         <plugin path="C:\Users\jjohn\.ivy2\cache\org.scala-js\scalajs-compiler_2.12.8\jars\scalajs-compiler_2.12.8-0.6.25.jar" />
       </plugins>
     </profile>
+    <profile name="sbt 3" modules="root">
+      <plugins>
+        <plugin path="C:\Users\jjohn\.ivy2\cache\org.scala-js\scalajs-compiler_2.12.7\jars\scalajs-compiler_2.12.7-0.6.25.jar" />
+      </plugins>
+    </profile>
   </component>
 </project>

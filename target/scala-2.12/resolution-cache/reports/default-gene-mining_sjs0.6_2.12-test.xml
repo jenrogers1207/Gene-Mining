@@ -7,10 +7,10 @@
 		revision="0.1"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool, phantom-js-jetty"
-		date="20190412172017"/>
+		date="20190415192731"/>
 	<dependencies>
 		<module organisation="org.scala-js" name="scalajs-test-interface_2.12">
-			<revision name="0.6.25" status="release" pubdate="20180831060501" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scala-js.org/" extra-info.apiURL="http://www.scala-js.org/api/scalajs-test-interface/0.6.25/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="76">
+			<revision name="0.6.25" status="release" pubdate="20180831060501" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scala-js.org/" extra-info.apiURL="http://www.scala-js.org/api/scalajs-test-interface/0.6.25/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="77">
 				<license name="BSD New" url="https://github.com/scala-js/scala-js/blob/master/LICENSE"/>
 				<metadata-artifact status="no" details="" size="3068" time="0" location="C:\Users\jjohn\.ivy2\cache\org.scala-js\scalajs-test-interface_2.12\ivy-0.6.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-js/scalajs-test-interface_2.12/0.6.25/scalajs-test-interface_2.12-0.6.25.pom"/>
 				<caller organisation="default" name="gene-mining_sjs0.6_2.12" conf="test, compile, runtime" rev="0.6.25" rev-constraint-default="0.6.25" rev-constraint-dynamic="0.6.25" callerrev="0.1"/>
@@ -27,6 +27,18 @@
 				<evicted-by rev="0.6.25"/>
 				<caller organisation="com.lihaoyi" name="utest_sjs0.6_2.12" conf="compile, runtime" rev="0.6.22" rev-constraint-default="0.6.22" rev-constraint-dynamic="0.6.22" callerrev="0.6.4"/>
 				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.lihaoyi" name="requests_2.12">
+			<revision name="0.1.7" status="release" pubdate="20190121065927" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lihaoyi/requests" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="76">
+				<license name="MIT" url="https://spdx.org/licenses/MIT.html"/>
+				<metadata-artifact status="no" details="" size="2526" time="0" location="C:\Users\jjohn\.ivy2\cache\com.lihaoyi\requests_2.12\ivy-0.1.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/lihaoyi/requests_2.12/0.1.7/requests_2.12-0.1.7.pom"/>
+				<caller organisation="default" name="gene-mining_sjs0.6_2.12" conf="test, compile, runtime" rev="0.1.7" rev-constraint-default="0.1.7" rev-constraint-dynamic="0.1.7" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="requests_2.12" type="jar" ext="jar" status="no" details="" size="104446" time="0" location="C:\Users\jjohn\.ivy2\cache\com.lihaoyi\requests_2.12\jars\requests_2.12-0.1.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/lihaoyi/requests_2.12/0.1.7/requests_2.12-0.1.7.jar"/>
+					</artifact>
 				</artifacts>
 			</revision>
 		</module>
@@ -146,7 +158,7 @@
 				<metadata-artifact status="no" details="" size="3140" time="0" location="C:\Users\jjohn\.ivy2\cache\com.github.fdietze\scala-js-d3v4\ivy-master-SNAPSHOT.xml" searched="true" origin-is-local="false" origin-location="https://jitpack.io/com/github/fdietze/scala-js-d3v4/master-SNAPSHOT/scala-js-d3v4-master-e9ce7a935b-1.pom"/>
 				<caller organisation="default" name="gene-mining_sjs0.6_2.12" conf="test, compile, runtime" rev="master-SNAPSHOT" rev-constraint-default="master-SNAPSHOT" rev-constraint-dynamic="master-SNAPSHOT" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="scala-js-d3v4" type="jar" ext="jar" status="successful" details="" size="126767" time="1718" location="C:\Users\jjohn\.ivy2\cache\com.github.fdietze\scala-js-d3v4\jars\scala-js-d3v4-master-SNAPSHOT.jar">
+					<artifact name="scala-js-d3v4" type="jar" ext="jar" status="no" details="" size="126767" time="0" location="C:\Users\jjohn\.ivy2\cache\com.github.fdietze\scala-js-d3v4\jars\scala-js-d3v4-master-SNAPSHOT.jar">
 						<origin-location is-local="false" location="https://jitpack.io/com/github/fdietze/scala-js-d3v4/master-SNAPSHOT/scala-js-d3v4-master-e9ce7a935b-1.jar"/>
 					</artifact>
 				</artifacts>

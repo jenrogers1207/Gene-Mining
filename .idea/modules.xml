@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Gene-Mining.iml" filepath="$PROJECT_DIR$/.idea/modules/Gene-Mining.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Gene-Mining-build.iml" filepath="$PROJECT_DIR$/.idea/modules/Gene-Mining-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/root.iml" filepath="$PROJECT_DIR$/.idea/modules/root.iml" />
     </modules>
   </component>
 </project>

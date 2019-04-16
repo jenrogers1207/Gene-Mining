@@ -24,11 +24,14 @@ libraryDependencies ++= {
     "org.scala-js" %%% "scalajs-dom" % "0.9.6",
     "com.github.fdietze" % "scala-js-d3v4" % "master-SNAPSHOT",
     "com.lihaoyi" %%% "upickle" % "0.7.1",
-    "com.lihaoyi" %%% "scalatags" % "0.6.7"
+    "com.lihaoyi" %%% "scalatags" % "0.6.7",
+    "com.lihaoyi" %% "requests" % "0.1.7"
   )
 }
 
-
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 dependencyOverrides += "org.scala-lang" % "scala-compiler" % scalaVersion.value
+
+lazy val root = project.
+  enablePlugins(ScalaJSPlugin)
 

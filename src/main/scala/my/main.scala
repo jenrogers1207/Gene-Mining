@@ -9,8 +9,8 @@ import org.scalajs.dom._
 object Main{
 
   def main(args: Array[String]): Unit = {
-
-    val div = document.createElement("div");
+   // textmine.ProcessorMachine.processMain()
+    val div = document.createElement("div")
     val searchDiv = document.getElementById("main").appendChild(div)
 
     render.Inputs.main(searchDiv)

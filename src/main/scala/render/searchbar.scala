@@ -41,7 +41,8 @@ object Inputs extends{
     ).render
 
     searchB.onclick = (e: dom.Event) => {
-      textmine.GetUrlContent.requestFile(box.value)
+    //  textmine.GetUrlContent.requestFile(box.value)
+      textmine.inputMatch.matching(box.value)
     }
 
     target.appendChild(

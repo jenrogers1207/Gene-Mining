@@ -5601,7 +5601,7 @@ class $c_Lrender_Inputs$ extends $c_O {
     return target.appendChild(jsx$10.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$5)).render__Lorg_scalajs_dom_raw_Element())
   };
   render$Inputs$$$anonfun$main$3__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_HTMLInputElement__V(e, box$1) {
-    $m_Ltextmine_GetUrlContent$().requestFile__T__V($as_T(box$1.value))
+    $m_Ltextmine_inputMatch$().matching__T__V($as_T(box$1.value))
   };
   $$js$exported$meth$main__Lorg_scalajs_dom_raw_Node__O(target) {
     return this.main__Lorg_scalajs_dom_raw_Node__Lorg_scalajs_dom_raw_Node(target)
@@ -5793,19 +5793,35 @@ class $c_Ltextmine_GetUrlContent$ extends $c_O {
   init___() {
     return this
   };
-  requestFile__T__V(qvalue) {
-    const url = (("https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=" + qvalue) + "&format=json");
-    const xhr = new $g.XMLHttpRequest();
-    xhr.open("GET", url);
-    xhr.onload = (function(xhr$1) {
-      return (function(arg1$2) {
-        return $m_Ltextmine_GetUrlContent$().textmine$GetUrlContent$$$anonfun$requestFile$1__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__O(arg1$2, xhr$1)
-      })
-    })(xhr);
-    xhr.send()
+  textmine$GetUrlContent$$$anonfun$searchTest$1__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__sr_ObjectRef__O(e, xhr$2, text$1) {
+    if (($uI(xhr$2.status) === 200)) {
+      text$1.elem$1 = (("" + $as_T(text$1.elem$1)) + $as_T(xhr$2.responseText));
+      return (void 0)
+    } else {
+      return (void 0)
+    }
   };
-  textmine$GetUrlContent$$$anonfun$requestFile$1__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__O(e, xhr$1) {
-    return (($uI(xhr$1.status) === 200) ? ($m_Ltextmine_Parser$().parseFile__T__V($as_T(xhr$1.responseText)), (void 0)) : (void 0))
+  searchTest__T__T(test) {
+    const url = ("http://mygene.info/v3/query?q=" + test);
+    const xhr = new $g.XMLHttpRequest();
+    const text = new $c_sr_ObjectRef().init___O("");
+    xhr.open("GET", url);
+    xhr.onload = (function(xhr$2, text$1) {
+      return (function(arg1$2) {
+        return $m_Ltextmine_GetUrlContent$().textmine$GetUrlContent$$$anonfun$searchTest$1__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__sr_ObjectRef__O(arg1$2, xhr$2, text$1)
+      })
+    })(xhr, text);
+    xhr.send();
+    return $as_T(text.elem$1)
+  };
+  searchGene__T__V(query) {
+    const this$2 = $m_s_Console$();
+    const this$3 = $as_Ljava_io_PrintStream(this$2.outVar$2.v$1);
+    this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V("Gene\n");
+    const test = this.searchTest__T__T(query);
+    const this$5 = $m_s_Console$();
+    const this$6 = $as_Ljava_io_PrintStream(this$5.outVar$2.v$1);
+    this$6.java$lang$JSConsoleBasedPrintStream$$printString__T__V((test + "\n"))
   };
 }
 const $d_Ltextmine_GetUrlContent$ = new $TypeData().initClass({
@@ -5822,155 +5838,33 @@ const $m_Ltextmine_GetUrlContent$ = (function() {
   };
   return $n_Ltextmine_GetUrlContent$
 });
-class $c_Ltextmine_Parser$ extends $c_O {
+class $c_Ltextmine_inputMatch$ extends $c_O {
   init___() {
     return this
   };
-  checker$1__p1__sjs_js_Dictionary__T__T__Z(f, c, k) {
-    if ((c === k)) {
-      return $uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(f, k))
+  matching__T__V(query) {
+    if ((($uI(query.length) >= 0) && ($as_T(query.substring(0, $uI("rs".length))) === "rs"))) {
+      const this$8 = $m_s_Console$();
+      const this$9 = $as_Ljava_io_PrintStream(this$8.outVar$2.v$1);
+      this$9.java$lang$JSConsoleBasedPrintStream$$printString__T__V("variant\n")
     } else {
-      if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(f, c)))) {
-        throw new $c_ju_NoSuchElementException().init___T(("key not found: " + c))
-      };
-      const x = f[c];
-      return ((x !== null) && $objectEquals(x, "Y"))
+      $m_Ltextmine_GetUrlContent$().searchGene__T__V(query)
     }
-  };
-  textmine$Parser$$$anonfun$parseFile$4__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__O(e, xhr$1) {
-    if (($uI(xhr$1.status) === 200)) {
-      const xml = xhr$1.responseXML;
-      xml.getElementsByTagName("article-title");
-      xml.getElementsByTagName("body");
-      return (void 0)
-    } else {
-      return (void 0)
-    }
-  };
-  parseFile__T__V(response) {
-    const file = $g.JSON.parse(response);
-    this.getArray$1__p1__sjs_js_Array__T__T__sjs_js_Array(file.resultList.result, "id", "id");
-    const pmcids = this.getArray$1__p1__sjs_js_Array__T__T__sjs_js_Array(file.resultList.result, "pmcid", "pmcid");
-    this.getArray$1__p1__sjs_js_Array__T__T__sjs_js_Array(file.resultList.result, "hasTextMinedTerms", "id");
-    const array = [];
-    const x1 = $uI(pmcids.length);
-    switch (x1) {
-      case (-1): {
-        break
-      }
-    };
-    let i = 0;
-    const len = $uI(pmcids.length);
-    while ((i < len)) {
-      const index = i;
-      const arg1 = pmcids[index];
-      const x = $as_sci_Vector(arg1);
-      const queryId = $as_T(x.apply__I__O(1));
-      const this$4 = $m_s_Console$();
-      const this$5 = $as_Ljava_io_PrintStream(this$4.outVar$2.v$1);
-      this$5.java$lang$JSConsoleBasedPrintStream$$printString__T__V((queryId + "\n"));
-      const url = (("https://www.ebi.ac.uk/europepmc/webservices/rest/" + queryId) + "/fullTextXML");
-      const xhr = new $g.XMLHttpRequest();
-      xhr.open("GET", url);
-      xhr.onload = (function(xhr$1) {
-        return (function(arg1$2) {
-          return $m_Ltextmine_Parser$().textmine$Parser$$$anonfun$parseFile$4__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__O(arg1$2, xhr$1)
-        })
-      })(xhr);
-      xhr.send();
-      const elem = (void 0);
-      array.push(elem);
-      i = ((1 + i) | 0)
-    }
-  };
-  getArray$1__p1__sjs_js_Array__T__T__sjs_js_Array(fi, check, keyVal) {
-    const array = [];
-    const x1 = $uI(fi.length);
-    switch (x1) {
-      case (-1): {
-        break
-      }
-    };
-    let i = 0;
-    const len = $uI(fi.length);
-    while ((i < len)) {
-      const index = i;
-      const arg1 = fi[index];
-      let elem;
-      if (this.checker$1__p1__sjs_js_Dictionary__T__T__Z(arg1, check, keyVal)) {
-        const this$9 = $m_s_package$().Vector$1;
-        if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(arg1, "source")))) {
-          throw new $c_ju_NoSuchElementException().init___T("key not found: source")
-        };
-        const jsx$1 = $as_T(arg1.source);
-        if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(arg1, keyVal)))) {
-          throw new $c_ju_NoSuchElementException().init___T(("key not found: " + keyVal))
-        };
-        const array$1 = [jsx$1, $as_T(arg1[keyVal])];
-        if (($uI(array$1.length) === 0)) {
-          elem = this$9.NIL$6
-        } else {
-          const b = new $c_sci_VectorBuilder().init___();
-          let i$1 = 0;
-          const len$1 = $uI(array$1.length);
-          while ((i$1 < len$1)) {
-            const index$1 = i$1;
-            const arg1$1 = array$1[index$1];
-            b.$$plus$eq__O__sci_VectorBuilder(arg1$1);
-            i$1 = ((1 + i$1) | 0)
-          };
-          elem = b.result__sci_Vector()
-        }
-      } else {
-        const this$12 = $m_s_package$().Vector$1;
-        const array$2 = ["null"];
-        if (($uI(array$2.length) === 0)) {
-          elem = this$12.NIL$6
-        } else {
-          const b$1 = new $c_sci_VectorBuilder().init___();
-          let i$2 = 0;
-          const len$2 = $uI(array$2.length);
-          while ((i$2 < len$2)) {
-            const index$2 = i$2;
-            const arg1$2 = array$2[index$2];
-            b$1.$$plus$eq__O__sci_VectorBuilder(arg1$2);
-            i$2 = ((1 + i$2) | 0)
-          };
-          elem = b$1.result__sci_Vector()
-        }
-      };
-      array.push(elem);
-      i = ((1 + i) | 0)
-    };
-    const array$3 = [];
-    let i$3 = 0;
-    const len$3 = $uI(array.length);
-    while ((i$3 < len$3)) {
-      const index$3 = i$3;
-      const arg1$3 = array[index$3];
-      const f = $as_sci_Vector(arg1$3);
-      const x = f.apply__I__O(0);
-      if (((!((x !== null) && $objectEquals(x, "null"))) !== false)) {
-        array$3.push(arg1$3)
-      };
-      i$3 = ((1 + i$3) | 0)
-    };
-    return array$3
   };
 }
-const $d_Ltextmine_Parser$ = new $TypeData().initClass({
-  Ltextmine_Parser$: 0
-}, false, "textmine.Parser$", {
-  Ltextmine_Parser$: 1,
+const $d_Ltextmine_inputMatch$ = new $TypeData().initClass({
+  Ltextmine_inputMatch$: 0
+}, false, "textmine.inputMatch$", {
+  Ltextmine_inputMatch$: 1,
   O: 1
 });
-$c_Ltextmine_Parser$.prototype.$classData = $d_Ltextmine_Parser$;
-let $n_Ltextmine_Parser$ = (void 0);
-const $m_Ltextmine_Parser$ = (function() {
-  if ((!$n_Ltextmine_Parser$)) {
-    $n_Ltextmine_Parser$ = new $c_Ltextmine_Parser$().init___()
+$c_Ltextmine_inputMatch$.prototype.$classData = $d_Ltextmine_inputMatch$;
+let $n_Ltextmine_inputMatch$ = (void 0);
+const $m_Ltextmine_inputMatch$ = (function() {
+  if ((!$n_Ltextmine_inputMatch$)) {
+    $n_Ltextmine_inputMatch$ = new $c_Ltextmine_inputMatch$().init___()
   };
-  return $n_Ltextmine_Parser$
+  return $n_Ltextmine_inputMatch$
 });
 class $c_Lutest_TestQueryParser extends $c_O {
   constructor() {
