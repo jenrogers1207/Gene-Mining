@@ -80,6 +80,7 @@ object GetRestContent {
       case "getPathIds" => "https://reactome.org/ContentService/data/mapping/OMIM/" + id + "/pathways?species=9606"
       case "getGeneIds" => "http://mygene.info/v3/query?q=" + id + "&fields=symbol,name,taxid,entrezgene,ensemblgene,MIM"
       case "getPubIds" => "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query="+id+"&format=json"
+      case "getVarSNP" => "https://api.ncbi.nlm.nih.gov/variation/v0/beta/refsnp/" + id
     }
   }
 
@@ -106,6 +107,7 @@ object GetRestContent {
           //GET PATHWAYS ThAT GENE IS INVOLVED IN
           httpCall(urlBuilder("getPathIds", geneQuery.getId("OMIM")), responseText=> {
             val json = js.JSON.parse(responseText).asInstanceOf[Array[Dictionary[Dynamic]]]
+            console.log(json)
             val pathways = json.map(p=> {
               new Pathway(p("dbId").toString, p("stId").toString, p("displayName").toString, p("hasDiagram").asInstanceOf[Boolean], p("speciesName").toString)
             })
@@ -116,28 +118,22 @@ object GetRestContent {
             println("responseText", responseText)
           })
       })
-
-
-
-      /*
-    val f = Ajax.get(url)
-
-    f.onComplete{
-      case Success(xhd) =>
-        val json=js.JSON.parse(xhd.responseText)
-        val hits = json.hits.asInstanceOf[Array[Unit]]
-        val ob = hits(0).asInstanceOf[Dictionary[Dynamic]]
-        val geneQuery = new Gene(ob("name").toString, ob("entrezgene").toString, ob("symbol").toString, ob("taxid").toString)
-       // geneQuery.idToMim(ob("entrezgene").toString)
-        geneQuery.idToMim(geneQuery.findReactomePathways)
-        geneQuery.requestPub(ob("symbol").toString)
-      case Failure(e) => println(e.toString)
-    }*/
     }
 
 
-    def searchVariant() = {
-      println("variant")
+    def searchVariant(rsValue: String) = {
+      println("variant", rsValue)
+      val rsdigit = rsValue.split("[Ss]")
+      httpCall(urlBuilder("getVarSNP", rsdigit(1)), responseText => {
+        val json = js.JSON.parse(responseText)
+        val snapshot = json.primary_snapshot_data
+        val alleleAn = snapshot.allele_annotations.asInstanceOf[Array[Dictionary[Dynamic]]]
+       
+        console.log(alleleAn)
+        console.log(typeOf(alleleAn))
+
+
+      })
     }
 
 

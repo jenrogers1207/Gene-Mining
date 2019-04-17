@@ -11,6 +11,7 @@ import dom.html
 import scalatags.JsDom.all._
 import scala.scalajs.js.annotation._
 
+
 //@JSExport
 @JSExportTopLevel("Inputs")
 object Inputs extends{
@@ -24,10 +25,6 @@ object Inputs extends{
 
     val output = span.render
 
-    box.onkeyup = (e: dom.Event) => {
-      output.textContent =
-        box.value.toUpperCase
-    }
 
     val searchB =  button(
       `class`:="btn btn-outline-secondary",
@@ -35,13 +32,21 @@ object Inputs extends{
     ).render
 
     searchB.onclick = (e: dom.Event) => {
-    //  textmine.GetUrlContent.requestFile(box.value)
       textmine.inputMatch.matching(box.value)
+    }
+
+    val title = span.render
+    title.textContent= "What's That Gene?"
+
+    box.onkeyup = (e: dom.Event) => {
+      output.textContent =
+        box.value.toUpperCase
+      if (box.value.startsWith("rs")) title.textContent = "What's That Variant?"
     }
 
     target.appendChild(
       div(
-        h1("What's that Gene?"),
+       h1(title),
         div(
           `class`:= "input-group mb-3",
           box, searchB),

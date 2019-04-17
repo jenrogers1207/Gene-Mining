@@ -5617,12 +5617,11 @@ const $m_Lorg_scalajs_testinterface_internal_TaskInfoBuilder$ = (function() {
   return $n_Lorg_scalajs_testinterface_internal_TaskInfoBuilder$
 });
 class $c_Lrender_Inputs$ extends $c_O {
+  render$Inputs$$$anonfun$main$1__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_HTMLInputElement__V(e, box$1) {
+    $m_Ltextmine_inputMatch$().matching__T__V($as_T(box$1.value))
+  };
   init___() {
     return this
-  };
-  render$Inputs$$$anonfun$main$1__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_HTMLSpanElement__Lorg_scalajs_dom_raw_HTMLInputElement__V(e, output$1, box$1) {
-    const thiz = $as_T(box$1.value);
-    output$1.textContent = $as_T(thiz.toUpperCase())
   };
   main__Lorg_scalajs_dom_raw_Node__Lorg_scalajs_dom_raw_Node(target) {
     const this$1 = $m_Lscalatags_JsDom$all$();
@@ -5631,43 +5630,55 @@ class $c_Lrender_Inputs$ extends $c_O {
     const box = jsx$1.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array)).render__Lorg_scalajs_dom_raw_Element();
     const this$4 = $m_Lscalatags_JsDom$all$();
     const output = this$4.span__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
-    box.onkeyup = (function(output$1, box$1) {
-      return (function(arg1$2) {
-        $m_Lrender_Inputs$().render$Inputs$$$anonfun$main$1__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_HTMLSpanElement__Lorg_scalajs_dom_raw_HTMLInputElement__V(arg1$2, output$1, box$1)
-      })
-    })(output, box);
     const this$5 = $m_Lscalatags_JsDom$all$();
     const jsx$2 = this$5.button__Lscalatags_JsDom$TypedTag();
     const array$1 = [$m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("btn btn-outline-secondary", $m_Lscalatags_JsDom$all$().stringAttr$1), ($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T("GO"))];
     const searchB = jsx$2.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1)).render__Lorg_scalajs_dom_raw_Element();
-    searchB.onclick = (function(box$1$1) {
-      return (function(arg1$2$1) {
-        $m_Lrender_Inputs$().render$Inputs$$$anonfun$main$3__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_HTMLInputElement__V(arg1$2$1, box$1$1)
+    searchB.onclick = (function(box$1) {
+      return (function(arg1$2) {
+        $m_Lrender_Inputs$().render$Inputs$$$anonfun$main$1__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_HTMLInputElement__V(arg1$2, box$1)
       })
     })(box);
     const this$9 = $m_Lscalatags_JsDom$all$();
-    const jsx$10 = this$9.div__Lscalatags_JsDom$TypedTag();
+    const title = this$9.span__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
+    title.textContent = "What's That Gene?";
+    box.onkeyup = (function(output$1, box$1$1, title$1) {
+      return (function(arg1$2$1) {
+        return $m_Lrender_Inputs$().render$Inputs$$$anonfun$main$3__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_HTMLSpanElement__Lorg_scalajs_dom_raw_HTMLInputElement__Lorg_scalajs_dom_raw_HTMLSpanElement__O(arg1$2$1, output$1, box$1$1, title$1)
+      })
+    })(output, box, title);
     const this$10 = $m_Lscalatags_JsDom$all$();
-    const jsx$9 = this$10.h1__Lscalatags_JsDom$TypedTag();
-    const array$2 = [($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T("What's that Gene?"))];
+    const jsx$10 = this$10.div__Lscalatags_JsDom$TypedTag();
+    const this$11 = $m_Lscalatags_JsDom$all$();
+    const jsx$9 = this$11.h1__Lscalatags_JsDom$TypedTag();
+    const this$12 = $m_Lscalatags_JsDom$all$();
+    const array$2 = [new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$12, title)];
     const jsx$8 = jsx$9.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$2));
-    const this$14 = $m_Lscalatags_JsDom$all$();
-    const jsx$7 = this$14.div__Lscalatags_JsDom$TypedTag();
-    const jsx$6 = $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("input-group mb-3", $m_Lscalatags_JsDom$all$().stringAttr$1);
     const this$15 = $m_Lscalatags_JsDom$all$();
-    const jsx$5 = new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$15, box);
+    const jsx$7 = this$15.div__Lscalatags_JsDom$TypedTag();
+    const jsx$6 = $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("input-group mb-3", $m_Lscalatags_JsDom$all$().stringAttr$1);
     const this$16 = $m_Lscalatags_JsDom$all$();
-    const array$3 = [jsx$6, jsx$5, new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$16, searchB)];
+    const jsx$5 = new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$16, box);
+    const this$17 = $m_Lscalatags_JsDom$all$();
+    const array$3 = [jsx$6, jsx$5, new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$17, searchB)];
     const jsx$4 = jsx$7.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$3));
-    const this$19 = $m_Lscalatags_JsDom$all$();
-    const jsx$3 = this$19.div__Lscalatags_JsDom$TypedTag();
     const this$20 = $m_Lscalatags_JsDom$all$();
-    const array$4 = [new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$20, output)];
+    const jsx$3 = this$20.div__Lscalatags_JsDom$TypedTag();
+    const this$21 = $m_Lscalatags_JsDom$all$();
+    const array$4 = [new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$21, output)];
     const array$5 = [jsx$8, jsx$4, jsx$3.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$4))];
     return target.appendChild(jsx$10.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$5)).render__Lorg_scalajs_dom_raw_Element())
   };
-  render$Inputs$$$anonfun$main$3__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_HTMLInputElement__V(e, box$1) {
-    $m_Ltextmine_inputMatch$().matching__T__V($as_T(box$1.value))
+  render$Inputs$$$anonfun$main$3__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_HTMLSpanElement__Lorg_scalajs_dom_raw_HTMLInputElement__Lorg_scalajs_dom_raw_HTMLSpanElement__O(e, output$1, box$1, title$1) {
+    const thiz = $as_T(box$1.value);
+    output$1.textContent = $as_T(thiz.toUpperCase());
+    const thiz$1 = $as_T(box$1.value);
+    if ((($uI(thiz$1.length) >= 0) && ($as_T(thiz$1.substring(0, $uI("rs".length))) === "rs"))) {
+      title$1.textContent = "What's That Variant?";
+      return (void 0)
+    } else {
+      return (void 0)
+    }
   };
 }
 const $d_Lrender_Inputs$ = new $TypeData().initClass({
@@ -5927,6 +5938,7 @@ class $c_Ltextmine_GetRestContent$ extends $c_O {
           return (function(responseText$2$2) {
             const responseText$2$1 = $as_T(responseText$2$2);
             const json$1 = $g.JSON.parse(responseText$2$1);
+            $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console().log(json$1);
             const array = [];
             const x1 = $uI(json$1.length);
             switch (x1) {
@@ -5986,9 +5998,30 @@ class $c_Ltextmine_GetRestContent$ extends $c_O {
       return (("http://mygene.info/v3/query?q=" + id) + "&fields=symbol,name,taxid,entrezgene,ensemblgene,MIM")
     } else if ((query === "getPubIds")) {
       return (("https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=" + id) + "&format=json")
+    } else if ((query === "getVarSNP")) {
+      return ("https://api.ncbi.nlm.nih.gov/variation/v0/beta/refsnp/" + id)
     } else {
       throw new $c_s_MatchError().init___O(query)
     }
+  };
+  searchVariant__T__V(rsValue) {
+    const x = new $c_T2().init___O__O("variant", rsValue);
+    const this$2 = $m_s_Console$();
+    const this$3 = $as_Ljava_io_PrintStream(this$2.outVar$2.v$1);
+    this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"));
+    const rsdigit = $m_sjsr_RuntimeString$().split__T__T__I__AT(rsValue, "[Ss]", 0);
+    this.httpCall__T__F1__V(this.urlBuilder__T__T__T("getVarSNP", rsdigit.get(1)), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+      return (function(responseText$2) {
+        const responseText = $as_T(responseText$2);
+        const json = $g.JSON.parse(responseText);
+        const snapshot = json.primary_snapshot_data;
+        const alleleAn = snapshot.allele_annotations;
+        $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console().log(alleleAn);
+        const jsx$1 = $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console();
+        const s = $as_T((typeof alleleAn));
+        jsx$1.log(s)
+      })
+    })(this)))
   };
   httpCall__T__F1__V(url, callback) {
     const this$3 = $m_Lorg_scalajs_dom_ext_Ajax$();
@@ -6047,9 +6080,7 @@ class $c_Ltextmine_inputMatch$ extends $c_O {
   };
   matching__T__V(query) {
     if ((($uI(query.length) >= 0) && ($as_T(query.substring(0, $uI("rs".length))) === "rs"))) {
-      const this$8 = $m_s_Console$();
-      const this$9 = $as_Ljava_io_PrintStream(this$8.outVar$2.v$1);
-      this$9.java$lang$JSConsoleBasedPrintStream$$printString__T__V("variant\n")
+      $m_Ltextmine_GetRestContent$().searchVariant__T__V(query)
     } else {
       $m_Ltextmine_GetRestContent$().searchGene__T__V(query)
     }
@@ -42200,11 +42231,11 @@ class $c_sci_HashMap$HashTrieMap extends $c_sci_HashMap {
       return new $c_sci_HashMap$HashTrieMap().init___I__Asci_HashMap__I(bitmap1, elems1, rs)
     }
   };
-  size__I() {
-    return this.size0$6
-  };
   iterator__sc_Iterator() {
     return new $c_sci_HashMap$HashTrieMap$$anon$3().init___sci_HashMap$HashTrieMap(this)
+  };
+  size__I() {
+    return this.size0$6
   };
   init___I__Asci_HashMap__I(bitmap, elems, size0) {
     this.bitmap$6 = bitmap;

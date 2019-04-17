@@ -10,7 +10,8 @@ scalaJSLinkerConfig ~= { _.withOutputMode(OutputMode.ECMAScript2015) }
 scalaJSUseMainModuleInitializer := true
 mainClass := Some("my.Main")
 jsEnv := new org.scalajs.jsenv.jsdomnodejs.JSDOMNodeJSEnv()
-resolvers ++= Seq("jitpack" at "https://jitpack.io", "hmil" at "maven")
+resolvers ++= Seq("jitpack" at "https://jitpack.io", Resolver.sonatypeRepo("releases") )
+ 
 
 libraryDependencies ++= {
   val procVer = "7.4.2"
@@ -26,6 +27,7 @@ libraryDependencies ++= {
     "com.lihaoyi" %%% "upickle" % "0.7.1",
     "com.lihaoyi" %%% "scalatags" % "0.6.7",
     "com.lihaoyi" %% "requests" % "0.1.7",
+   // "io.scalajs.npm" %%% "eclairjs" % "0.4.2"
   //  "fr.hmil" %%% "roshttp" % "2.2.4"
   )
 }
