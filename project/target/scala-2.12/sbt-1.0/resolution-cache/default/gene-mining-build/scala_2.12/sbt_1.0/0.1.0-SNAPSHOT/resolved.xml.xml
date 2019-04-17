@@ -4,7 +4,7 @@
 		module="gene-mining-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20190408185655"
+		publication="20190416191628"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>
@@ -47,6 +47,7 @@
 		<dependency org="com.dwijnand" name="sbt-dynver" rev="3.1.0" conf="compile->default(compile)" e:sbtVersion="1.0" e:scalaVersion="2.12"/>
 		<dependency org="org.jetbrains" name="sbt-idea-plugin" rev="2.2.5-noauto" conf="compile->default(compile)" e:sbtVersion="1.0" e:scalaVersion="2.12"/>
 		<dependency org="com.eed3si9n" name="sbt-assembly" rev="0.14.6" conf="compile->default(compile)" e:sbtVersion="1.0" e:scalaVersion="2.12"/>
+		<dependency org="org.scala-js" name="sbt-jsdependencies" rev="1.0.0-M1" conf="compile->default(compile)" e:sbtVersion="1.0" e:scalaVersion="2.12"/>
 		<override org="org.scala-sbt" module="scripted-plugin_2.12" matcher="exact" rev="1.2.8"/>
 	</dependencies>
 </ivy-module>

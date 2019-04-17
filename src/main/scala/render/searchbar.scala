@@ -6,22 +6,15 @@ import org.scalajs.dom._
 import scala.scalajs.js.JSON
 import scala.scalajs.js
 import org.scalajs.dom
-import org.scalajs.dom.experimental._
-import dom.html
-import org.scalajs.dom.html.{Div, Button, Input}
-import org.scalajs.dom.raw.MouseEvent
-import scala.util.Try
-import scalajs.js.annotation.JSExport
-import scalatags.JsDom.all._
-import textmine._
 import org.scalajs.dom
 import dom.html
-import scalajs.js.annotation.JSExport
 import scalatags.JsDom.all._
+import scala.scalajs.js.annotation._
 
-@JSExport
+//@JSExport
+@JSExportTopLevel("Inputs")
 object Inputs extends{
-  @JSExport
+ // @JSExport
   def main(target: Node) = {
     val box = input(
       `type`:="text",

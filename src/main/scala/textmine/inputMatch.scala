@@ -11,10 +11,10 @@ object inputMatch{
 
     query match{
       case x if x startsWith "rs" =>
-        GetUrlContent.searchVariant()
+        GetRestContent.searchVariant()
       case _ =>
+        GetRestContent.searchGene(query)
 
-        GetUrlContent.searchGene(query)
     }
   }
 

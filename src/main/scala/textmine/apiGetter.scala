@@ -18,37 +18,29 @@ import scala.scalajs.js.Dynamic.global
 import util._
 import dom.ext._
 
-
+import scala.concurrent.Future
 import scala.scalajs.concurrent.JSExecutionContext.Implicits.runNow
 
-class Gene(name:String, entrezgene:String, symbol:String, taxid:String){
+class Pathway(dbId:String, stId:String, name:String, hasDiagram: Boolean, species:String){
 
+ def loadPathway() = {
 
-  def idToMim(callback: (String) => Unit):Unit = {
-    var url = "http://mygene.info/v2/gene/"+entrezgene+"?fields=MIM"
-    val f = Ajax.get (url)
-    f.onComplete {
-      case Success (xhd) =>
-        val json = js.JSON.parse (xhd.responseText)
+ }
 
-        callback(json.MIM.toString)
+}
 
-      case Failure (e) => println (e.toString)
+class Gene(n:String, entrez:String, sym:String, taxon:String, omim:String){
+
+  def getId(value:String): String = {
+    value match {
+      case "OMIM" =>  omim
+      case "ENTREZ" => entrez
+      case "SYMBOL" => sym
+      case "TAXON" => taxon
+      case "NAME" => n
     }
   }
 
-  def findReactomePathways(urlVal:String):Unit={
-    val url = "https://reactome.org/ContentService/data/mapping/OMIM/"+urlVal+"/pathways?species=9606"
-    val f = Ajax.get (url)
-    f.onComplete{
-      case Success (xhd) =>
-        val json = js.JSON.parse(xhd.responseText)
-        console.log(json)
-
-
-      case Failure (e) =>  println (e.toString)
-    }
-  }
 
   def requestPub(qvalue:String) = {
     var url = "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query="+qvalue+"&format=json"
@@ -79,10 +71,55 @@ class Gene(name:String, entrezgene:String, symbol:String, taxid:String){
   }*/
 }
 
-object GetUrlContent {
+object GetRestContent {
 
-  def searchGene(query:String) = {
-    var url = "http://mygene.info/v3/query?q="+query
+
+  def urlBuilder(query: String, id: String): String = {
+    query match {
+      case "getOmim" => "http://mygene.info/v2/gene/" + id + "?fields=MIM"
+      case "getPathIds" => "https://reactome.org/ContentService/data/mapping/OMIM/" + id + "/pathways?species=9606"
+      case "getGeneIds" => "http://mygene.info/v3/query?q=" + id + "&fields=symbol,name,taxid,entrezgene,ensemblgene,MIM"
+      case "getPubIds" => "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query="+id+"&format=json"
+    }
+  }
+
+    def httpCall(url: String, callback: (String) => Unit): Unit = {
+      val f = Ajax.get(url)
+      f.onComplete {
+        case Success(xhr) => callback(xhr.responseText)
+        case Failure(e) => println(e.toString)
+      }
+    }
+
+    def searchGene(query: String): Unit = {
+
+      httpCall(urlBuilder("getGeneIds", query), responseText => {
+
+        //The callback hells begins
+        //Initial search for gene ids. create new gene
+        val json = js.JSON.parse(responseText)
+        val hits = json.hits.asInstanceOf[Array[Unit]]
+        val ob = hits(0).asInstanceOf[Dictionary[Dynamic]]
+        val geneQuery = new Gene(ob("name").toString, ob("entrezgene").toString, ob("symbol").toString, ob("taxid").toString, ob("MIM").toString)
+        println("match?",geneQuery.getId("SYMBOL"))
+
+          //GET PATHWAYS ThAT GENE IS INVOLVED IN
+          httpCall(urlBuilder("getPathIds", geneQuery.getId("OMIM")), responseText=> {
+            val json = js.JSON.parse(responseText).asInstanceOf[Array[Dictionary[Dynamic]]]
+            val pathways = json.map(p=> {
+              new Pathway(p("dbId").toString, p("stId").toString, p("displayName").toString, p("hasDiagram").asInstanceOf[Boolean], p("speciesName").toString)
+            })
+            console.log(pathways)
+          })
+          //GET PUBLICATION IDS
+          httpCall(urlBuilder("getPubIds", geneQuery.getId("ENTREZ")), responseText => {
+            println("responseText", responseText)
+          })
+      })
+
+
+
+      /*
     val f = Ajax.get(url)
 
     f.onComplete{
@@ -95,13 +132,13 @@ object GetUrlContent {
         geneQuery.idToMim(geneQuery.findReactomePathways)
         geneQuery.requestPub(ob("symbol").toString)
       case Failure(e) => println(e.toString)
+    }*/
     }
+
+
+    def searchVariant() = {
+      println("variant")
+    }
+
+
   }
-
-
-  def searchVariant() = {
-  println("variant")
-  }
-
-
-}

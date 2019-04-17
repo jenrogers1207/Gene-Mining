@@ -9,7 +9,7 @@
 		extra-sbtVersion="1.0"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20190408185655"/>
+		date="20190416191628"/>
 	<dependencies>
 		<module organisation="com.eed3si9n" name="sbt-assembly">
 			<revision name="0.14.6" status="release" pubdate="20171114125801" resolver="sbt-chain" artresolver="sbt-chain" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="70">
@@ -904,7 +904,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="global-plugins">
-			<revision name="0.0" status="integration" pubdate="20190408185646" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
+			<revision name="0.0" status="integration" pubdate="20190416191621" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="default" name="gene-mining-build" conf="compile, runtime-internal, runtime, optional" rev="0.0" rev-constraint-default="0.0" rev-constraint-dynamic="0.0" callerrev="0.1.0-SNAPSHOT" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
 				<artifacts>
@@ -934,6 +934,13 @@
 					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5277511" time="0" location="C:\Users\jjohn\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.7.jar">
 						<origin-location is-local="false" location="file:/C:/Users/jjohn/.sbt/preloaded/org.scala-lang/scala-library/2.12.7/jars/scala-library.jar"/>
 					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-js" name="sbt-jsdependencies">
+			<revision name="1.0.0-M1" error="not found" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="default" name="gene-mining-build" conf="compile, runtime-internal, runtime, optional" rev="1.0.0-M1" rev-constraint-default="1.0.0-M1" rev-constraint-dynamic="1.0.0-M1" callerrev="0.1.0-SNAPSHOT" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
 				</artifacts>
 			</revision>
 		</module>

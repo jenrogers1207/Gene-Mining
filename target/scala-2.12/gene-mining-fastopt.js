@@ -5669,13 +5669,6 @@ class $c_Lrender_Inputs$ extends $c_O {
   render$Inputs$$$anonfun$main$3__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_HTMLInputElement__V(e, box$1) {
     $m_Ltextmine_inputMatch$().matching__T__V($as_T(box$1.value))
   };
-  $$js$exported$meth$main__Lorg_scalajs_dom_raw_Node__O(target) {
-    return this.main__Lorg_scalajs_dom_raw_Node__Lorg_scalajs_dom_raw_Node(target)
-  };
-  "main"(arg$1) {
-    const prep0 = arg$1;
-    return this.$$js$exported$meth$main__Lorg_scalajs_dom_raw_Node__O(prep0)
-  };
 }
 const $d_Lrender_Inputs$ = new $TypeData().initClass({
   Lrender_Inputs$: 0
@@ -5858,40 +5851,146 @@ const $f_Lscalatags_generic_Util__attr__T__Lscalatags_generic_Namespace__Z__Lsca
 class $c_Ltextmine_Gene extends $c_O {
   constructor() {
     super();
-    this.entrezgene$1 = null
+    this.n$1 = null;
+    this.entrez$1 = null;
+    this.sym$1 = null;
+    this.taxon$1 = null;
+    this.omim$1 = null
   };
-  requestPub__T__V(qvalue) {
-    const url = (("https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=" + qvalue) + "&format=json");
-    const this$3 = $m_Lorg_scalajs_dom_ext_Ajax$();
-    const headers = $m_sci_Map$EmptyMap$();
-    const f = this$3.apply__T__T__Lorg_scalajs_dom_ext_Ajax$InputData__I__sci_Map__Z__T__s_concurrent_Future("GET", url, null, 0, headers, false, "");
-    f.onComplete__F1__s_concurrent_ExecutionContext__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
-      return (function(x0$1$2) {
-        const x0$1 = $as_s_util_Try(x0$1$2);
-        if ($is_s_util_Success(x0$1)) {
-          const x2 = $as_s_util_Success(x0$1);
-          const xhd = x2.value$2;
-          const json = $g.JSON.parse($as_T(xhd.responseText));
-          $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console().log(json)
-        } else if ($is_s_util_Failure(x0$1)) {
-          const x3 = $as_s_util_Failure(x0$1);
-          const e = x3.exception$2;
-          const x = e.toString__T();
-          const this$5 = $m_s_Console$();
-          const this$6 = $as_Ljava_io_PrintStream(this$5.outVar$2.v$1);
-          this$6.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"))
-        } else {
-          throw new $c_s_MatchError().init___O(x0$1)
-        }
-      })
-    })(this)), $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1)
-  };
-  init___T__T__T__T(name, entrezgene, symbol, taxid) {
-    this.entrezgene$1 = entrezgene;
+  init___T__T__T__T__T(n, entrez, sym, taxon, omim) {
+    this.n$1 = n;
+    this.entrez$1 = entrez;
+    this.sym$1 = sym;
+    this.taxon$1 = taxon;
+    this.omim$1 = omim;
     return this
   };
-  idToMim__F1__V(callback) {
-    const url = (("http://mygene.info/v2/gene/" + this.entrezgene$1) + "?fields=MIM");
+  getId__T__T(value) {
+    if ((value === "OMIM")) {
+      return this.omim$1
+    } else if ((value === "ENTREZ")) {
+      return this.entrez$1
+    } else if ((value === "SYMBOL")) {
+      return this.sym$1
+    } else if ((value === "TAXON")) {
+      return this.taxon$1
+    } else if ((value === "NAME")) {
+      return this.n$1
+    } else {
+      throw new $c_s_MatchError().init___O(value)
+    }
+  };
+}
+const $d_Ltextmine_Gene = new $TypeData().initClass({
+  Ltextmine_Gene: 0
+}, false, "textmine.Gene", {
+  Ltextmine_Gene: 1,
+  O: 1
+});
+$c_Ltextmine_Gene.prototype.$classData = $d_Ltextmine_Gene;
+class $c_Ltextmine_GetRestContent$ extends $c_O {
+  init___() {
+    return this
+  };
+  searchGene__T__V(query) {
+    this.httpCall__T__F1__V(this.urlBuilder__T__T__T("getGeneIds", query), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+      return (function(responseText$2) {
+        const responseText = $as_T(responseText$2);
+        const json = $g.JSON.parse(responseText);
+        const hits = json.hits;
+        const ob = hits[0];
+        if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(ob, "name")))) {
+          throw new $c_ju_NoSuchElementException().init___T("key not found: name")
+        };
+        const jsx$4 = $objectToString(ob.name);
+        if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(ob, "entrezgene")))) {
+          throw new $c_ju_NoSuchElementException().init___T("key not found: entrezgene")
+        };
+        const jsx$3 = $objectToString(ob.entrezgene);
+        if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(ob, "symbol")))) {
+          throw new $c_ju_NoSuchElementException().init___T("key not found: symbol")
+        };
+        const jsx$2 = $objectToString(ob.symbol);
+        if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(ob, "taxid")))) {
+          throw new $c_ju_NoSuchElementException().init___T("key not found: taxid")
+        };
+        const jsx$1 = $objectToString(ob.taxid);
+        if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(ob, "MIM")))) {
+          throw new $c_ju_NoSuchElementException().init___T("key not found: MIM")
+        };
+        const geneQuery = new $c_Ltextmine_Gene().init___T__T__T__T__T(jsx$4, jsx$3, jsx$2, jsx$1, $objectToString(ob.MIM));
+        const x = new $c_T2().init___O__O("match?", geneQuery.getId__T__T("SYMBOL"));
+        const this$12 = $m_s_Console$();
+        const this$13 = $as_Ljava_io_PrintStream(this$12.outVar$2.v$1);
+        this$13.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"));
+        $m_Ltextmine_GetRestContent$().httpCall__T__F1__V($m_Ltextmine_GetRestContent$().urlBuilder__T__T__T("getPathIds", geneQuery.getId__T__T("OMIM")), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$1) {
+          return (function(responseText$2$2) {
+            const responseText$2$1 = $as_T(responseText$2$2);
+            const json$1 = $g.JSON.parse(responseText$2$1);
+            const array = [];
+            const x1 = $uI(json$1.length);
+            switch (x1) {
+              case (-1): {
+                break
+              }
+            };
+            let i = 0;
+            const len = $uI(json$1.length);
+            while ((i < len)) {
+              const index = i;
+              const arg1 = json$1[index];
+              if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(arg1, "dbId")))) {
+                throw new $c_ju_NoSuchElementException().init___T("key not found: dbId")
+              };
+              const jsx$8 = $objectToString(arg1.dbId);
+              if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(arg1, "stId")))) {
+                throw new $c_ju_NoSuchElementException().init___T("key not found: stId")
+              };
+              const jsx$7 = $objectToString(arg1.stId);
+              if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(arg1, "displayName")))) {
+                throw new $c_ju_NoSuchElementException().init___T("key not found: displayName")
+              };
+              const jsx$6 = $objectToString(arg1.displayName);
+              if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(arg1, "hasDiagram")))) {
+                throw new $c_ju_NoSuchElementException().init___T("key not found: hasDiagram")
+              };
+              const jsx$5 = $uZ(arg1.hasDiagram);
+              if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(arg1, "speciesName")))) {
+                throw new $c_ju_NoSuchElementException().init___T("key not found: speciesName")
+              };
+              const elem = new $c_Ltextmine_Pathway().init___T__T__T__Z__T(jsx$8, jsx$7, jsx$6, jsx$5, $objectToString(arg1.speciesName));
+              array.push(elem);
+              i = ((1 + i) | 0)
+            };
+            $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console().log(array)
+          })
+        })($this)));
+        $m_Ltextmine_GetRestContent$().httpCall__T__F1__V($m_Ltextmine_GetRestContent$().urlBuilder__T__T__T("getPubIds", geneQuery.getId__T__T("ENTREZ")), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
+          return (function(responseText$3$2) {
+            const responseText$3 = $as_T(responseText$3$2);
+            const x$1 = new $c_T2().init___O__O("responseText", responseText$3);
+            const this$27 = $m_s_Console$();
+            const this$28 = $as_Ljava_io_PrintStream(this$27.outVar$2.v$1);
+            this$28.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x$1 + "\n"))
+          })
+        })($this)))
+      })
+    })(this)))
+  };
+  urlBuilder__T__T__T(query, id) {
+    if ((query === "getOmim")) {
+      return (("http://mygene.info/v2/gene/" + id) + "?fields=MIM")
+    } else if ((query === "getPathIds")) {
+      return (("https://reactome.org/ContentService/data/mapping/OMIM/" + id) + "/pathways?species=9606")
+    } else if ((query === "getGeneIds")) {
+      return (("http://mygene.info/v3/query?q=" + id) + "&fields=symbol,name,taxid,entrezgene,ensemblgene,MIM")
+    } else if ((query === "getPubIds")) {
+      return (("https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=" + id) + "&format=json")
+    } else {
+      throw new $c_s_MatchError().init___O(query)
+    }
+  };
+  httpCall__T__F1__V(url, callback) {
     const this$3 = $m_Lorg_scalajs_dom_ext_Ajax$();
     const headers = $m_sci_Map$EmptyMap$();
     const f = this$3.apply__T__T__Lorg_scalajs_dom_ext_Ajax$InputData__I__sci_Map__Z__T__s_concurrent_Future("GET", url, null, 0, headers, false, "");
@@ -5900,9 +5999,8 @@ class $c_Ltextmine_Gene extends $c_O {
         const x0$1 = $as_s_util_Try(x0$1$2);
         if ($is_s_util_Success(x0$1)) {
           const x2 = $as_s_util_Success(x0$1);
-          const xhd = x2.value$2;
-          const json = $g.JSON.parse($as_T(xhd.responseText));
-          $asUnit(callback$1.apply__O__O($objectToString(json.MIM)))
+          const xhr = x2.value$2;
+          $asUnit(callback$1.apply__O__O($as_T(xhr.responseText)))
         } else if ($is_s_util_Failure(x0$1)) {
           const x3 = $as_s_util_Failure(x0$1);
           const e = x3.exception$2;
@@ -5916,112 +6014,33 @@ class $c_Ltextmine_Gene extends $c_O {
       })
     })(this, callback)), $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1)
   };
-  findReactomePathways__T__V(urlVal) {
-    const url = (("https://reactome.org/ContentService/data/mapping/OMIM/" + urlVal) + "/pathways?species=9606");
-    const this$3 = $m_Lorg_scalajs_dom_ext_Ajax$();
-    const headers = $m_sci_Map$EmptyMap$();
-    const f = this$3.apply__T__T__Lorg_scalajs_dom_ext_Ajax$InputData__I__sci_Map__Z__T__s_concurrent_Future("GET", url, null, 0, headers, false, "");
-    f.onComplete__F1__s_concurrent_ExecutionContext__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
-      return (function(x0$1$2) {
-        const x0$1 = $as_s_util_Try(x0$1$2);
-        if ($is_s_util_Success(x0$1)) {
-          const x2 = $as_s_util_Success(x0$1);
-          const xhd = x2.value$2;
-          const json = $g.JSON.parse($as_T(xhd.responseText));
-          $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console().log(json)
-        } else if ($is_s_util_Failure(x0$1)) {
-          const x3 = $as_s_util_Failure(x0$1);
-          const e = x3.exception$2;
-          const x = e.toString__T();
-          const this$5 = $m_s_Console$();
-          const this$6 = $as_Ljava_io_PrintStream(this$5.outVar$2.v$1);
-          this$6.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"))
-        } else {
-          throw new $c_s_MatchError().init___O(x0$1)
-        }
-      })
-    })(this)), $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1)
-  };
 }
-const $d_Ltextmine_Gene = new $TypeData().initClass({
-  Ltextmine_Gene: 0
-}, false, "textmine.Gene", {
-  Ltextmine_Gene: 1,
+const $d_Ltextmine_GetRestContent$ = new $TypeData().initClass({
+  Ltextmine_GetRestContent$: 0
+}, false, "textmine.GetRestContent$", {
+  Ltextmine_GetRestContent$: 1,
   O: 1
 });
-$c_Ltextmine_Gene.prototype.$classData = $d_Ltextmine_Gene;
-class $c_Ltextmine_GetUrlContent$ extends $c_O {
-  init___() {
+$c_Ltextmine_GetRestContent$.prototype.$classData = $d_Ltextmine_GetRestContent$;
+let $n_Ltextmine_GetRestContent$ = (void 0);
+const $m_Ltextmine_GetRestContent$ = (function() {
+  if ((!$n_Ltextmine_GetRestContent$)) {
+    $n_Ltextmine_GetRestContent$ = new $c_Ltextmine_GetRestContent$().init___()
+  };
+  return $n_Ltextmine_GetRestContent$
+});
+class $c_Ltextmine_Pathway extends $c_O {
+  init___T__T__T__Z__T(dbId, stId, name, hasDiagram, species) {
     return this
   };
-  searchGene__T__V(query) {
-    const url = ("http://mygene.info/v3/query?q=" + query);
-    const this$3 = $m_Lorg_scalajs_dom_ext_Ajax$();
-    const headers = $m_sci_Map$EmptyMap$();
-    const f = this$3.apply__T__T__Lorg_scalajs_dom_ext_Ajax$InputData__I__sci_Map__Z__T__s_concurrent_Future("GET", url, null, 0, headers, false, "");
-    f.onComplete__F1__s_concurrent_ExecutionContext__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
-      return (function(x0$1$2) {
-        const x0$1 = $as_s_util_Try(x0$1$2);
-        if ($is_s_util_Success(x0$1)) {
-          const x2 = $as_s_util_Success(x0$1);
-          const xhd = x2.value$2;
-          const json = $g.JSON.parse($as_T(xhd.responseText));
-          const hits = json.hits;
-          const ob = hits[0];
-          if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(ob, "name")))) {
-            throw new $c_ju_NoSuchElementException().init___T("key not found: name")
-          };
-          const jsx$3 = $objectToString(ob.name);
-          if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(ob, "entrezgene")))) {
-            throw new $c_ju_NoSuchElementException().init___T("key not found: entrezgene")
-          };
-          const jsx$2 = $objectToString(ob.entrezgene);
-          if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(ob, "symbol")))) {
-            throw new $c_ju_NoSuchElementException().init___T("key not found: symbol")
-          };
-          const jsx$1 = $objectToString(ob.symbol);
-          if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(ob, "taxid")))) {
-            throw new $c_ju_NoSuchElementException().init___T("key not found: taxid")
-          };
-          const geneQuery = new $c_Ltextmine_Gene().init___T__T__T__T(jsx$3, jsx$2, jsx$1, $objectToString(ob.taxid));
-          geneQuery.idToMim__F1__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$1, geneQuery$1) {
-            return (function(urlVal$2) {
-              const urlVal = $as_T(urlVal$2);
-              geneQuery$1.findReactomePathways__T__V(urlVal)
-            })
-          })($this, geneQuery)));
-          if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(ob, "symbol")))) {
-            throw new $c_ju_NoSuchElementException().init___T("key not found: symbol")
-          };
-          geneQuery.requestPub__T__V($objectToString(ob.symbol))
-        } else if ($is_s_util_Failure(x0$1)) {
-          const x3 = $as_s_util_Failure(x0$1);
-          const e = x3.exception$2;
-          const x = e.toString__T();
-          const this$15 = $m_s_Console$();
-          const this$16 = $as_Ljava_io_PrintStream(this$15.outVar$2.v$1);
-          this$16.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"))
-        } else {
-          throw new $c_s_MatchError().init___O(x0$1)
-        }
-      })
-    })(this)), $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1)
-  };
 }
-const $d_Ltextmine_GetUrlContent$ = new $TypeData().initClass({
-  Ltextmine_GetUrlContent$: 0
-}, false, "textmine.GetUrlContent$", {
-  Ltextmine_GetUrlContent$: 1,
+const $d_Ltextmine_Pathway = new $TypeData().initClass({
+  Ltextmine_Pathway: 0
+}, false, "textmine.Pathway", {
+  Ltextmine_Pathway: 1,
   O: 1
 });
-$c_Ltextmine_GetUrlContent$.prototype.$classData = $d_Ltextmine_GetUrlContent$;
-let $n_Ltextmine_GetUrlContent$ = (void 0);
-const $m_Ltextmine_GetUrlContent$ = (function() {
-  if ((!$n_Ltextmine_GetUrlContent$)) {
-    $n_Ltextmine_GetUrlContent$ = new $c_Ltextmine_GetUrlContent$().init___()
-  };
-  return $n_Ltextmine_GetUrlContent$
-});
+$c_Ltextmine_Pathway.prototype.$classData = $d_Ltextmine_Pathway;
 class $c_Ltextmine_inputMatch$ extends $c_O {
   init___() {
     return this
@@ -6032,7 +6051,7 @@ class $c_Ltextmine_inputMatch$ extends $c_O {
       const this$9 = $as_Ljava_io_PrintStream(this$8.outVar$2.v$1);
       this$9.java$lang$JSConsoleBasedPrintStream$$printString__T__V("variant\n")
     } else {
-      $m_Ltextmine_GetUrlContent$().searchGene__T__V(query)
+      $m_Ltextmine_GetRestContent$().searchGene__T__V(query)
     }
   };
 }
@@ -47346,8 +47365,7 @@ $e.org.scalajs.testinterface.internal = ($e.org.scalajs.testinterface.internal |
 $e.org.scalajs.testinterface.internal.startBridge = (function() {
   $m_Lorg_scalajs_testinterface_internal_Bridge$().start__V()
 });
-$e.render = ($e.render || {});
-$e.render.Inputs = $m_Lrender_Inputs$;
+$e.Inputs = $m_Lrender_Inputs$();
 $m_Lmy_Main$().main__AT__V($makeNativeArrayWrapper($d_T.getArrayOf(), []));
 }).call(this);
 //# sourceMappingURL=gene-mining-fastopt.js.map
