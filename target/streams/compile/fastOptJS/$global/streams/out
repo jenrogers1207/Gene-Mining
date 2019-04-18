@@ -1,16 +1,16 @@
 [0m[[0m[0minfo[0m] [0m[0mFast optimizing C:\Users\jjohn\Documents\GitHub\Gene-Mining\target\scala-2.12\gene-mining-fastopt.js[0m
-[0m[[0m[0mdebug[0m] [0m[0mLinker: Compute reachability: 129548 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mLinker: Assemble LinkedClasses: 60957 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mBasic Linking: 193853 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Compute reachability: 183080 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Assemble LinkedClasses: 52195 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mBasic Linking: 239711 us[0m
 [0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Batch mode: false[0m
-[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Incremental part: 19183 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Optimizing 82 methods.[0m
-[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Optimizer part: 32130 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: 54651 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mRefiner: Compute reachability: 101811 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mRefiner: Assemble LinkedClasses: 4951 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mRefiner: 106877 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mEmitter: Class tree cache stats: reused: 1511 -- invalidated: 5[0m
-[0m[[0m[0mdebug[0m] [0m[0mEmitter: Method tree cache stats: resued: 4320 -- invalidated: 50[0m
-[0m[[0m[0mdebug[0m] [0m[0mEmitter (write output): 79269 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mGlobal IR cache stats: reused: 88 -- invalidated: 10 -- trees read: 5[0m
+[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Incremental part: 9083 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Optimizing 2 methods.[0m
+[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Optimizer part: 6100 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: 20130 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Compute reachability: 116279 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Assemble LinkedClasses: 4910 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: 121374 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Class tree cache stats: reused: 1519 -- invalidated: 1[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Method tree cache stats: resued: 4381 -- invalidated: 1[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter (write output): 72419 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mGlobal IR cache stats: reused: 96 -- invalidated: 1 -- trees read: 1[0m

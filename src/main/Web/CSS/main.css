@@ -20,6 +20,10 @@ a{
     text-decoration: none;
 }
 
+span{
+    padding: 2px;
+}
+
 #main div{
     margin:auto;
 

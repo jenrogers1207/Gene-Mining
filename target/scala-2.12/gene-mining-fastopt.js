@@ -3026,13 +3026,53 @@ const $m_Ljava_nio_charset_CodingErrorAction$ = (function() {
   };
   return $n_Ljava_nio_charset_CodingErrorAction$
 });
+class $c_Lmy_Gene extends $c_O {
+  constructor() {
+    super();
+    this.n$1 = null;
+    this.entrez$1 = null;
+    this.sym$1 = null;
+    this.taxon$1 = null;
+    this.omim$1 = null
+  };
+  init___T__T__T__T__T(n, entrez, sym, taxon, omim) {
+    this.n$1 = n;
+    this.entrez$1 = entrez;
+    this.sym$1 = sym;
+    this.taxon$1 = taxon;
+    this.omim$1 = omim;
+    return this
+  };
+  getId__T__T(value) {
+    if ((value === "OMIM")) {
+      return this.omim$1
+    } else if ((value === "ENTREZ")) {
+      return this.entrez$1
+    } else if ((value === "SYMBOL")) {
+      return this.sym$1
+    } else if ((value === "TAXON")) {
+      return this.taxon$1
+    } else if ((value === "NAME")) {
+      return this.n$1
+    } else {
+      throw new $c_s_MatchError().init___O(value)
+    }
+  };
+}
+const $d_Lmy_Gene = new $TypeData().initClass({
+  Lmy_Gene: 0
+}, false, "my.Gene", {
+  Lmy_Gene: 1,
+  O: 1
+});
+$c_Lmy_Gene.prototype.$classData = $d_Lmy_Gene;
 class $c_Lmy_Main$ extends $c_O {
   init___() {
     return this
   };
   main__AT__V(args) {
     const div = $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createElement("div");
-    const searchDiv = $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().getElementById("main").appendChild(div);
+    const searchDiv = $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().getElementById("query").appendChild(div);
     $m_Lrender_Inputs$().main__Lorg_scalajs_dom_raw_Node__Lorg_scalajs_dom_raw_Node(searchDiv)
   };
 }
@@ -3050,6 +3090,83 @@ const $m_Lmy_Main$ = (function() {
   };
   return $n_Lmy_Main$
 });
+class $c_Lmy_Pathway extends $c_O {
+  constructor() {
+    super();
+    this.name$1 = null;
+    this.stId$1 = null
+  };
+  init___T__T__T__Z__T(dbId, st, n, hasDiagram, species) {
+    this.name$1 = n;
+    this.stId$1 = st;
+    return this
+  };
+}
+const $is_Lmy_Pathway = (function(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lmy_Pathway)))
+});
+const $as_Lmy_Pathway = (function(obj) {
+  return (($is_Lmy_Pathway(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "my.Pathway"))
+});
+const $isArrayOf_Lmy_Pathway = (function(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lmy_Pathway)))
+});
+const $asArrayOf_Lmy_Pathway = (function(obj, depth) {
+  return (($isArrayOf_Lmy_Pathway(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lmy.Pathway;", depth))
+});
+const $d_Lmy_Pathway = new $TypeData().initClass({
+  Lmy_Pathway: 0
+}, false, "my.Pathway", {
+  Lmy_Pathway: 1,
+  O: 1
+});
+$c_Lmy_Pathway.prototype.$classData = $d_Lmy_Pathway;
+class $c_Lmy_PubCollection extends $c_O {
+  constructor() {
+    super();
+    this.idArray$1 = null;
+    this.pmArray$1 = null;
+    this.tmArray$1 = null
+  };
+  init___sjs_js_Array__sjs_js_Array__sjs_js_Array(id, pm, tm) {
+    this.idArray$1 = id;
+    this.pmArray$1 = pm;
+    this.tmArray$1 = tm;
+    return this
+  };
+}
+const $d_Lmy_PubCollection = new $TypeData().initClass({
+  Lmy_PubCollection: 0
+}, false, "my.PubCollection", {
+  Lmy_PubCollection: 1,
+  O: 1
+});
+$c_Lmy_PubCollection.prototype.$classData = $d_Lmy_PubCollection;
+class $c_Lmy_Variant extends $c_O {
+  constructor() {
+    super();
+    this.rsId$1 = null;
+    this.gene$1 = null;
+    this.clinRel$1 = null;
+    this.variantType$1 = null;
+    this.anchor$1 = null
+  };
+  init___T__T__sjs_js_Array__T__T(rs, assG, clinical, varType, anc) {
+    this.rsId$1 = rs;
+    this.gene$1 = assG;
+    this.clinRel$1 = clinical;
+    this.variantType$1 = varType;
+    this.anchor$1 = anc;
+    return this
+  };
+}
+const $d_Lmy_Variant = new $TypeData().initClass({
+  Lmy_Variant: 0
+}, false, "my.Variant", {
+  Lmy_Variant: 1,
+  O: 1
+});
+$c_Lmy_Variant.prototype.$classData = $d_Lmy_Variant;
 class $c_Lorg_scalajs_dom_ext_Ajax$ extends $c_O {
   init___() {
     return this
@@ -5700,6 +5817,39 @@ class $c_Lrender_Outputs$ extends $c_O {
   init___() {
     return this
   };
+  varDetailRender__Lmy_Variant__Lorg_scalajs_dom_raw_Node(varData) {
+    const this$1 = $m_Lscalatags_JsDom$all$();
+    const jsx$1 = this$1.div__Lscalatags_JsDom$TypedTag();
+    const array = [$m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("variant-detail-wrapper", $m_Lscalatags_JsDom$all$().stringAttr$1)];
+    jsx$1.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array)).render__Lorg_scalajs_dom_raw_Element();
+    const this$4 = $m_Lscalatags_JsDom$all$();
+    const jsx$2 = this$4.span__Lscalatags_JsDom$TypedTag();
+    const array$1 = [$m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("badge badge-primary", $m_Lscalatags_JsDom$all$().stringAttr$1)];
+    const spanAnch = jsx$2.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1)).render__Lorg_scalajs_dom_raw_Element();
+    spanAnch.textContent = ("Anchor: " + varData.anchor$1);
+    const this$7 = $m_Lscalatags_JsDom$all$();
+    const jsx$3 = this$7.span__Lscalatags_JsDom$TypedTag();
+    const array$2 = [$m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("badge badge-primary", $m_Lscalatags_JsDom$all$().stringAttr$1)];
+    const spanGene = jsx$3.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$2)).render__Lorg_scalajs_dom_raw_Element();
+    spanGene.textContent = ("Associated Gene: " + varData.gene$1);
+    const this$10 = $m_Lscalatags_JsDom$all$();
+    const jsx$4 = this$10.span__Lscalatags_JsDom$TypedTag();
+    const array$3 = [$m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("badge badge-primary", $m_Lscalatags_JsDom$all$().stringAttr$1)];
+    const spanType = jsx$4.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$3)).render__Lorg_scalajs_dom_raw_Element();
+    spanType.textContent = ("Type: " + varData.variantType$1);
+    const this$13 = $m_Lscalatags_JsDom$all$();
+    const jsx$7 = this$13.div__Lscalatags_JsDom$TypedTag();
+    const this$14 = $m_Lscalatags_JsDom$all$();
+    const jsx$6 = new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$14, spanAnch);
+    const this$15 = $m_Lscalatags_JsDom$all$();
+    const jsx$5 = new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$15, spanType);
+    const this$16 = $m_Lscalatags_JsDom$all$();
+    const array$4 = [jsx$6, jsx$5, new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$16, spanGene)];
+    const divWrap = jsx$7.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$4)).render__Lorg_scalajs_dom_raw_Element();
+    const this$19 = $m_Lscalatags_JsDom$all$();
+    const e = $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().getElementById("variant").appendChild(divWrap);
+    return new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$19, e).e$1
+  };
   consequenceRender__sjs_js_Array__Lorg_scalajs_dom_raw_Node(varData) {
     const this$1 = $m_Lscalatags_JsDom$all$();
     const jsx$3 = this$1.div__Lscalatags_JsDom$TypedTag();
@@ -5721,34 +5871,141 @@ class $c_Lrender_Outputs$ extends $c_O {
     while ((i < len)) {
       const index = i;
       const arg1 = varData[index];
-      $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console().log("v", arg1);
       const sig = arg1.clinical_significances;
       const dn = arg1.disease_names;
-      const this$12 = $m_s_Console$();
-      const this$13 = $as_Ljava_io_PrintStream(this$12.outVar$2.v$1);
-      this$13.java$lang$JSConsoleBasedPrintStream$$printString__T__V((sig + "\n"));
-      const this$14 = $m_Lscalatags_JsDom$all$();
-      const jsx$4 = this$14.span__Lscalatags_JsDom$TypedTag();
+      const this$10 = $m_Lscalatags_JsDom$all$();
+      const jsx$4 = this$10.span__Lscalatags_JsDom$TypedTag();
       const array$3 = [$m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("badge badge-info", $m_Lscalatags_JsDom$all$().stringAttr$1)];
       const spanSig = jsx$4.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$3)).render__Lorg_scalajs_dom_raw_Element();
       spanSig.textContent = $objectToString(sig);
-      const this$17 = $m_Lscalatags_JsDom$all$();
-      const jsx$6 = this$17.div__Lscalatags_JsDom$TypedTag();
+      const this$13 = $m_Lscalatags_JsDom$all$();
+      const jsx$6 = this$13.div__Lscalatags_JsDom$TypedTag();
       $m_Lscalatags_JsDom$all$();
       const v = ($objectToString(dn) + " : ");
       const jsx$5 = new $c_Lscalatags_JsDom$StringFrag().init___T(v);
-      const this$19 = $m_Lscalatags_JsDom$all$();
-      const array$4 = [jsx$5, new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$19, spanSig), $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("alle-cons", $m_Lscalatags_JsDom$all$().stringAttr$1)];
+      const this$15 = $m_Lscalatags_JsDom$all$();
+      const array$4 = [jsx$5, new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$15, spanSig), $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("alle-cons", $m_Lscalatags_JsDom$all$().stringAttr$1)];
       const varAllelle = jsx$6.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$4)).render__Lorg_scalajs_dom_raw_Element();
-      const this$22 = $m_Lscalatags_JsDom$all$();
+      const this$18 = $m_Lscalatags_JsDom$all$();
       const e = varDiv.appendChild(varAllelle);
-      const elem = new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$22, e).e$1;
+      const elem = new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$18, e).e$1;
       array$2.push(elem);
       i = ((1 + i) | 0)
     };
-    const this$23 = $m_Lscalatags_JsDom$all$();
-    const e$1 = $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().getElementById("main").appendChild(varDiv);
-    return new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$23, e$1).e$1
+    const this$19 = $m_Lscalatags_JsDom$all$();
+    const e$1 = $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().getElementById("variant").appendChild(varDiv);
+    return new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$19, e$1).e$1
+  };
+  pathRender__sjs_js_Array__Lorg_scalajs_dom_raw_Node(pData) {
+    const this$1 = $m_Lscalatags_JsDom$all$();
+    const jsx$3 = this$1.div__Lscalatags_JsDom$TypedTag();
+    const jsx$2 = $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("path-detail-wrapper", $m_Lscalatags_JsDom$all$().stringAttr$1);
+    const this$2 = $m_Lscalatags_JsDom$all$();
+    const jsx$1 = this$2.h4__Lscalatags_JsDom$TypedTag();
+    const array = [($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T("Pathway the Gene is Involved in:"))];
+    const array$1 = [jsx$2, jsx$1.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array))];
+    const divWrap = jsx$3.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1)).render__Lorg_scalajs_dom_raw_Element();
+    const array$2 = [];
+    const x1 = $uI(pData.length);
+    switch (x1) {
+      case (-1): {
+        break
+      }
+    };
+    let i = 0;
+    const len = $uI(pData.length);
+    while ((i < len)) {
+      const index = i;
+      const arg1 = pData[index];
+      const v = $as_Lmy_Pathway(arg1);
+      const this$10 = $m_Lscalatags_JsDom$all$();
+      const jsx$4 = this$10.span__Lscalatags_JsDom$TypedTag();
+      const array$3 = [$m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("badge badge-dark", $m_Lscalatags_JsDom$all$().stringAttr$1)];
+      const spanP = jsx$4.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$3)).render__Lorg_scalajs_dom_raw_Element();
+      spanP.textContent = v.name$1;
+      const this$13 = $m_Lscalatags_JsDom$all$();
+      const e = divWrap.appendChild(spanP);
+      const elem = new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$13, e).e$1;
+      array$2.push(elem);
+      i = ((1 + i) | 0)
+    };
+    const this$14 = $m_Lscalatags_JsDom$all$();
+    const e$1 = $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().getElementById("gene").appendChild(divWrap);
+    return new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$14, e$1).e$1
+  };
+  pubRender__Lmy_PubCollection__Lorg_scalajs_dom_raw_HTMLDivElement(pData) {
+    const this$1 = $m_Lscalatags_JsDom$all$();
+    const jsx$5 = this$1.div__Lscalatags_JsDom$TypedTag();
+    const jsx$4 = $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("pub-detail-wrapper", $m_Lscalatags_JsDom$all$().stringAttr$1);
+    const this$2 = $m_Lscalatags_JsDom$all$();
+    const jsx$3 = this$2.h4__Lscalatags_JsDom$TypedTag();
+    $m_Lscalatags_JsDom$all$();
+    const v = ($uI(pData.idArray$1.length) + " publications found for gene:");
+    const array = [new $c_Lscalatags_JsDom$StringFrag().init___T(v)];
+    const jsx$2 = jsx$3.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array));
+    const this$6 = $m_Lscalatags_JsDom$all$();
+    const jsx$1 = this$6.h4__Lscalatags_JsDom$TypedTag();
+    $m_Lscalatags_JsDom$all$();
+    const v$1 = ($uI(pData.pmArray$1.length) + " full text publications found for gene:");
+    const array$1 = [new $c_Lscalatags_JsDom$StringFrag().init___T(v$1)];
+    const array$2 = [jsx$4, jsx$2, jsx$1.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1))];
+    const divWrap = jsx$5.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$2)).render__Lorg_scalajs_dom_raw_Element();
+    const this$12 = $m_Lscalatags_JsDom$all$();
+    const e = $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().getElementById("gene").appendChild(divWrap);
+    new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$12, e);
+    return divWrap
+  };
+  geneDetailRender__Lmy_Gene__Lorg_scalajs_dom_raw_Node(gData) {
+    const this$1 = $m_Lscalatags_JsDom$all$();
+    const jsx$1 = this$1.div__Lscalatags_JsDom$TypedTag();
+    const array = [$m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("gene-detail-wrapper", $m_Lscalatags_JsDom$all$().stringAttr$1)];
+    jsx$1.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array)).render__Lorg_scalajs_dom_raw_Element();
+    const jsx$2 = $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console();
+    const s = gData.getId__T__T("SYMBOL");
+    jsx$2.log(s);
+    const this$5 = $m_Lscalatags_JsDom$all$();
+    const jsx$3 = this$5.span__Lscalatags_JsDom$TypedTag();
+    const array$1 = [$m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("badge badge-warning", $m_Lscalatags_JsDom$all$().stringAttr$1)];
+    const spanName = jsx$3.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1)).render__Lorg_scalajs_dom_raw_Element();
+    spanName.textContent = ("Name: " + gData.getId__T__T("NAME"));
+    const this$8 = $m_Lscalatags_JsDom$all$();
+    const jsx$4 = this$8.span__Lscalatags_JsDom$TypedTag();
+    const array$2 = [$m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("badge badge-warning", $m_Lscalatags_JsDom$all$().stringAttr$1)];
+    const spanSym = jsx$4.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$2)).render__Lorg_scalajs_dom_raw_Element();
+    spanSym.textContent = ("Symbol: " + gData.getId__T__T("SYMBOL"));
+    const this$11 = $m_Lscalatags_JsDom$all$();
+    const jsx$5 = this$11.span__Lscalatags_JsDom$TypedTag();
+    const array$3 = [$m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("badge badge-warning", $m_Lscalatags_JsDom$all$().stringAttr$1)];
+    const spanEn = jsx$5.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$3)).render__Lorg_scalajs_dom_raw_Element();
+    spanEn.textContent = ("Entrez Id: " + gData.getId__T__T("ENTREZ"));
+    const this$14 = $m_Lscalatags_JsDom$all$();
+    const jsx$6 = this$14.span__Lscalatags_JsDom$TypedTag();
+    const array$4 = [$m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("badge badge-warning", $m_Lscalatags_JsDom$all$().stringAttr$1)];
+    const spanTax = jsx$6.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$4)).render__Lorg_scalajs_dom_raw_Element();
+    spanTax.textContent = ("Species Id: " + gData.getId__T__T("TAXON"));
+    const this$17 = $m_Lscalatags_JsDom$all$();
+    const jsx$10 = this$17.div__Lscalatags_JsDom$TypedTag();
+    const this$18 = $m_Lscalatags_JsDom$all$();
+    const jsx$9 = new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$18, spanName);
+    const this$19 = $m_Lscalatags_JsDom$all$();
+    const jsx$8 = new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$19, spanSym);
+    const this$20 = $m_Lscalatags_JsDom$all$();
+    const jsx$7 = new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$20, spanEn);
+    const this$21 = $m_Lscalatags_JsDom$all$();
+    const array$5 = [jsx$9, jsx$8, jsx$7, new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$21, spanTax)];
+    const divWrap = jsx$10.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$5)).render__Lorg_scalajs_dom_raw_Element();
+    const this$24 = $m_Lscalatags_JsDom$all$();
+    const e = $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().getElementById("gene").appendChild(divWrap);
+    return new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$24, e).e$1
+  };
+  paperRender__Lorg_scalajs_dom_raw_HTMLDivElement__T__Lorg_scalajs_dom_raw_Node(divB, pData) {
+    const this$1 = $m_Lscalatags_JsDom$all$();
+    const jsx$1 = this$1.div__Lscalatags_JsDom$TypedTag();
+    const array = [($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T(pData))];
+    const blurb = jsx$1.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array)).render__Lorg_scalajs_dom_raw_Element();
+    const this$5 = $m_Lscalatags_JsDom$all$();
+    const e = divB.appendChild(blurb);
+    return new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$5, e).e$1
   };
 }
 const $d_Lrender_Outputs$ = new $TypeData().initClass({
@@ -5929,66 +6186,35 @@ const $m_Lscalatags_generic_Namespace$ = (function() {
 const $f_Lscalatags_generic_Util__attr__T__Lscalatags_generic_Namespace__Z__Lscalatags_generic_Attr = (function($thiz, s, ns, raw) {
   return new $c_Lscalatags_generic_Attr().init___T__s_Option__Z(s, $m_s_Option$().apply__O__s_Option(ns), raw)
 });
-class $c_Ltextmine_Gene extends $c_O {
-  constructor() {
-    super();
-    this.n$1 = null;
-    this.entrez$1 = null;
-    this.sym$1 = null;
-    this.taxon$1 = null;
-    this.omim$1 = null
-  };
-  init___T__T__T__T__T(n, entrez, sym, taxon, omim) {
-    this.n$1 = n;
-    this.entrez$1 = entrez;
-    this.sym$1 = sym;
-    this.taxon$1 = taxon;
-    this.omim$1 = omim;
-    return this
-  };
-  getId__T__T(value) {
-    if ((value === "OMIM")) {
-      return this.omim$1
-    } else if ((value === "ENTREZ")) {
-      return this.entrez$1
-    } else if ((value === "SYMBOL")) {
-      return this.sym$1
-    } else if ((value === "TAXON")) {
-      return this.taxon$1
-    } else if ((value === "NAME")) {
-      return this.n$1
+class $c_Ltextmine_GetRestContent$ extends $c_O {
+  textmine$GetRestContent$$$anonfun$searchGene$6__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__Lorg_scalajs_dom_raw_HTMLDivElement__O(e, xhr$1, pubCountDiv$1) {
+    if (($uI(xhr$1.status) === 200)) {
+      const xml = xhr$1.responseXML;
+      const this$2 = $m_s_Console$();
+      const this$3 = $as_Ljava_io_PrintStream(this$2.outVar$2.v$1);
+      this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V((xhr$1 + "\n"));
+      const title = xml.getElementsByTagName("article-title");
+      const abst = xml.getElementsByTagName("abstract");
+      xml.getElementsByTagName("body");
+      $m_Lrender_Outputs$().paperRender__Lorg_scalajs_dom_raw_HTMLDivElement__T__Lorg_scalajs_dom_raw_Node(pubCountDiv$1, $as_T(title[0].textContent));
+      return $m_Lrender_Outputs$().paperRender__Lorg_scalajs_dom_raw_HTMLDivElement__T__Lorg_scalajs_dom_raw_Node(pubCountDiv$1, $as_T(abst[0].textContent))
     } else {
-      throw new $c_s_MatchError().init___O(value)
+      return (void 0)
     }
   };
-}
-const $d_Ltextmine_Gene = new $TypeData().initClass({
-  Ltextmine_Gene: 0
-}, false, "textmine.Gene", {
-  Ltextmine_Gene: 1,
-  O: 1
-});
-$c_Ltextmine_Gene.prototype.$classData = $d_Ltextmine_Gene;
-class $c_Ltextmine_GetRestContent$ extends $c_O {
   init___() {
     return this
   };
-  urlBuilder__T__T__T(query, id) {
-    if ((query === "getOmim")) {
-      return (("http://mygene.info/v2/gene/" + id) + "?fields=MIM")
-    } else if ((query === "getPathIds")) {
-      return (("https://reactome.org/ContentService/data/mapping/OMIM/" + id) + "/pathways?species=9606")
-    } else if ((query === "getGeneIds")) {
-      return (("http://mygene.info/v3/query?q=" + id) + "&fields=symbol,name,taxid,entrezgene,ensemblgene,MIM")
-    } else if ((query === "getPubIds")) {
-      return (("https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=" + id) + "&format=json")
-    } else if ((query === "getVarSNP")) {
-      return ("https://api.ncbi.nlm.nih.gov/variation/v0/beta/refsnp/" + id)
+  textmine$GetRestContent$$$anonfun$searchGene$8__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__O(e, xhr$2) {
+    if (($uI(xhr$2.status) === 200)) {
+      const json = $g.JSON.parse($as_T(xhr$2.responseText));
+      $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console().log("parsing??", json.semanticTypeCountList);
+      return (void 0)
     } else {
-      throw new $c_s_MatchError().init___O(query)
+      return (void 0)
     }
   };
-  searchGene__T__Ltextmine_Variant__V(query, variant) {
+  searchGene__T__Lmy_Variant__V(query, variant) {
     const x = new $c_T2().init___O__O("variant in search gene ", variant);
     const this$2 = $m_s_Console$();
     const this$3 = $as_Ljava_io_PrintStream(this$2.outVar$2.v$1);
@@ -6018,7 +6244,8 @@ class $c_Ltextmine_GetRestContent$ extends $c_O {
         if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(ob, "MIM")))) {
           throw new $c_ju_NoSuchElementException().init___T("key not found: MIM")
         };
-        const geneQuery = new $c_Ltextmine_Gene().init___T__T__T__T__T(jsx$4, jsx$3, jsx$2, jsx$1, $objectToString(ob.MIM));
+        const geneQuery = new $c_Lmy_Gene().init___T__T__T__T__T(jsx$4, jsx$3, jsx$2, jsx$1, $objectToString(ob.MIM));
+        $m_Lrender_Outputs$().geneDetailRender__Lmy_Gene__Lorg_scalajs_dom_raw_Node(geneQuery);
         $m_Ltextmine_GetRestContent$().httpCall__T__F1__V($m_Ltextmine_GetRestContent$().urlBuilder__T__T__T("getPathIds", geneQuery.getId__T__T("OMIM")), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$1) {
           return (function(responseText$2$2) {
             const responseText$2$1 = $as_T(responseText$2$2);
@@ -6054,19 +6281,99 @@ class $c_Ltextmine_GetRestContent$ extends $c_O {
               if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(arg1, "speciesName")))) {
                 throw new $c_ju_NoSuchElementException().init___T("key not found: speciesName")
               };
-              const elem = new $c_Ltextmine_Pathway().init___T__T__T__Z__T(jsx$8, jsx$7, jsx$6, jsx$5, $objectToString(arg1.speciesName));
+              const elem = new $c_Lmy_Pathway().init___T__T__T__Z__T(jsx$8, jsx$7, jsx$6, jsx$5, $objectToString(arg1.speciesName));
               array.push(elem);
               i = ((1 + i) | 0)
-            }
+            };
+            $m_Lrender_Outputs$().pathRender__sjs_js_Array__Lorg_scalajs_dom_raw_Node(array)
           })
         })($this)));
         $m_Ltextmine_GetRestContent$().httpCall__T__F1__V($m_Ltextmine_GetRestContent$().urlBuilder__T__T__T("getPubIds", geneQuery.getId__T__T("ENTREZ")), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
           return (function(responseText$3$2) {
-            $as_T(responseText$3$2)
+            const responseText$3 = $as_T(responseText$3$2);
+            const pubCollection = $m_Ltextmine_Parser$().parseFile__T__Lmy_PubCollection(responseText$3);
+            const pubCountDiv = $m_Lrender_Outputs$().pubRender__Lmy_PubCollection__Lorg_scalajs_dom_raw_HTMLDivElement(pubCollection);
+            const array$1 = pubCollection.pmArray$1;
+            const array$2 = [];
+            const x1$1 = $uI(array$1.length);
+            switch (x1$1) {
+              case (-1): {
+                break
+              }
+            };
+            let i$1 = 0;
+            const len$1 = $uI(array$1.length);
+            while ((i$1 < len$1)) {
+              const index$1 = i$1;
+              const arg1$1 = array$1[index$1];
+              const pm = $as_sci_Vector(arg1$1);
+              const queryId = $as_T(pm.apply__I__O(1));
+              const url = $m_Ltextmine_GetRestContent$().urlBuilder__T__T__T("getPubXML", queryId);
+              const xhr = new $g.XMLHttpRequest();
+              xhr.open("GET", url);
+              xhr.onload = (function(xhr$1, pubCountDiv$1) {
+                return (function(arg1$2) {
+                  return $m_Ltextmine_GetRestContent$().textmine$GetRestContent$$$anonfun$searchGene$6__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__Lorg_scalajs_dom_raw_HTMLDivElement__O(arg1$2, xhr$1, pubCountDiv$1)
+                })
+              })(xhr, pubCountDiv);
+              xhr.send();
+              const elem$1 = (void 0);
+              array$2.push(elem$1);
+              i$1 = ((1 + i$1) | 0)
+            };
+            const array$3 = pubCollection.tmArray$1;
+            const array$4 = [];
+            const x1$2 = $uI(array$3.length);
+            switch (x1$2) {
+              case (-1): {
+                break
+              }
+            };
+            let i$2 = 0;
+            const len$2 = $uI(array$3.length);
+            while ((i$2 < len$2)) {
+              const index$2 = i$2;
+              const arg1$3 = array$3[index$2];
+              const pm$3 = $as_sci_Vector(arg1$3);
+              const queryId$1 = $as_T(pm$3.apply__I__O(1));
+              const x$1 = new $c_T2().init___O__O(pm$3.apply__I__O(0), pm$3.apply__I__O(1));
+              const this$31 = $m_s_Console$();
+              const this$32 = $as_Ljava_io_PrintStream(this$31.outVar$2.v$1);
+              this$32.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x$1 + "\n"));
+              const url$1 = (((("https://www.ebi.ac.uk/europepmc/webservices/rest/" + pm$3.apply__I__O(0)) + "/") + queryId$1) + "/textMinedTerms?page=1&pageSize=25&format=json");
+              const xhr$2 = new $g.XMLHttpRequest();
+              xhr$2.open("GET", url$1);
+              xhr$2.onload = (function(xhr$2$1) {
+                return (function(arg1$2$1) {
+                  return $m_Ltextmine_GetRestContent$().textmine$GetRestContent$$$anonfun$searchGene$8__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__O(arg1$2$1, xhr$2$1)
+                })
+              })(xhr$2);
+              xhr$2.send();
+              const elem$2 = (void 0);
+              array$4.push(elem$2);
+              i$2 = ((1 + i$2) | 0)
+            }
           })
         })($this)))
       })
     })(this)))
+  };
+  urlBuilder__T__T__T(query, id) {
+    if ((query === "getOmim")) {
+      return (("http://mygene.info/v2/gene/" + id) + "?fields=MIM")
+    } else if ((query === "getPathIds")) {
+      return (("https://reactome.org/ContentService/data/mapping/OMIM/" + id) + "/pathways?species=9606")
+    } else if ((query === "getGeneIds")) {
+      return (("http://mygene.info/v3/query?q=" + id) + "&fields=symbol,name,taxid,entrezgene,ensemblgene,MIM")
+    } else if ((query === "getPubIds")) {
+      return (("https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=" + id) + "&format=json")
+    } else if ((query === "getVarSNP")) {
+      return ("https://api.ncbi.nlm.nih.gov/variation/v0/beta/refsnp/" + id)
+    } else if ((query === "getPubXML")) {
+      return (("https://www.ebi.ac.uk/europepmc/webservices/rest/" + id) + "/fullTextXML")
+    } else {
+      throw new $c_s_MatchError().init___O(query)
+    }
   };
   searchVariant__T__V(rsValue) {
     const x = new $c_T2().init___O__O("variant", rsValue);
@@ -6090,7 +6397,6 @@ class $c_Ltextmine_GetRestContent$ extends $c_O {
           throw new $c_ju_NoSuchElementException().init___T("key not found: genes")
         };
         const associatedGenes = dict$1.genes;
-        $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console().log("snapshot", snapshot);
         const array = [];
         let i = 0;
         const len = $uI(alleleAn.length);
@@ -6126,18 +6432,14 @@ class $c_Ltextmine_GetRestContent$ extends $c_O {
           };
           i$1 = ((1 + i$1) | 0)
         };
-        $m_Lrender_Outputs$().consequenceRender__sjs_js_Array__Lorg_scalajs_dom_raw_Node(array$1);
         const dict$2 = associatedGenes[0];
         if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(dict$2, "locus")))) {
           throw new $c_ju_NoSuchElementException().init___T("key not found: locus")
         };
-        const variant = new $c_Ltextmine_Variant().init___T__T__sjs_js_Array__T__T(rsValue$1, $objectToString(dict$2.locus), array$1, $objectToString(snapshot.variant_type), $objectToString(snapshot.anchor));
-        const jsx$1 = $m_Ltextmine_GetRestContent$();
-        const dict$3 = associatedGenes[0];
-        if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(dict$3, "locus")))) {
-          throw new $c_ju_NoSuchElementException().init___T("key not found: locus")
-        };
-        jsx$1.searchGene__T__Ltextmine_Variant__V($objectToString(dict$3.locus), variant)
+        const variant = new $c_Lmy_Variant().init___T__T__sjs_js_Array__T__T(rsValue$1, $objectToString(dict$2.locus), array$1, $objectToString(snapshot.variant_type), $objectToString(snapshot.anchor));
+        $m_Lrender_Outputs$().varDetailRender__Lmy_Variant__Lorg_scalajs_dom_raw_Node(variant);
+        $m_Lrender_Outputs$().consequenceRender__sjs_js_Array__Lorg_scalajs_dom_raw_Node(array$1);
+        $m_Ltextmine_GetRestContent$().searchGene__T__Lmy_Variant__V(variant.gene$1, variant)
       })
     })(this, rsValue)))
   };
@@ -6180,30 +6482,117 @@ const $m_Ltextmine_GetRestContent$ = (function() {
   };
   return $n_Ltextmine_GetRestContent$
 });
-class $c_Ltextmine_Pathway extends $c_O {
-  init___T__T__T__Z__T(dbId, stId, name, hasDiagram, species) {
+class $c_Ltextmine_Parser$ extends $c_O {
+  init___() {
     return this
   };
-}
-const $d_Ltextmine_Pathway = new $TypeData().initClass({
-  Ltextmine_Pathway: 0
-}, false, "textmine.Pathway", {
-  Ltextmine_Pathway: 1,
-  O: 1
-});
-$c_Ltextmine_Pathway.prototype.$classData = $d_Ltextmine_Pathway;
-class $c_Ltextmine_Variant extends $c_O {
-  init___T__T__sjs_js_Array__T__T(rsId, associatedGene, clinical, varType, anchor) {
-    return this
+  parseFile__T__Lmy_PubCollection(response) {
+    const file = $g.JSON.parse(response);
+    const ids = this.getArray$1__p1__sjs_js_Array__T__T__sjs_js_Array(file.resultList.result, "id", "id");
+    const pmcids = this.getArray$1__p1__sjs_js_Array__T__T__sjs_js_Array(file.resultList.result, "pmcid", "pmcid");
+    const textMineIds = this.getArray$1__p1__sjs_js_Array__T__T__sjs_js_Array(file.resultList.result, "hasTextMinedTerms", "id");
+    return new $c_Lmy_PubCollection().init___sjs_js_Array__sjs_js_Array__sjs_js_Array(ids, pmcids, textMineIds)
+  };
+  checker$1__p1__sjs_js_Dictionary__T__T__Z(f, c, k) {
+    if ((c === k)) {
+      return $uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(f, k))
+    } else {
+      if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(f, c)))) {
+        throw new $c_ju_NoSuchElementException().init___T(("key not found: " + c))
+      };
+      const x = f[c];
+      return ((x !== null) && $objectEquals(x, "Y"))
+    }
+  };
+  getArray$1__p1__sjs_js_Array__T__T__sjs_js_Array(fi, check, keyVal) {
+    const array = [];
+    const x1 = $uI(fi.length);
+    switch (x1) {
+      case (-1): {
+        break
+      }
+    };
+    let i = 0;
+    const len = $uI(fi.length);
+    while ((i < len)) {
+      const index = i;
+      const arg1 = fi[index];
+      let elem;
+      if (this.checker$1__p1__sjs_js_Dictionary__T__T__Z(arg1, check, keyVal)) {
+        const this$9 = $m_s_package$().Vector$1;
+        if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(arg1, "source")))) {
+          throw new $c_ju_NoSuchElementException().init___T("key not found: source")
+        };
+        const jsx$1 = $as_T(arg1.source);
+        if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(arg1, keyVal)))) {
+          throw new $c_ju_NoSuchElementException().init___T(("key not found: " + keyVal))
+        };
+        const array$1 = [jsx$1, $as_T(arg1[keyVal])];
+        if (($uI(array$1.length) === 0)) {
+          elem = this$9.NIL$6
+        } else {
+          const b = new $c_sci_VectorBuilder().init___();
+          let i$1 = 0;
+          const len$1 = $uI(array$1.length);
+          while ((i$1 < len$1)) {
+            const index$1 = i$1;
+            const arg1$1 = array$1[index$1];
+            b.$$plus$eq__O__sci_VectorBuilder(arg1$1);
+            i$1 = ((1 + i$1) | 0)
+          };
+          elem = b.result__sci_Vector()
+        }
+      } else {
+        const this$12 = $m_s_package$().Vector$1;
+        const array$2 = ["null"];
+        if (($uI(array$2.length) === 0)) {
+          elem = this$12.NIL$6
+        } else {
+          const b$1 = new $c_sci_VectorBuilder().init___();
+          let i$2 = 0;
+          const len$2 = $uI(array$2.length);
+          while ((i$2 < len$2)) {
+            const index$2 = i$2;
+            const arg1$2 = array$2[index$2];
+            b$1.$$plus$eq__O__sci_VectorBuilder(arg1$2);
+            i$2 = ((1 + i$2) | 0)
+          };
+          elem = b$1.result__sci_Vector()
+        }
+      };
+      array.push(elem);
+      i = ((1 + i) | 0)
+    };
+    const array$3 = [];
+    let i$3 = 0;
+    const len$3 = $uI(array.length);
+    while ((i$3 < len$3)) {
+      const index$3 = i$3;
+      const arg1$3 = array[index$3];
+      const f = $as_sci_Vector(arg1$3);
+      const x = f.apply__I__O(0);
+      if (((!((x !== null) && $objectEquals(x, "null"))) !== false)) {
+        array$3.push(arg1$3)
+      };
+      i$3 = ((1 + i$3) | 0)
+    };
+    return array$3
   };
 }
-const $d_Ltextmine_Variant = new $TypeData().initClass({
-  Ltextmine_Variant: 0
-}, false, "textmine.Variant", {
-  Ltextmine_Variant: 1,
+const $d_Ltextmine_Parser$ = new $TypeData().initClass({
+  Ltextmine_Parser$: 0
+}, false, "textmine.Parser$", {
+  Ltextmine_Parser$: 1,
   O: 1
 });
-$c_Ltextmine_Variant.prototype.$classData = $d_Ltextmine_Variant;
+$c_Ltextmine_Parser$.prototype.$classData = $d_Ltextmine_Parser$;
+let $n_Ltextmine_Parser$ = (void 0);
+const $m_Ltextmine_Parser$ = (function() {
+  if ((!$n_Ltextmine_Parser$)) {
+    $n_Ltextmine_Parser$ = new $c_Ltextmine_Parser$().init___()
+  };
+  return $n_Ltextmine_Parser$
+});
 class $c_Ltextmine_inputMatch$ extends $c_O {
   init___() {
     return this
@@ -6212,7 +6601,7 @@ class $c_Ltextmine_inputMatch$ extends $c_O {
     if ((($uI(query.length) >= 0) && ($as_T(query.substring(0, $uI("rs".length))) === "rs"))) {
       $m_Ltextmine_GetRestContent$().searchVariant__T__V(query)
     } else {
-      $m_Ltextmine_GetRestContent$().searchGene__T__Ltextmine_Variant__V(query, null)
+      $m_Ltextmine_GetRestContent$().searchGene__T__Lmy_Variant__V(query, null)
     }
   };
 }
@@ -38018,19 +38407,6 @@ class $c_Lscalatags_JsDom$all$ extends $c_O {
     $f_Lscalatags_JsDom$Aggregate__$$init$__V(this);
     return this
   };
-  h1$lzycompute__p1__Lscalatags_JsDom$TypedTag() {
-    const b = this.bitmap$0$1;
-    const lo = (128 & b.lo$2);
-    if ((lo === 0)) {
-      const ns = $m_Lscalatags_generic_Namespace$().htmlNamespaceConfig$1;
-      this.h1$1 = $as_Lscalatags_JsDom$TypedTag($f_Lscalatags_jsdom_TagFactory__typedTag__T__Z__Lscalatags_generic_Namespace__Lscalatags_generic_TypedTag(this, "h1", false, ns));
-      const b$1 = this.bitmap$0$1;
-      const lo$1 = (128 | b$1.lo$2);
-      const hi = b$1.hi$2;
-      this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
-    };
-    return this.h1$1
-  };
   span$lzycompute__p1__Lscalatags_JsDom$TypedTag() {
     const b = this.bitmap$0$1;
     const hi = (256 & b.hi$2);
@@ -38043,6 +38419,19 @@ class $c_Lscalatags_JsDom$all$ extends $c_O {
       this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo, hi$1)
     };
     return this.span$1
+  };
+  h1$lzycompute__p1__Lscalatags_JsDom$TypedTag() {
+    const b = this.bitmap$0$1;
+    const lo = (128 & b.lo$2);
+    if ((lo === 0)) {
+      const ns = $m_Lscalatags_generic_Namespace$().htmlNamespaceConfig$1;
+      this.h1$1 = $as_Lscalatags_JsDom$TypedTag($f_Lscalatags_jsdom_TagFactory__typedTag__T__Z__Lscalatags_generic_Namespace__Lscalatags_generic_TypedTag(this, "h1", false, ns));
+      const b$1 = this.bitmap$0$1;
+      const lo$1 = (128 | b$1.lo$2);
+      const hi = b$1.hi$2;
+      this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
+    };
+    return this.h1$1
   };
   div$lzycompute__p1__Lscalatags_JsDom$TypedTag() {
     const b = this.bitmap$0$1;

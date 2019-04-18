@@ -4,7 +4,7 @@
 		module="gene-mining$sources"
 		revision="0.1"
 		status="integration"
-		publication="20190417095046"
+		publication="20190417201125"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

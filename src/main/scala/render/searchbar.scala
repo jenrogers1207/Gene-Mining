@@ -10,6 +10,7 @@ import org.scalajs.dom
 import dom.html
 import scalatags.JsDom.all._
 import scala.scalajs.js.annotation._
+import my._
 
 
 //@JSExport

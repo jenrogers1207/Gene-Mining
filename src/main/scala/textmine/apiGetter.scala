@@ -3,63 +3,18 @@ package textmine
 import org.scalajs.dom
 import org.scalajs.dom.experimental._
 import org.scalajs.dom.{console, document}
-
 import scala.scalajs.js._
 import scala.scalajs.js.{Dictionary, JSON}
 import scala.util.Random
 import requests._
-
 import scala.scalajs.js
 import scala.scalajs.js.Dynamic.global
 import util._
 import dom.ext._
-
 import scala.concurrent.Future
 import scala.scalajs.concurrent.JSExecutionContext.Implicits.runNow
+import my._
 
-class Pathway(dbId:String, stId:String, name:String, hasDiagram: Boolean, species:String){
-
- def loadPathway() = {
-
- }
-
-}
-
-class Gene(n:String, entrez:String, sym:String, taxon:String, omim:String) {
-
-  def getId(value: String): String = {
-    value match {
-      case "OMIM" => omim
-      case "ENTREZ" => entrez
-      case "SYMBOL" => sym
-      case "TAXON" => taxon
-      case "NAME" => n
-    }
-  }
-}
-
-
-class Variant(rsId:String, associatedGene:String, clinical:Array[Dynamic], varType:String, anchor:String)
-
-
-
-
-
-/*
-  def neo4jTest(): Unit ={
-
-    val xhr = new dom.XMLHttpRequest()
-    val body = ""
-    xhr.open("GET", "https://cors-anywhere.herokuapp.com/http://http://192.168.155.98.131.4:7474/db/data")
-
-    xhr.onload = { (e: dom.Event) =>
-      if (xhr.status == 200) {
-
-        println(xhr)
-      }
-    }
-    xhr.send(body)
-  }*/
 
 
 object GetRestContent {
@@ -72,6 +27,7 @@ object GetRestContent {
       case "getGeneIds" => "http://mygene.info/v3/query?q=" + id + "&fields=symbol,name,taxid,entrezgene,ensemblgene,MIM"
       case "getPubIds" => "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query="+id+"&format=json"
       case "getVarSNP" => "https://api.ncbi.nlm.nih.gov/variation/v0/beta/refsnp/" + id
+      case "getPubXML" => "https://www.ebi.ac.uk/europepmc/webservices/rest/"+id+"/fullTextXML"
     }
   }
 
@@ -93,7 +49,7 @@ object GetRestContent {
         val ob = hits(0).asInstanceOf[Dictionary[Dynamic]]
         val geneQuery = new Gene(ob("name").toString, ob("entrezgene").toString, ob("symbol").toString, ob("taxid").toString, ob("MIM").toString)
        // println("match?",geneQuery.getId("SYMBOL"))
-
+        render.Outputs.geneDetailRender(geneQuery)
           //GET PATHWAYS ThAT GENE IS INVOLVED IN
           httpCall(urlBuilder("getPathIds", geneQuery.getId("OMIM")), responseText=> {
             val json = js.JSON.parse(responseText).asInstanceOf[Array[Dictionary[Dynamic]]]
@@ -101,11 +57,60 @@ object GetRestContent {
             val pathways = json.map(p=> {
               new Pathway(p("dbId").toString, p("stId").toString, p("displayName").toString, p("hasDiagram").asInstanceOf[Boolean], p("speciesName").toString)
             })
-           // console.log(pathways)
+
+            render.Outputs.pathRender(pathways)
           })
           //GET PUBLICATION IDS
           httpCall(urlBuilder("getPubIds", geneQuery.getId("ENTREZ")), responseText => {
-           // println("responseText", responseText)
+
+            val pubCollection = Parser.parseFile(responseText)
+
+            val pubCountDiv = render.Outputs.pubRender(pubCollection)
+
+            val papers = pubCollection.pmArray.map(pm=> {
+              val queryId = pm(1)
+              val url = urlBuilder("getPubXML", queryId)
+              val xhr = new dom.XMLHttpRequest()
+              xhr.open("GET", url)
+              xhr.onload = { e: dom.Event =>
+                if (xhr.status == 200) {
+                  val xml = xhr.responseXML
+                  println(xhr)
+                  val title = xml.getElementsByTagName("article-title")
+                  val abst = xml.getElementsByTagName("abstract")
+                  val body = xml.getElementsByTagName("body")
+
+                  //println("papes", title(0).textContent)
+                  render.Outputs.paperRender(pubCountDiv, title(0).textContent)
+                  render.Outputs.paperRender(pubCountDiv, abst(0).textContent)
+                //  println("papes", abst(0).textContent)
+
+                }
+              }
+              xhr.send()
+
+            })
+
+
+            val terms = pubCollection.tmArray.map(pm=> {
+              val queryId = pm(1)
+              println(pm(0), pm(1))
+
+
+             // val url = "https://www.ebi.ac.uk/europepmc/webservices/rest/"+pm(0)+"/"+queryId+"/textMinedTerms&format=json"
+              val url = "https://www.ebi.ac.uk/europepmc/webservices/rest/"+pm(0)+"/"+queryId+"/textMinedTerms?page=1&pageSize=25&format=json"
+              val xhr = new dom.XMLHttpRequest()
+              xhr.open("GET", url)
+              xhr.onload = { e: dom.Event =>
+                if (xhr.status == 200) {
+                  val json = js.JSON.parse(xhr.responseText)
+                  console.log("parsing??",json.semanticTypeCountList)
+
+                }
+              }
+              xhr.send()
+
+            })
           })
       })
     }
@@ -120,19 +125,39 @@ object GetRestContent {
         val alleleAn = snapshot.allele_annotations.asInstanceOf[Array[Dictionary[Dynamic]]]
         val assembly = alleleAn(0)("assembly_annotation").asInstanceOf[Array[Dictionary[Dynamic]]]
         val associatedGenes = assembly(0)("genes").asInstanceOf[Array[Dictionary[Dynamic]]]
-        console.log("snapshot",snapshot)
         val clinicalSignificance = alleleAn.filter(f=> {
          val clinical = f("clinical").asInstanceOf[Array[Dynamic]]
           clinical.length != 0
         }).flatMap(m=> m("clinical").asInstanceOf[Array[Dynamic]])
 
-        render.Outputs.consequenceRender(clinicalSignificance)
 
         val variant = new Variant(rsValue, associatedGenes(0)("locus").toString, clinicalSignificance, snapshot.variant_type.toString, snapshot.anchor.toString)
-        searchGene(associatedGenes(0)("locus").toString, variant)
+
+        render.Outputs.varDetailRender(variant)
+
+        render.Outputs.consequenceRender(clinicalSignificance)
+
+        searchGene(variant.gene, variant)
 
       })
     }
+
+
+  /*
+    def neo4jTest(): Unit ={
+
+      val xhr = new dom.XMLHttpRequest()
+      val body = ""
+      xhr.open("GET", "https://cors-anywhere.herokuapp.com/http://http://192.168.155.98.131.4:7474/db/data")
+
+      xhr.onload = { (e: dom.Event) =>
+        if (xhr.status == 200) {
+
+          println(xhr)
+        }
+      }
+      xhr.send(body)
+    }*/
 
 
   }

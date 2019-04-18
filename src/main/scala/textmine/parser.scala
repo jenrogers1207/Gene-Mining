@@ -6,9 +6,11 @@ import upickle.default.read
 import upickle.default._
 import upickle.default.{macroRW, ReadWriter => RW}
 import ujson.Js
+
 import scala.scalajs.js._
 import scala.scalajs.js.{Dictionary, JSON}
 import ProcessorMachine._
+import my.PubCollection
 import org.clulab.processors.corenlp.CoreNLPProcessor
 import org.clulab.processors.shallownlp.ShallowNLPProcessor
 import org.clulab.serialization.DocumentSerializer
@@ -17,7 +19,7 @@ import org.clulab.struct.DirectedGraphEdgeIterator
 
 object Parser {
 
-  def parseFile(response:String): Unit ={
+  def parseFile(response:String): PubCollection ={
 
     val file = JSON.parse(response)
 
@@ -37,10 +39,13 @@ object Parser {
     val pmcids = getArray(file.resultList.result.asInstanceOf[Array[Dictionary[String]]], "pmcid", "pmcid")
     val textMineIds = getArray(file.resultList.result.asInstanceOf[Array[Dictionary[String]]], "hasTextMinedTerms", "id")
 
+    new PubCollection(ids, pmcids, textMineIds)
 
+/*
     val papers = pmcids.map(x=> {
       val queryId = x(1)
       println(queryId)
+
       val url = "https://www.ebi.ac.uk/europepmc/webservices/rest/"+queryId+"/fullTextXML"
       val xhr = new dom.XMLHttpRequest()
       xhr.open("GET", url)
@@ -65,6 +70,7 @@ object Parser {
       }
       xhr.send()
     })
+    */
 
   }
 
@@ -74,4 +80,3 @@ object Parser {
   }
 }
 
-class pubQuery

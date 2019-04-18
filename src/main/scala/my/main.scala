@@ -11,7 +11,7 @@ object Main{
   def main(args: Array[String]): Unit = {
    // textmine.ProcessorMachine.processMain()
     val div = document.createElement("div")
-    val searchDiv = document.getElementById("main").appendChild(div)
+    val searchDiv = document.getElementById("query").appendChild(div)
 
     render.Inputs.main(searchDiv)
   }
