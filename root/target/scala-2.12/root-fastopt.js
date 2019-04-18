@@ -23,6 +23,9 @@ var $g =
     : ((typeof global === "object" && global && global["Object"] === Object) ? global : this);
 $env["global"] = $g;
 
+
+
+
 // Where to send exports
 
 
@@ -32,6 +35,7 @@ var $e =
     ? $env["exportsNamespace"] : $g;
 
 $env["exportsNamespace"] = $e;
+
 
 // Freeze the environment info
 $g["Object"]["freeze"]($env);
@@ -83,7 +87,7 @@ var $linkingInfo = {
 
   "assumingES6": false,
 
-  "linkerVersion": "0.6.25",
+  "linkerVersion": "0.6.27",
   "globalThis": this
 };
 $g["Object"]["freeze"]($linkingInfo);

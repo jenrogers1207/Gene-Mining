@@ -85,8 +85,18 @@ object GetRestContent {
                   render.Outputs.paperRender(pubCountDiv, abst(0).textContent)
                 //  println("papes", abst(0).textContent)
 
+                 // val alg = new AprioriAlgorithm(new File(body(0).textContent))
+                 // alg.runApriori()
+                 // println("===Support Items===")
+                //  alg.toRetItems.foreach(println)
+                //  println("===Association Rules===")
+                // alg.associationRules.foreach(println)
+
+
                 }
+
               }
+
               xhr.send()
 
             })

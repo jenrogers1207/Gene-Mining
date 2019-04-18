@@ -1,2 +1,13 @@
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\jjohn\Documents\GitHub\Gene-Mining\src\main\scala\my\main.scala:8:2: Using a namespaced export (with a '.') in @JSExportTopLevel is deprecated.[0m
+[0m[[0m[33mwarn[0m] [0m[0m  (you can suppress this warning in 0.6.x by passing the option `-P:scalajs:suppressExportDeprecations` to scalac)[0m
+[0m[[0m[33mwarn[0m] [0m[0m@JSExportTopLevel("my.Main")[0m
+[0m[[0m[33mwarn[0m] [0m[0m ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\jjohn\Documents\GitHub\Gene-Mining\src\main\scala\textmine\textMine.scala:1:1: [0m
+[0m[[0m[33mwarn[0m] [0m[0mFound names but no class, trait or object is defined in the compilation unit.[0m
+[0m[[0m[33mwarn[0m] [0m[0mThe incremental compiler cannot record the dependency information in such case.[0m
+[0m[[0m[33mwarn[0m] [0m[0mSome errors like unused import referring to a non-existent class might not be reported.[0m
+[0m[[0m[33mwarn[0m] [0m[0m    [0m
+[0m[[0m[33mwarn[0m] [0m[0mpackage textmine[0m
+[0m[[0m[33mwarn[0m] [0m[0m^[0m
 [0m[[0m[33mwarn[0m] [0m[0mthere was one deprecation warning (since 0.6.6); re-run with -deprecation for details[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[33mwarn[0m] [0m[0mthree warnings found[0m

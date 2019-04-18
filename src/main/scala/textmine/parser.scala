@@ -9,13 +9,8 @@ import ujson.Js
 
 import scala.scalajs.js._
 import scala.scalajs.js.{Dictionary, JSON}
-import ProcessorMachine._
 import my.PubCollection
-import org.clulab.processors.corenlp.CoreNLPProcessor
-import org.clulab.processors.shallownlp.ShallowNLPProcessor
-import org.clulab.serialization.DocumentSerializer
-import org.clulab.processors.{Document, Processor}
-import org.clulab.struct.DirectedGraphEdgeIterator
+
 
 object Parser {
 

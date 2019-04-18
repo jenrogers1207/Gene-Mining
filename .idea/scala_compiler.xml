@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ScalaCompilerConfiguration">
     <profile name="sbt 1" modules="gene-pub-mine" />
-    <profile name="sbt 2" modules="Gene-Mining,Gene-Pub-Mine">
+    <profile name="sbt 2" modules="Gene-Pub-Mine">
       <parameters>
         <parameter value="-P:scalajs:sjsDefinedByDefault" />
       </parameters>
@@ -12,7 +12,15 @@
     </profile>
     <profile name="sbt 3" modules="root">
       <plugins>
-        <plugin path="C:\Users\jjohn\.ivy2\cache\org.scala-js\scalajs-compiler_2.12.7\jars\scalajs-compiler_2.12.7-0.6.25.jar" />
+        <plugin path="C:\Users\jjohn\.ivy2\cache\org.scala-js\scalajs-compiler_2.12.7\jars\scalajs-compiler_2.12.7-0.6.27.jar" />
+      </plugins>
+    </profile>
+    <profile name="sbt 4" modules="Gene-Mining">
+      <parameters>
+        <parameter value="-P:scalajs:sjsDefinedByDefault" />
+      </parameters>
+      <plugins>
+        <plugin path="C:\Users\jjohn\.ivy2\cache\org.scala-js\scalajs-compiler_2.12.8\jars\scalajs-compiler_2.12.8-0.6.27.jar" />
       </plugins>
     </profile>
   </component>

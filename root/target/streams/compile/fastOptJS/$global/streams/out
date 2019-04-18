@@ -1,16 +1,16 @@
 [0m[[0m[0minfo[0m] [0m[0mFast optimizing C:\Users\jjohn\Documents\GitHub\Gene-Mining\root\target\scala-2.12\root-fastopt.js[0m
-[0m[[0m[0mdebug[0m] [0m[0mLinker: Compute reachability: 186047 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mLinker: Assemble LinkedClasses: 394148 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mBasic Linking: 595538 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Compute reachability: 132097 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Assemble LinkedClasses: 308706 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mBasic Linking: 463957 us[0m
 [0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Batch mode: true[0m
-[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Incremental part: 122540 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Incremental part: 141077 us[0m
 [0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Optimizing 814 methods.[0m
-[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Optimizer part: 344298 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: 480196 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mRefiner: Compute reachability: 95339 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mRefiner: Assemble LinkedClasses: 5253 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mRefiner: 102848 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Optimizer part: 438167 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: 590171 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Compute reachability: 44444 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Assemble LinkedClasses: 7729 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: 54883 us[0m
 [0m[[0m[0mdebug[0m] [0m[0mEmitter: Class tree cache stats: reused: 32 -- invalidated: 39[0m
 [0m[[0m[0mdebug[0m] [0m[0mEmitter: Method tree cache stats: resued: 0 -- invalidated: 96[0m
-[0m[[0m[0mdebug[0m] [0m[0mEmitter (write output): 195165 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter (write output): 205698 us[0m
 [0m[[0m[0mdebug[0m] [0m[0mGlobal IR cache stats: reused: 0 -- invalidated: 2 -- trees read: 251[0m

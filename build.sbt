@@ -27,13 +27,14 @@ libraryDependencies ++= {
     "com.lihaoyi" %%% "upickle" % "0.7.1",
     "com.lihaoyi" %%% "scalatags" % "0.6.7",
     "com.lihaoyi" %% "requests" % "0.1.7",
+    "io.scalajs" %%% "core" % "0.4.2",
    // "io.scalajs.npm" %%% "eclairjs" % "0.4.2"
   //  "fr.hmil" %%% "roshttp" % "2.2.4"
   )
 }
 
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
-dependencyOverrides += "org.scala-lang" % "scala-compiler" % scalaVersion.value
+//dependencyOverrides += "org.scala-lang" % "scala-compiler" % scalaVersion.value
 
 //Resolver.bintrayIvyRepo("hmil", "maven")
 

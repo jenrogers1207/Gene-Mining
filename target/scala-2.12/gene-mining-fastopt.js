@@ -23,6 +23,9 @@ const $g =
     : ((typeof global === "object" && global && global["Object"] === Object) ? global : this);
 $env["global"] = $g;
 
+
+
+
 // Where to send exports
 
 
@@ -32,6 +35,7 @@ const $e =
     ? $env["exportsNamespace"] : $g;
 
 $env["exportsNamespace"] = $e;
+
 
 // Freeze the environment info
 $g["Object"]["freeze"]($env);
@@ -83,7 +87,7 @@ const $linkingInfo = {
 
 
 
-  "linkerVersion": "0.6.25",
+  "linkerVersion": "0.6.27",
   "globalThis": this
 };
 $g["Object"]["freeze"]($linkingInfo);
@@ -1990,7 +1994,7 @@ const $f_sci_VectorPointer__getElem__I__I__O = (function($thiz, index, xor) {
   }
 });
 const $f_sci_VectorPointer__gotoFreshPosWritable0__I__I__I__V = (function($thiz, oldIndex, newIndex, xor) {
-  if ((xor >= 32)) {
+  if ((!(xor < 32))) {
     if ((xor < 1024)) {
       if (($thiz.depth__I() === 1)) {
         $thiz.display1$und$eq__AO__V($newArrayObject($d_O.getArrayOf(), [32]));
@@ -2180,7 +2184,7 @@ const $f_sci_VectorPointer__copyRange__AO__I__I__AO = (function($thiz, array, ol
   return elems
 });
 const $f_sci_VectorPointer__gotoPos__I__I__V = (function($thiz, index, xor) {
-  if ((xor >= 32)) {
+  if ((!(xor < 32))) {
     if ((xor < 1024)) {
       $thiz.display0$und$eq__AO__V($asArrayOf_O($thiz.display1__AO().get((31 & ((index >>> 5) | 0))), 1))
     } else if ((xor < 32768)) {
