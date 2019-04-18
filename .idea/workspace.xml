@@ -2,54 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5a747d6-a913-4307-85b2-463cce475318" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Gene-Mining-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Gene-Mining-build.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Gene-Mining.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Gene-Mining.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/root.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/root.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/build.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project/build.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/plugins.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/project/plugins.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$1b22ef5c935c3523ebb8$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$1b22ef5c935c3523ebb8.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/project/target/config-classes/$1b22ef5c935c3523ebb8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$150bc862d9cdaf769d15$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$150bc862d9cdaf769d15$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$2905bb07f6b7247510f0$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$2905bb07f6b7247510f0.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$2905bb07f6b7247510f0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$445e94698cf60ff40649$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$445e94698cf60ff40649$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e2ae249174f2a54af37b$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$e2ae249174f2a54af37b$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e67b1c093846d6616760$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e67b1c093846d6616760.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e67b1c093846d6616760.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/gene-mining-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/gene-mining-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/gene-mining-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/gene-mining-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-compile-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-compile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-optional.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-provided.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-runtime-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-runtime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-scala-tool.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-test-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/input_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/input_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-compile-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-compile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-optional.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-phantom-js-jetty.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-phantom-js-jetty.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-provided.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-runtime-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-runtime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-scala-tool.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-test-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-test.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-compile-internal.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-compile.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-optional.xml" afterDir="false" />
@@ -65,50 +18,28 @@
       <change beforePath="$PROJECT_DIR$/root/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/streams/$global/update/$global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/root/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/root/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/streams/$global/updateClassifiers/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/streams/$global/updateClassifiers/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/streams/compile/fastOptJS/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/streams/compile/fastOptJS/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Web/CSS/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Web/CSS/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/render/renderHelp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/render/renderOutput.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/render/searchbar.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/render/searchbar.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/textmine/apiGetter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/textmine/apiGetter.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/textmine/inputMatch.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/textmine/inputMatch.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/.history" beforeDir="false" afterPath="$PROJECT_DIR$/target/.history" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Window.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Window.sjsir" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/render/Inputs$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/render/Inputs$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/render/Inputs$.sjsir" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/render/Inputs$.sjsir" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/Gene.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/Gene.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/Gene.sjsir" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/Gene.sjsir" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/GetRestContent$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/GetRestContent$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/GetRestContent$.sjsir" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/GetRestContent$.sjsir" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/GetRestContent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/GetRestContent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/Pathway.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/Pathway.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/Pathway.sjsir" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/Pathway.sjsir" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/inputMatch$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/inputMatch$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/inputMatch$.sjsir" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/inputMatch$.sjsir" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/gene-mining-fastopt.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/gene-mining-fastopt.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/gene-mining-fastopt.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/gene-mining-fastopt.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/gene-mining$sources/0.1/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/gene-mining$sources/0.1/resolved.xml.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/gene-mining$sources/0.1/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/gene-mining$sources/0.1/resolved.xml.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/gene-mining_sjs0.6_2.12/0.1/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/gene-mining_sjs0.6_2.12/0.1/resolved.xml.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/gene-mining_sjs0.6_2.12/0.1/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/gene-mining_sjs0.6_2.12/0.1/resolved.xml.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-compile-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-compile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-optional.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-phantom-js-jetty.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-phantom-js-jetty.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-provided.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-runtime-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-runtime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-scala-tool.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-test-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-compile-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-compile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-optional.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-phantom-js-jetty.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-phantom-js-jetty.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-provided.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-runtime-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-runtime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-scala-tool.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-test-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/ivyConfiguration/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/ivyConfiguration/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/ssExtractDependencies/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/ssExtractDependencies/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/$global/$global/sjsirFilesOnClasspath/data" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/$global/$global/sjsirFilesOnClasspath/data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
@@ -148,17 +79,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/my/main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1">
-              <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/my/queryClasses.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="10" selection-start-column="10" selection-end-column="10" />
+            <state relative-caret-position="264">
+              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="43" />
+              <folding>
+                <element signature="e#12#63#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -166,10 +91,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/textmine/parser.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="35" column="59" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="59" />
+            <state relative-caret-position="1">
+              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/render/renderOutput.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="53" column="7" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
               <folding>
-                <element signature="e#18#40#0" expanded="true" />
+                <element signature="e#16#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Web/CSS/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/render/searchbar.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+              <folding>
+                <element signature="e#16#44#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -178,20 +133,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/textmine/apiGetter.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="130" column="7" selection-start-line="130" selection-start-column="7" selection-end-line="130" selection-end-column="7" />
+            <state relative-caret-position="333">
+              <caret line="131" column="65" selection-start-line="131" selection-start-column="65" selection-end-line="131" selection-end-column="65" />
               <folding>
                 <element signature="e#18#40#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/textmine/inputMatch.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -222,7 +168,6 @@
         <option value="$PROJECT_DIR$/src/main/scala/render/renderHelp.scala" />
         <option value="$PROJECT_DIR$/src/main/Web/index.html" />
         <option value="$PROJECT_DIR$/src/main/scala/textmine/parser.scala" />
-        <option value="$PROJECT_DIR$/src/main/Web/CSS/main.css" />
         <option value="$PROJECT_DIR$/src/main/scala/my/queryClasses.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/textmine/textMine.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/my/main.scala" />
@@ -231,6 +176,8 @@
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/main/scala/textmine/inputMatch.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/render/searchbar.scala" />
+        <option value="$PROJECT_DIR$/src/main/Web/CSS/main.css" />
+        <option value="$PROJECT_DIR$/src/main/scala/render/renderOutput.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/textmine/apiGetter.scala" />
       </list>
     </option>
@@ -289,7 +236,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="textmine" type="462c0819:PsiDirectoryNode" />
+              <item name="my" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gene-Mining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Gene-Mining" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="render" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Gene-Mining" type="b2602c69:ProjectViewProjectNode" />
@@ -316,7 +271,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555522716416" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555549635157" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -452,12 +407,12 @@
       <workItem from="1555428326827" duration="15755000" />
       <workItem from="1555460974120" duration="14171000" />
       <workItem from="1555481094014" duration="2153000" />
-      <workItem from="1555515731976" duration="6719000" />
+      <workItem from="1555515731976" duration="28468000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129361000" />
+    <option name="totallyTimeSpent" value="151110000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
@@ -479,11 +434,11 @@
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.90409124" visible="true" weight="0.32921812" />
+      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.90409124" visible="true" weight="0.08504801" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="9" weight="0.32921812" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.09590878" side_tool="true" visible="true" weight="0.32921812" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.09590878" side_tool="true" visible="true" weight="0.08504801" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49295774" visible="true" weight="0.32921812" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Version Control" order="15" />
@@ -516,23 +471,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Web/CSS/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/render/renderHelp.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Web/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -561,39 +499,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/render/searchbar.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="43" column="80" selection-start-line="43" selection-start-column="80" selection-end-line="43" selection-end-column="80" />
-          <folding>
-            <element signature="e#16#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/textmine/textMine.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
           <folding>
             <element signature="e#18#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/textmine/inputMatch.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/textmine/parser.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="35" column="59" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="59" />
-          <folding>
-            <element signature="e#18#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -607,18 +518,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/my/main.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        <state relative-caret-position="264">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="43" />
+          <folding>
+            <element signature="e#12#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/textmine/inputMatch.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/render/renderOutput.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="53" column="7" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
+          <folding>
+            <element signature="e#16#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Web/CSS/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/render/searchbar.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+          <folding>
+            <element signature="e#16#44#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/textmine/apiGetter.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="130" column="7" selection-start-line="130" selection-start-column="7" selection-end-line="130" selection-end-column="7" />
+        <state relative-caret-position="333">
+          <caret line="131" column="65" selection-start-line="131" selection-start-column="65" selection-end-line="131" selection-end-column="65" />
           <folding>
             <element signature="e#18#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/textmine/parser.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
         </state>
       </provider>
     </entry>

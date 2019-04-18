@@ -2,11 +2,7 @@ package textmine
 
 import org.scalajs.dom
 import org.scalajs.dom.experimental._
-import org.scalajs.dom.console
-import upickle.default.read
-import upickle.default._
-import upickle.default.{macroRW, ReadWriter => RW}
-import ujson.Js
+import org.scalajs.dom.{console, document}
 
 import scala.scalajs.js._
 import scala.scalajs.js.{Dictionary, JSON}
@@ -29,30 +25,25 @@ class Pathway(dbId:String, stId:String, name:String, hasDiagram: Boolean, specie
 
 }
 
-class Gene(n:String, entrez:String, sym:String, taxon:String, omim:String){
+class Gene(n:String, entrez:String, sym:String, taxon:String, omim:String) {
 
-  def getId(value:String): String = {
+  def getId(value: String): String = {
     value match {
-      case "OMIM" =>  omim
+      case "OMIM" => omim
       case "ENTREZ" => entrez
       case "SYMBOL" => sym
       case "TAXON" => taxon
       case "NAME" => n
     }
   }
+}
 
 
-  def requestPub(qvalue:String) = {
-    var url = "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query="+qvalue+"&format=json"
+class Variant(rsId:String, associatedGene:String, clinical:Array[Dynamic], varType:String, anchor:String)
 
-    val f = Ajax.get(url)
-    f.onComplete{
-      case Success(xhd) =>
-        val json=js.JSON.parse(xhd.responseText)
-        console.log(json)
-      case Failure(e) => println(e.toString)
-    }
-  }
+
+
+
 
 /*
   def neo4jTest(): Unit ={
@@ -69,7 +60,7 @@ class Gene(n:String, entrez:String, sym:String, taxon:String, omim:String){
     }
     xhr.send(body)
   }*/
-}
+
 
 object GetRestContent {
 
@@ -92,30 +83,29 @@ object GetRestContent {
       }
     }
 
-    def searchGene(query: String): Unit = {
-
+    def searchGene(query: String, variant: Variant = null): Unit = {
+      println("variant in search gene ", variant);
       httpCall(urlBuilder("getGeneIds", query), responseText => {
-
         //The callback hells begins
         //Initial search for gene ids. create new gene
         val json = js.JSON.parse(responseText)
         val hits = json.hits.asInstanceOf[Array[Unit]]
         val ob = hits(0).asInstanceOf[Dictionary[Dynamic]]
         val geneQuery = new Gene(ob("name").toString, ob("entrezgene").toString, ob("symbol").toString, ob("taxid").toString, ob("MIM").toString)
-        println("match?",geneQuery.getId("SYMBOL"))
+       // println("match?",geneQuery.getId("SYMBOL"))
 
           //GET PATHWAYS ThAT GENE IS INVOLVED IN
           httpCall(urlBuilder("getPathIds", geneQuery.getId("OMIM")), responseText=> {
             val json = js.JSON.parse(responseText).asInstanceOf[Array[Dictionary[Dynamic]]]
-            console.log(json)
+           // console.log(json)
             val pathways = json.map(p=> {
               new Pathway(p("dbId").toString, p("stId").toString, p("displayName").toString, p("hasDiagram").asInstanceOf[Boolean], p("speciesName").toString)
             })
-            console.log(pathways)
+           // console.log(pathways)
           })
           //GET PUBLICATION IDS
           httpCall(urlBuilder("getPubIds", geneQuery.getId("ENTREZ")), responseText => {
-            println("responseText", responseText)
+           // println("responseText", responseText)
           })
       })
     }
@@ -128,10 +118,18 @@ object GetRestContent {
         val json = js.JSON.parse(responseText)
         val snapshot = json.primary_snapshot_data
         val alleleAn = snapshot.allele_annotations.asInstanceOf[Array[Dictionary[Dynamic]]]
-       
-        console.log(alleleAn)
-        console.log(typeOf(alleleAn))
+        val assembly = alleleAn(0)("assembly_annotation").asInstanceOf[Array[Dictionary[Dynamic]]]
+        val associatedGenes = assembly(0)("genes").asInstanceOf[Array[Dictionary[Dynamic]]]
+        console.log("snapshot",snapshot)
+        val clinicalSignificance = alleleAn.filter(f=> {
+         val clinical = f("clinical").asInstanceOf[Array[Dynamic]]
+          clinical.length != 0
+        }).flatMap(m=> m("clinical").asInstanceOf[Array[Dynamic]])
 
+        render.Outputs.consequenceRender(clinicalSignificance)
+
+        val variant = new Variant(rsValue, associatedGenes(0)("locus").toString, clinicalSignificance, snapshot.variant_type.toString, snapshot.anchor.toString)
+        searchGene(associatedGenes(0)("locus").toString, variant)
 
       })
     }

@@ -42,6 +42,7 @@ object Inputs extends{
       output.textContent =
         box.value.toUpperCase
       if (box.value.startsWith("rs")) title.textContent = "What's That Variant?"
+      else title.textContent = "What's That Gene?"
     }
 
     target.appendChild(

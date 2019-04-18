@@ -5617,11 +5617,11 @@ const $m_Lorg_scalajs_testinterface_internal_TaskInfoBuilder$ = (function() {
   return $n_Lorg_scalajs_testinterface_internal_TaskInfoBuilder$
 });
 class $c_Lrender_Inputs$ extends $c_O {
-  render$Inputs$$$anonfun$main$1__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_HTMLInputElement__V(e, box$1) {
-    $m_Ltextmine_inputMatch$().matching__T__V($as_T(box$1.value))
-  };
   init___() {
     return this
+  };
+  render$Inputs$$$anonfun$main$1__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_HTMLInputElement__V(e, box$1) {
+    $m_Ltextmine_inputMatch$().matching__T__V($as_T(box$1.value))
   };
   main__Lorg_scalajs_dom_raw_Node__Lorg_scalajs_dom_raw_Node(target) {
     const this$1 = $m_Lscalatags_JsDom$all$();
@@ -5677,6 +5677,7 @@ class $c_Lrender_Inputs$ extends $c_O {
       title$1.textContent = "What's That Variant?";
       return (void 0)
     } else {
+      title$1.textContent = "What's That Gene?";
       return (void 0)
     }
   };
@@ -5694,6 +5695,75 @@ const $m_Lrender_Inputs$ = (function() {
     $n_Lrender_Inputs$ = new $c_Lrender_Inputs$().init___()
   };
   return $n_Lrender_Inputs$
+});
+class $c_Lrender_Outputs$ extends $c_O {
+  init___() {
+    return this
+  };
+  consequenceRender__sjs_js_Array__Lorg_scalajs_dom_raw_Node(varData) {
+    const this$1 = $m_Lscalatags_JsDom$all$();
+    const jsx$3 = this$1.div__Lscalatags_JsDom$TypedTag();
+    const jsx$2 = $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("variant-wrapper", $m_Lscalatags_JsDom$all$().stringAttr$1);
+    const this$2 = $m_Lscalatags_JsDom$all$();
+    const jsx$1 = this$2.h4__Lscalatags_JsDom$TypedTag();
+    const array = [($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T("Associated Phenotypes"))];
+    const array$1 = [jsx$2, jsx$1.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array))];
+    const varDiv = jsx$3.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1)).render__Lorg_scalajs_dom_raw_Element();
+    const array$2 = [];
+    const x1 = $uI(varData.length);
+    switch (x1) {
+      case (-1): {
+        break
+      }
+    };
+    let i = 0;
+    const len = $uI(varData.length);
+    while ((i < len)) {
+      const index = i;
+      const arg1 = varData[index];
+      $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console().log("v", arg1);
+      const sig = arg1.clinical_significances;
+      const dn = arg1.disease_names;
+      const this$12 = $m_s_Console$();
+      const this$13 = $as_Ljava_io_PrintStream(this$12.outVar$2.v$1);
+      this$13.java$lang$JSConsoleBasedPrintStream$$printString__T__V((sig + "\n"));
+      const this$14 = $m_Lscalatags_JsDom$all$();
+      const jsx$4 = this$14.span__Lscalatags_JsDom$TypedTag();
+      const array$3 = [$m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("badge badge-info", $m_Lscalatags_JsDom$all$().stringAttr$1)];
+      const spanSig = jsx$4.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$3)).render__Lorg_scalajs_dom_raw_Element();
+      spanSig.textContent = $objectToString(sig);
+      const this$17 = $m_Lscalatags_JsDom$all$();
+      const jsx$6 = this$17.div__Lscalatags_JsDom$TypedTag();
+      $m_Lscalatags_JsDom$all$();
+      const v = ($objectToString(dn) + " : ");
+      const jsx$5 = new $c_Lscalatags_JsDom$StringFrag().init___T(v);
+      const this$19 = $m_Lscalatags_JsDom$all$();
+      const array$4 = [jsx$5, new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$19, spanSig), $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("alle-cons", $m_Lscalatags_JsDom$all$().stringAttr$1)];
+      const varAllelle = jsx$6.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$4)).render__Lorg_scalajs_dom_raw_Element();
+      const this$22 = $m_Lscalatags_JsDom$all$();
+      const e = varDiv.appendChild(varAllelle);
+      const elem = new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$22, e).e$1;
+      array$2.push(elem);
+      i = ((1 + i) | 0)
+    };
+    const this$23 = $m_Lscalatags_JsDom$all$();
+    const e$1 = $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().getElementById("main").appendChild(varDiv);
+    return new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$23, e$1).e$1
+  };
+}
+const $d_Lrender_Outputs$ = new $TypeData().initClass({
+  Lrender_Outputs$: 0
+}, false, "render.Outputs$", {
+  Lrender_Outputs$: 1,
+  O: 1
+});
+$c_Lrender_Outputs$.prototype.$classData = $d_Lrender_Outputs$;
+let $n_Lrender_Outputs$ = (void 0);
+const $m_Lrender_Outputs$ = (function() {
+  if ((!$n_Lrender_Outputs$)) {
+    $n_Lrender_Outputs$ = new $c_Lrender_Outputs$().init___()
+  };
+  return $n_Lrender_Outputs$
 });
 const $is_Lsbt_testing_AnnotatedFingerprint = (function(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lsbt_testing_AnnotatedFingerprint)))
@@ -5903,7 +5973,26 @@ class $c_Ltextmine_GetRestContent$ extends $c_O {
   init___() {
     return this
   };
-  searchGene__T__V(query) {
+  urlBuilder__T__T__T(query, id) {
+    if ((query === "getOmim")) {
+      return (("http://mygene.info/v2/gene/" + id) + "?fields=MIM")
+    } else if ((query === "getPathIds")) {
+      return (("https://reactome.org/ContentService/data/mapping/OMIM/" + id) + "/pathways?species=9606")
+    } else if ((query === "getGeneIds")) {
+      return (("http://mygene.info/v3/query?q=" + id) + "&fields=symbol,name,taxid,entrezgene,ensemblgene,MIM")
+    } else if ((query === "getPubIds")) {
+      return (("https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=" + id) + "&format=json")
+    } else if ((query === "getVarSNP")) {
+      return ("https://api.ncbi.nlm.nih.gov/variation/v0/beta/refsnp/" + id)
+    } else {
+      throw new $c_s_MatchError().init___O(query)
+    }
+  };
+  searchGene__T__Ltextmine_Variant__V(query, variant) {
+    const x = new $c_T2().init___O__O("variant in search gene ", variant);
+    const this$2 = $m_s_Console$();
+    const this$3 = $as_Ljava_io_PrintStream(this$2.outVar$2.v$1);
+    this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"));
     this.httpCall__T__F1__V(this.urlBuilder__T__T__T("getGeneIds", query), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
       return (function(responseText$2) {
         const responseText = $as_T(responseText$2);
@@ -5930,15 +6019,10 @@ class $c_Ltextmine_GetRestContent$ extends $c_O {
           throw new $c_ju_NoSuchElementException().init___T("key not found: MIM")
         };
         const geneQuery = new $c_Ltextmine_Gene().init___T__T__T__T__T(jsx$4, jsx$3, jsx$2, jsx$1, $objectToString(ob.MIM));
-        const x = new $c_T2().init___O__O("match?", geneQuery.getId__T__T("SYMBOL"));
-        const this$12 = $m_s_Console$();
-        const this$13 = $as_Ljava_io_PrintStream(this$12.outVar$2.v$1);
-        this$13.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"));
         $m_Ltextmine_GetRestContent$().httpCall__T__F1__V($m_Ltextmine_GetRestContent$().urlBuilder__T__T__T("getPathIds", geneQuery.getId__T__T("OMIM")), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$1) {
           return (function(responseText$2$2) {
             const responseText$2$1 = $as_T(responseText$2$2);
             const json$1 = $g.JSON.parse(responseText$2$1);
-            $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console().log(json$1);
             const array = [];
             const x1 = $uI(json$1.length);
             switch (x1) {
@@ -5973,36 +6057,16 @@ class $c_Ltextmine_GetRestContent$ extends $c_O {
               const elem = new $c_Ltextmine_Pathway().init___T__T__T__Z__T(jsx$8, jsx$7, jsx$6, jsx$5, $objectToString(arg1.speciesName));
               array.push(elem);
               i = ((1 + i) | 0)
-            };
-            $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console().log(array)
+            }
           })
         })($this)));
         $m_Ltextmine_GetRestContent$().httpCall__T__F1__V($m_Ltextmine_GetRestContent$().urlBuilder__T__T__T("getPubIds", geneQuery.getId__T__T("ENTREZ")), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
           return (function(responseText$3$2) {
-            const responseText$3 = $as_T(responseText$3$2);
-            const x$1 = new $c_T2().init___O__O("responseText", responseText$3);
-            const this$27 = $m_s_Console$();
-            const this$28 = $as_Ljava_io_PrintStream(this$27.outVar$2.v$1);
-            this$28.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x$1 + "\n"))
+            $as_T(responseText$3$2)
           })
         })($this)))
       })
     })(this)))
-  };
-  urlBuilder__T__T__T(query, id) {
-    if ((query === "getOmim")) {
-      return (("http://mygene.info/v2/gene/" + id) + "?fields=MIM")
-    } else if ((query === "getPathIds")) {
-      return (("https://reactome.org/ContentService/data/mapping/OMIM/" + id) + "/pathways?species=9606")
-    } else if ((query === "getGeneIds")) {
-      return (("http://mygene.info/v3/query?q=" + id) + "&fields=symbol,name,taxid,entrezgene,ensemblgene,MIM")
-    } else if ((query === "getPubIds")) {
-      return (("https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=" + id) + "&format=json")
-    } else if ((query === "getVarSNP")) {
-      return ("https://api.ncbi.nlm.nih.gov/variation/v0/beta/refsnp/" + id)
-    } else {
-      throw new $c_s_MatchError().init___O(query)
-    }
   };
   searchVariant__T__V(rsValue) {
     const x = new $c_T2().init___O__O("variant", rsValue);
@@ -6010,18 +6074,72 @@ class $c_Ltextmine_GetRestContent$ extends $c_O {
     const this$3 = $as_Ljava_io_PrintStream(this$2.outVar$2.v$1);
     this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"));
     const rsdigit = $m_sjsr_RuntimeString$().split__T__T__I__AT(rsValue, "[Ss]", 0);
-    this.httpCall__T__F1__V(this.urlBuilder__T__T__T("getVarSNP", rsdigit.get(1)), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+    this.httpCall__T__F1__V(this.urlBuilder__T__T__T("getVarSNP", rsdigit.get(1)), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, rsValue$1) {
       return (function(responseText$2) {
         const responseText = $as_T(responseText$2);
         const json = $g.JSON.parse(responseText);
         const snapshot = json.primary_snapshot_data;
         const alleleAn = snapshot.allele_annotations;
-        $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console().log(alleleAn);
-        const jsx$1 = $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console();
-        const s = $as_T((typeof alleleAn));
-        jsx$1.log(s)
+        const dict = alleleAn[0];
+        if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(dict, "assembly_annotation")))) {
+          throw new $c_ju_NoSuchElementException().init___T("key not found: assembly_annotation")
+        };
+        const assembly = dict.assembly_annotation;
+        const dict$1 = assembly[0];
+        if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(dict$1, "genes")))) {
+          throw new $c_ju_NoSuchElementException().init___T("key not found: genes")
+        };
+        const associatedGenes = dict$1.genes;
+        $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console().log("snapshot", snapshot);
+        const array = [];
+        let i = 0;
+        const len = $uI(alleleAn.length);
+        while ((i < len)) {
+          const index = i;
+          const arg1 = alleleAn[index];
+          if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(arg1, "clinical")))) {
+            throw new $c_ju_NoSuchElementException().init___T("key not found: clinical")
+          };
+          const clinical = arg1.clinical;
+          if ((($uI(clinical.length) !== 0) !== false)) {
+            array.push(arg1)
+          };
+          i = ((1 + i) | 0)
+        };
+        const array$1 = [];
+        let i$1 = 0;
+        const len$1 = $uI(array.length);
+        while ((i$1 < len$1)) {
+          const index$1 = i$1;
+          const arg1$1 = array[index$1];
+          if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(arg1$1, "clinical")))) {
+            throw new $c_ju_NoSuchElementException().init___T("key not found: clinical")
+          };
+          const array$2 = arg1$1.clinical;
+          let i$2 = 0;
+          const len$2 = $uI(array$2.length);
+          while ((i$2 < len$2)) {
+            const index$2 = i$2;
+            const arg1$2 = array$2[index$2];
+            array$1.push(arg1$2);
+            i$2 = ((1 + i$2) | 0)
+          };
+          i$1 = ((1 + i$1) | 0)
+        };
+        $m_Lrender_Outputs$().consequenceRender__sjs_js_Array__Lorg_scalajs_dom_raw_Node(array$1);
+        const dict$2 = associatedGenes[0];
+        if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(dict$2, "locus")))) {
+          throw new $c_ju_NoSuchElementException().init___T("key not found: locus")
+        };
+        const variant = new $c_Ltextmine_Variant().init___T__T__sjs_js_Array__T__T(rsValue$1, $objectToString(dict$2.locus), array$1, $objectToString(snapshot.variant_type), $objectToString(snapshot.anchor));
+        const jsx$1 = $m_Ltextmine_GetRestContent$();
+        const dict$3 = associatedGenes[0];
+        if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1.call(dict$3, "locus")))) {
+          throw new $c_ju_NoSuchElementException().init___T("key not found: locus")
+        };
+        jsx$1.searchGene__T__Ltextmine_Variant__V($objectToString(dict$3.locus), variant)
       })
-    })(this)))
+    })(this, rsValue)))
   };
   httpCall__T__F1__V(url, callback) {
     const this$3 = $m_Lorg_scalajs_dom_ext_Ajax$();
@@ -6074,6 +6192,18 @@ const $d_Ltextmine_Pathway = new $TypeData().initClass({
   O: 1
 });
 $c_Ltextmine_Pathway.prototype.$classData = $d_Ltextmine_Pathway;
+class $c_Ltextmine_Variant extends $c_O {
+  init___T__T__sjs_js_Array__T__T(rsId, associatedGene, clinical, varType, anchor) {
+    return this
+  };
+}
+const $d_Ltextmine_Variant = new $TypeData().initClass({
+  Ltextmine_Variant: 0
+}, false, "textmine.Variant", {
+  Ltextmine_Variant: 1,
+  O: 1
+});
+$c_Ltextmine_Variant.prototype.$classData = $d_Ltextmine_Variant;
 class $c_Ltextmine_inputMatch$ extends $c_O {
   init___() {
     return this
@@ -6082,7 +6212,7 @@ class $c_Ltextmine_inputMatch$ extends $c_O {
     if ((($uI(query.length) >= 0) && ($as_T(query.substring(0, $uI("rs".length))) === "rs"))) {
       $m_Ltextmine_GetRestContent$().searchVariant__T__V(query)
     } else {
-      $m_Ltextmine_GetRestContent$().searchGene__T__V(query)
+      $m_Ltextmine_GetRestContent$().searchGene__T__Ltextmine_Variant__V(query, null)
     }
   };
 }
@@ -37999,6 +38129,19 @@ class $c_Lscalatags_JsDom$all$ extends $c_O {
     };
     return this.placeholder$1
   };
+  h4$lzycompute__p1__Lscalatags_JsDom$TypedTag() {
+    const b = this.bitmap$0$1;
+    const lo = (1024 & b.lo$2);
+    if ((lo === 0)) {
+      const ns = $m_Lscalatags_generic_Namespace$().htmlNamespaceConfig$1;
+      this.h4$1 = $as_Lscalatags_JsDom$TypedTag($f_Lscalatags_jsdom_TagFactory__typedTag__T__Z__Lscalatags_generic_Namespace__Lscalatags_generic_TypedTag(this, "h4", false, ns));
+      const b$1 = this.bitmap$0$1;
+      const lo$1 = (1024 | b$1.lo$2);
+      const hi = b$1.hi$2;
+      this.bitmap$0$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
+    };
+    return this.h4$1
+  };
   button$lzycompute__p1__Lscalatags_JsDom$TypedTag() {
     const b = this.bitmap$1$1;
     const lo = (256 & b.lo$2);
@@ -38019,6 +38162,15 @@ class $c_Lscalatags_JsDom$all$ extends $c_O {
       return this.input$lzycompute__p1__Lscalatags_JsDom$TypedTag()
     } else {
       return this.input$1
+    }
+  };
+  h4__Lscalatags_JsDom$TypedTag() {
+    const b = this.bitmap$0$1;
+    const lo = (1024 & b.lo$2);
+    if ((lo === 0)) {
+      return this.h4$lzycompute__p1__Lscalatags_JsDom$TypedTag()
+    } else {
+      return this.h4$1
     }
   };
   h1__Lscalatags_JsDom$TypedTag() {
@@ -47397,6 +47549,7 @@ $e.org.scalajs.testinterface.internal.startBridge = (function() {
   $m_Lorg_scalajs_testinterface_internal_Bridge$().start__V()
 });
 $e.Inputs = $m_Lrender_Inputs$();
+$e.Outputs = $m_Lrender_Outputs$();
 $m_Lmy_Main$().main__AT__V($makeNativeArrayWrapper($d_T.getArrayOf(), []));
 }).call(this);
 //# sourceMappingURL=gene-mining-fastopt.js.map
