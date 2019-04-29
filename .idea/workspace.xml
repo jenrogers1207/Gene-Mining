@@ -2,117 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5a747d6-a913-4307-85b2-463cce475318" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$4570bd007662576f9a8e$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$4570bd007662576f9a8e.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$4570bd007662576f9a8e.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$86fb89b01ee294a2f833$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$86fb89b01ee294a2f833$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$be4972aaa9e5b573c73d$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$be4972aaa9e5b573c73d$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/gene-mining-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/gene-mining-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/gene-mining-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/gene-mining-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-compile-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-compile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-optional.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-provided.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-runtime-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-runtime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-scala-tool.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-test-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-gene-mining-build-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-compile-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-compile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-optional.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-phantom-js-jetty.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-phantom-js-jetty.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-provided.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-runtime-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-runtime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-scala-tool.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-test-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root$sources-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-compile-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-compile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-optional.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-phantom-js-jetty.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-phantom-js-jetty.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-provided.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-runtime-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-runtime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-scala-tool.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-test-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/scala-2.12/resolution-cache/reports/root-root_sjs0.6_2.12-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/streams/$global/update/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/target/streams/$global/updateClassifiers/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/root/target/streams/$global/updateClassifiers/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/textmine/apiGetter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/textmine/apiGetter.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/textmine/parser.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/textmine/parser.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/.history" beforeDir="false" afterPath="$PROJECT_DIR$/target/.history" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/GetRestContent$$anonfun$$nestedInanonfun$searchGene$5$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/GetRestContent$$anonfun$$nestedInanonfun$searchGene$7$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/GetRestContent$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/GetRestContent$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/GetRestContent$.sjsir" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/GetRestContent$.sjsir" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/Parser$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/Parser$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/Parser$.sjsir" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/Parser$.sjsir" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/textmine/Parser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/gene-mining-fastopt.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/gene-mining-fastopt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/gene-mining-fastopt.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/gene-mining-fastopt.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/gene-mining$sources/0.1/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/gene-mining$sources/0.1/resolved.xml.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/gene-mining$sources/0.1/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/gene-mining$sources/0.1/resolved.xml.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/gene-mining_sjs0.6_2.12/0.1/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/gene-mining_sjs0.6_2.12/0.1/resolved.xml.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/gene-mining_sjs0.6_2.12/0.1/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/default/gene-mining_sjs0.6_2.12/0.1/resolved.xml.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-compile-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-compile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-optional.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-phantom-js-jetty.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-phantom-js-jetty.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-provided.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-runtime-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-runtime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-scala-tool.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-test-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining$sources-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-compile-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-compile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-optional.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-phantom-js-jetty.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-phantom-js-jetty.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-provided.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-runtime-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-runtime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-scala-tool.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-test-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/default-gene-mining_sjs0.6_2.12-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/$global/$global/streams/package-js-deps/in-cache" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/$global/$global/streams/package-js-deps/in-cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/input_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/input_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/ivyConfiguration/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/ivyConfiguration/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/inputs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/$global/$global/sjsirFilesOnClasspath/data" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/$global/$global/sjsirFilesOnClasspath/data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/fastOptJS/$global/streams/in-cache" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/fastOptJS/$global/streams/in-cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/fastOptJS/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/fastOptJS/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/fullClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/fullClasspath/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -177,7 +67,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/textmine/parser.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="265">
@@ -185,6 +75,18 @@
               <folding>
                 <element signature="e#18#40#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="132">
+                <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -238,6 +140,7 @@
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/main/scala/textmine/parser.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/textmine/apiGetter.scala" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -314,7 +217,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556566698449" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556567346808" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../scalajs-cross-compile-example" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -455,18 +358,18 @@
       <workItem from="1555553461030" duration="13417000" />
       <workItem from="1555601909042" duration="7288000" />
       <workItem from="1556330888748" duration="2475000" />
-      <workItem from="1556549322355" duration="6486000" />
+      <workItem from="1556549322355" duration="6928000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180776000" />
+    <option name="totallyTimeSpent" value="181218000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49591836" weight="0.15358819" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49591836" visible="true" weight="0.1529175" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -660,6 +563,16 @@
           <folding>
             <element signature="e#18#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="132">
+            <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
