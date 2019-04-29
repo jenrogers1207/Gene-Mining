@@ -4,16 +4,16 @@
 	<info
 		organisation="root"
 		module="root_sjs0.6_2.12"
-		revision="14-592b4ad1+20190429-0845"
+		revision="17-76eb2104+20190429-1543"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool, phantom-js-jetty"
-		date="20190429084635"/>
+		date="20190429154401"/>
 	<dependencies>
 		<module organisation="org.scala-js" name="scalajs-test-interface_2.12">
 			<revision name="0.6.27" status="release" pubdate="20190405021539" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://www.scala-js.org/" extra-info.apiURL="http://www.scala-js.org/api/scalajs-test-interface/0.6.27/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
 				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3063" time="0" location="C:\Users\jjohn\.ivy2\cache\org.scala-js\scalajs-test-interface_2.12\ivy-0.6.27.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-js/scalajs-test-interface_2.12/0.6.27/scalajs-test-interface_2.12-0.6.27.pom"/>
-				<caller organisation="root" name="root_sjs0.6_2.12" conf="test, compile, runtime" rev="0.6.27" rev-constraint-default="0.6.27" rev-constraint-dynamic="0.6.27" callerrev="14-592b4ad1+20190429-0845"/>
+				<caller organisation="root" name="root_sjs0.6_2.12" conf="test, compile, runtime" rev="0.6.27" rev-constraint-default="0.6.27" rev-constraint-dynamic="0.6.27" callerrev="17-76eb2104+20190429-1543"/>
 				<artifacts>
 					<artifact name="scalajs-test-interface_2.12" type="jar" ext="jar" status="no" details="" size="405734" time="0" location="C:\Users\jjohn\.ivy2\cache\org.scala-js\scalajs-test-interface_2.12\jars\scalajs-test-interface_2.12-0.6.27.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-js/scalajs-test-interface_2.12/0.6.27/scalajs-test-interface_2.12-0.6.27.jar"/>
@@ -26,7 +26,7 @@
 				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3027" time="0" location="C:\Users\jjohn\.ivy2\cache\org.scala-js\scalajs-library_2.12\ivy-0.6.27.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-js/scalajs-library_2.12/0.6.27/scalajs-library_2.12-0.6.27.pom"/>
 				<caller organisation="org.scala-js" name="scalajs-test-interface_2.12" conf="default, compile, runtime, master" rev="0.6.27" rev-constraint-default="0.6.27" rev-constraint-dynamic="0.6.27" callerrev="0.6.27"/>
-				<caller organisation="root" name="root_sjs0.6_2.12" conf="test, compile, runtime" rev="0.6.27" rev-constraint-default="0.6.27" rev-constraint-dynamic="0.6.27" callerrev="14-592b4ad1+20190429-0845"/>
+				<caller organisation="root" name="root_sjs0.6_2.12" conf="test, compile, runtime" rev="0.6.27" rev-constraint-default="0.6.27" rev-constraint-dynamic="0.6.27" callerrev="17-76eb2104+20190429-1543"/>
 				<artifacts>
 					<artifact name="scalajs-library_2.12" type="jar" ext="jar" status="no" details="" size="6519499" time="0" location="C:\Users\jjohn\.ivy2\cache\org.scala-js\scalajs-library_2.12\jars\scalajs-library_2.12-0.6.27.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-js/scalajs-library_2.12/0.6.27/scalajs-library_2.12-0.6.27.jar"/>
@@ -40,7 +40,7 @@
 				<metadata-artifact status="no" details="" size="2642" time="0" location="C:\Users\jjohn\.ivy2\cache\org.scala-lang\scala-library\ivy-2.12.7.xml" searched="false" origin-is-local="false" origin-location="file:/C:/Users/jjohn/.sbt/preloaded/org.scala-lang/scala-library/2.12.7/ivys/ivy.xml"/>
 				<caller organisation="org.scala-js" name="scalajs-library_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="0.6.27"/>
 				<caller organisation="org.scala-js" name="scalajs-test-interface_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="0.6.27"/>
-				<caller organisation="root" name="root_sjs0.6_2.12" conf="test, compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="14-592b4ad1+20190429-0845"/>
+				<caller organisation="root" name="root_sjs0.6_2.12" conf="test, compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="17-76eb2104+20190429-1543"/>
 				<artifacts>
 					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5277511" time="0" location="C:\Users\jjohn\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.7.jar">
 						<origin-location is-local="false" location="file:/C:/Users/jjohn/.sbt/preloaded/org.scala-lang/scala-library/2.12.7/jars/scala-library.jar"/>
