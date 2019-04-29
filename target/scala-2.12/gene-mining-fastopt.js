@@ -6191,32 +6191,8 @@ const $f_Lscalatags_generic_Util__attr__T__Lscalatags_generic_Namespace__Z__Lsca
   return new $c_Lscalatags_generic_Attr().init___T__s_Option__Z(s, $m_s_Option$().apply__O__s_Option(ns), raw)
 });
 class $c_Ltextmine_GetRestContent$ extends $c_O {
-  textmine$GetRestContent$$$anonfun$searchGene$6__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__Lorg_scalajs_dom_raw_HTMLDivElement__O(e, xhr$1, pubCountDiv$1) {
-    if (($uI(xhr$1.status) === 200)) {
-      const xml = xhr$1.responseXML;
-      const this$2 = $m_s_Console$();
-      const this$3 = $as_Ljava_io_PrintStream(this$2.outVar$2.v$1);
-      this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V((xhr$1 + "\n"));
-      const title = xml.getElementsByTagName("article-title");
-      const abst = xml.getElementsByTagName("abstract");
-      xml.getElementsByTagName("body");
-      $m_Lrender_Outputs$().paperRender__Lorg_scalajs_dom_raw_HTMLDivElement__T__Lorg_scalajs_dom_raw_Node(pubCountDiv$1, $as_T(title[0].textContent));
-      return $m_Lrender_Outputs$().paperRender__Lorg_scalajs_dom_raw_HTMLDivElement__T__Lorg_scalajs_dom_raw_Node(pubCountDiv$1, $as_T(abst[0].textContent))
-    } else {
-      return (void 0)
-    }
-  };
   init___() {
     return this
-  };
-  textmine$GetRestContent$$$anonfun$searchGene$8__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__O(e, xhr$2) {
-    if (($uI(xhr$2.status) === 200)) {
-      const json = $g.JSON.parse($as_T(xhr$2.responseText));
-      $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console().log("parsing??", json.semanticTypeCountList);
-      return (void 0)
-    } else {
-      return (void 0)
-    }
   };
   searchGene__T__Lmy_Variant__V(query, variant) {
     const x = new $c_T2().init___O__O("variant in search gene ", variant);
@@ -6313,14 +6289,37 @@ class $c_Ltextmine_GetRestContent$ extends $c_O {
               const pm = $as_sci_Vector(arg1$1);
               const queryId = $as_T(pm.apply__I__O(1));
               const url = $m_Ltextmine_GetRestContent$().urlBuilder__T__T__T("getPubXML", queryId);
-              const xhr = new $g.XMLHttpRequest();
-              xhr.open("GET", url);
-              xhr.onload = (function(xhr$1, pubCountDiv$1) {
-                return (function(arg1$2) {
-                  return $m_Ltextmine_GetRestContent$().textmine$GetRestContent$$$anonfun$searchGene$6__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__Lorg_scalajs_dom_raw_HTMLDivElement__O(arg1$2, xhr$1, pubCountDiv$1)
+              const this$30 = $m_Lorg_scalajs_dom_ext_Ajax$();
+              const headers = $m_sci_Map$EmptyMap$();
+              const f = this$30.apply__T__T__Lorg_scalajs_dom_ext_Ajax$InputData__I__sci_Map__Z__T__s_concurrent_Future("GET", url, null, 0, headers, false, "");
+              f.onComplete__F1__s_concurrent_ExecutionContext__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$2, pubCountDiv$1) {
+                return (function(x0$1$2) {
+                  const x0$1 = $as_s_util_Try(x0$1$2);
+                  if ($is_s_util_Success(x0$1)) {
+                    const x2 = $as_s_util_Success(x0$1);
+                    const xhr = x2.value$2;
+                    const xml = xhr.responseXML;
+                    const title = xml.getElementsByTagName("article-title");
+                    $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console().log("title", title);
+                    const abst = xml.getElementsByTagName("abstract");
+                    $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console().log("abst", abst);
+                    xml.getElementsByTagName("body");
+                    const arg1$2 = $as_T(title[0].textContent);
+                    const arg2 = $as_T(abst[0].textContent);
+                    $m_Lrender_Outputs$().paperRender__Lorg_scalajs_dom_raw_HTMLDivElement__T__Lorg_scalajs_dom_raw_Node(pubCountDiv$1, arg1$2);
+                    $m_Lrender_Outputs$().paperRender__Lorg_scalajs_dom_raw_HTMLDivElement__T__Lorg_scalajs_dom_raw_Node(pubCountDiv$1, arg2)
+                  } else if ($is_s_util_Failure(x0$1)) {
+                    const x3 = $as_s_util_Failure(x0$1);
+                    const e = x3.exception$2;
+                    const x$1 = e.toString__T();
+                    const this$35 = $m_s_Console$();
+                    const this$36 = $as_Ljava_io_PrintStream(this$35.outVar$2.v$1);
+                    this$36.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x$1 + "\n"))
+                  } else {
+                    throw new $c_s_MatchError().init___O(x0$1)
+                  }
                 })
-              })(xhr, pubCountDiv);
-              xhr.send();
+              })(this$2$1, pubCountDiv)), $m_sjs_concurrent_JSExecutionContext$Implicits$().runNow$1);
               const elem$1 = (void 0);
               array$2.push(elem$1);
               i$1 = ((1 + i$1) | 0)
@@ -6340,19 +6339,19 @@ class $c_Ltextmine_GetRestContent$ extends $c_O {
               const arg1$3 = array$3[index$2];
               const pm$3 = $as_sci_Vector(arg1$3);
               const queryId$1 = $as_T(pm$3.apply__I__O(1));
-              const x$1 = new $c_T2().init___O__O(pm$3.apply__I__O(0), pm$3.apply__I__O(1));
-              const this$31 = $m_s_Console$();
-              const this$32 = $as_Ljava_io_PrintStream(this$31.outVar$2.v$1);
-              this$32.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x$1 + "\n"));
+              const x$2 = new $c_T2().init___O__O(pm$3.apply__I__O(0), pm$3.apply__I__O(1));
+              const this$40 = $m_s_Console$();
+              const this$41 = $as_Ljava_io_PrintStream(this$40.outVar$2.v$1);
+              this$41.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x$2 + "\n"));
               const url$1 = (((("https://www.ebi.ac.uk/europepmc/webservices/rest/" + pm$3.apply__I__O(0)) + "/") + queryId$1) + "/textMinedTerms?page=1&pageSize=25&format=json");
-              const xhr$2 = new $g.XMLHttpRequest();
-              xhr$2.open("GET", url$1);
-              xhr$2.onload = (function(xhr$2$1) {
+              const xhr$1 = new $g.XMLHttpRequest();
+              xhr$1.open("GET", url$1);
+              xhr$1.onload = (function(xhr$1$1) {
                 return (function(arg1$2$1) {
-                  return $m_Ltextmine_GetRestContent$().textmine$GetRestContent$$$anonfun$searchGene$8__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__O(arg1$2$1, xhr$2$1)
+                  return $m_Ltextmine_GetRestContent$().textmine$GetRestContent$$$anonfun$searchGene$9__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__O(arg1$2$1, xhr$1$1)
                 })
-              })(xhr$2);
-              xhr$2.send();
+              })(xhr$1);
+              xhr$1.send();
               const elem$2 = (void 0);
               array$4.push(elem$2);
               i$2 = ((1 + i$2) | 0)
@@ -6377,6 +6376,15 @@ class $c_Ltextmine_GetRestContent$ extends $c_O {
       return (("https://www.ebi.ac.uk/europepmc/webservices/rest/" + id) + "/fullTextXML")
     } else {
       throw new $c_s_MatchError().init___O(query)
+    }
+  };
+  textmine$GetRestContent$$$anonfun$searchGene$9__Lorg_scalajs_dom_raw_Event__Lorg_scalajs_dom_raw_XMLHttpRequest__O(e, xhr$1) {
+    if (($uI(xhr$1.status) === 200)) {
+      const json = $g.JSON.parse($as_T(xhr$1.responseText));
+      $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console().log("parsing??", json.semanticTypeCountList);
+      return (void 0)
+    } else {
+      return (void 0)
     }
   };
   searchVariant__T__V(rsValue) {

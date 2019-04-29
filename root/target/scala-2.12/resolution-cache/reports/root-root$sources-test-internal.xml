@@ -4,16 +4,16 @@
 	<info
 		organisation="root"
 		module="root$sources"
-		revision="13-7fa15279+20190418-1018"
+		revision="14-592b4ad1+20190418-1044"
 		conf="test-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool, phantom-js-jetty"
-		date="20190418101846"/>
+		date="20190418104413"/>
 	<dependencies>
 		<module organisation="org.scala-js" name="scalajs-test-interface_2.12">
 			<revision name="0.6.27" status="release" pubdate="20190405021539" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://www.scala-js.org/" extra-info.apiURL="http://www.scala-js.org/api/scalajs-test-interface/0.6.27/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
 				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3063" time="0" location="C:\Users\jjohn\.ivy2\cache\org.scala-js\scalajs-test-interface_2.12\ivy-0.6.27.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-js/scalajs-test-interface_2.12/0.6.27/scalajs-test-interface_2.12-0.6.27.pom"/>
-				<caller organisation="root" name="root$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="0.6.27" rev-constraint-default="0.6.27" rev-constraint-dynamic="0.6.27" callerrev="13-7fa15279+20190418-1018" extra-info.apiURL="http://www.scala-js.org/api/scalajs-test-interface/0.6.27/"/>
+				<caller organisation="root" name="root$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="0.6.27" rev-constraint-default="0.6.27" rev-constraint-dynamic="0.6.27" callerrev="14-592b4ad1+20190418-1044" extra-info.apiURL="http://www.scala-js.org/api/scalajs-test-interface/0.6.27/"/>
 				<artifacts>
 					<artifact name="scalajs-test-interface_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="41110" time="0" location="C:\Users\jjohn\.ivy2\cache\org.scala-js\scalajs-test-interface_2.12\srcs\scalajs-test-interface_2.12-0.6.27-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-js/scalajs-test-interface_2.12/0.6.27/scalajs-test-interface_2.12-0.6.27-sources.jar"/>
@@ -25,7 +25,7 @@
 			<revision name="0.6.27" status="release" pubdate="20190405021016" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://www.scala-js.org/" extra-info.apiURL="http://www.scala-js.org/api/scalajs-library/0.6.27/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="1">
 				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3027" time="0" location="C:\Users\jjohn\.ivy2\cache\org.scala-js\scalajs-library_2.12\ivy-0.6.27.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-js/scalajs-library_2.12/0.6.27/scalajs-library_2.12-0.6.27.pom"/>
-				<caller organisation="root" name="root$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="0.6.27" rev-constraint-default="0.6.27" rev-constraint-dynamic="0.6.27" callerrev="13-7fa15279+20190418-1018" extra-info.apiURL="http://www.scala-js.org/api/scalajs-library/0.6.27/"/>
+				<caller organisation="root" name="root$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="0.6.27" rev-constraint-default="0.6.27" rev-constraint-dynamic="0.6.27" callerrev="14-592b4ad1+20190418-1044" extra-info.apiURL="http://www.scala-js.org/api/scalajs-library/0.6.27/"/>
 				<artifacts>
 					<artifact name="scalajs-library_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="157604" time="0" location="C:\Users\jjohn\.ivy2\cache\org.scala-js\scalajs-library_2.12\srcs\scalajs-library_2.12-0.6.27-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-js/scalajs-library_2.12/0.6.27/scalajs-library_2.12-0.6.27-sources.jar"/>
@@ -37,7 +37,7 @@
 			<revision name="2.12.7" status="release" pubdate="20180927043542" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.7/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="0">
 				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
 				<metadata-artifact status="no" details="" size="2642" time="0" location="C:\Users\jjohn\.ivy2\cache\org.scala-lang\scala-library\ivy-2.12.7.xml" searched="false" origin-is-local="false" origin-location="file:/C:/Users/jjohn/.sbt/preloaded/org.scala-lang/scala-library/2.12.7/ivys/ivy.xml"/>
-				<caller organisation="root" name="root$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="13-7fa15279+20190418-1018" extra-info.apiURL="http://www.scala-lang.org/api/2.12.7/"/>
+				<caller organisation="root" name="root$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="14-592b4ad1+20190418-1044" extra-info.apiURL="http://www.scala-lang.org/api/2.12.7/"/>
 				<artifacts>
 					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="991412" time="0" location="C:\Users\jjohn\.ivy2\cache\org.scala-lang\scala-library\srcs\scala-library-2.12.7-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.7/scala-library-2.12.7-sources.jar"/>

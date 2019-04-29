@@ -48,59 +48,37 @@ object GetRestContent {
         val hits = json.hits.asInstanceOf[Array[Unit]]
         val ob = hits(0).asInstanceOf[Dictionary[Dynamic]]
         val geneQuery = new Gene(ob("name").toString, ob("entrezgene").toString, ob("symbol").toString, ob("taxid").toString, ob("MIM").toString)
-       // println("match?",geneQuery.getId("SYMBOL"))
+
         render.Outputs.geneDetailRender(geneQuery)
+
           //GET PATHWAYS ThAT GENE IS INVOLVED IN
           httpCall(urlBuilder("getPathIds", geneQuery.getId("OMIM")), responseText=> {
             val json = js.JSON.parse(responseText).asInstanceOf[Array[Dictionary[Dynamic]]]
-           // console.log(json)
+
             val pathways = json.map(p=> {
               new Pathway(p("dbId").toString, p("stId").toString, p("displayName").toString, p("hasDiagram").asInstanceOf[Boolean], p("speciesName").toString)
             })
-
             render.Outputs.pathRender(pathways)
           })
           //GET PUBLICATION IDS
           httpCall(urlBuilder("getPubIds", geneQuery.getId("ENTREZ")), responseText => {
 
             val pubCollection = Parser.parseFile(responseText)
-
             val pubCountDiv = render.Outputs.pubRender(pubCollection)
 
             val papers = pubCollection.pmArray.map(pm=> {
               val queryId = pm(1)
               val url = urlBuilder("getPubXML", queryId)
-              val xhr = new dom.XMLHttpRequest()
-              xhr.open("GET", url)
-              xhr.onload = { e: dom.Event =>
-                if (xhr.status == 200) {
-                  val xml = xhr.responseXML
-                  println(xhr)
-                  val title = xml.getElementsByTagName("article-title")
-                  val abst = xml.getElementsByTagName("abstract")
-                  val body = xml.getElementsByTagName("body")
 
-                  //println("papes", title(0).textContent)
-                  render.Outputs.paperRender(pubCountDiv, title(0).textContent)
-                  render.Outputs.paperRender(pubCountDiv, abst(0).textContent)
-                //  println("papes", abst(0).textContent)
-
-                 // val alg = new AprioriAlgorithm(new File(body(0).textContent))
-                 // alg.runApriori()
-                 // println("===Support Items===")
-                //  alg.toRetItems.foreach(println)
-                //  println("===Association Rules===")
-                // alg.associationRules.foreach(println)
-
-
-                }
-
-              }
-
-              xhr.send()
-
+              val f = Ajax.get(url)
+              f.onComplete({
+                case Success(xhr) => Parser.parseXML(xhr, (titleText, absText)=>{
+                  render.Outputs.paperRender(pubCountDiv, titleText)
+                  render.Outputs.paperRender(pubCountDiv, absText)
+                })
+                case Failure(e) => println(e.toString)
+              })
             })
-
 
             val terms = pubCollection.tmArray.map(pm=> {
               val queryId = pm(1)

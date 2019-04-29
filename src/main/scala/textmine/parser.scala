@@ -14,6 +14,29 @@ import my.PubCollection
 
 object Parser {
 
+  def parseXML(xhr: dom.XMLHttpRequest, callback: (String, String)=> Unit): Unit ={
+    val xml = xhr.responseXML
+
+    val title = xml.getElementsByTagName("article-title")
+    console.log("title",title)
+    val abst = xml.getElementsByTagName("abstract")
+    console.log("abst",abst)
+    val body = xml.getElementsByTagName("body")
+
+    callback(title(0).textContent, abst(0).textContent)
+
+    //println("papes", title(0).textContent)
+
+    //  println("papes", abst(0).textContent)
+
+    // val alg = new AprioriAlgorithm(new File(body(0).textContent))
+    // alg.runApriori()
+    // println("===Support Items===")
+    //  alg.toRetItems.foreach(println)
+    //  println("===Association Rules===")
+    // alg.associationRules.foreach(println)
+  }
+
   def parseFile(response:String): PubCollection ={
 
     val file = JSON.parse(response)

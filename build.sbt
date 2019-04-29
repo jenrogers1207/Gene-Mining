@@ -11,7 +11,7 @@ scalaJSUseMainModuleInitializer := true
 mainClass := Some("my.Main")
 jsEnv := new org.scalajs.jsenv.jsdomnodejs.JSDOMNodeJSEnv()
 resolvers ++= Seq("jitpack" at "https://jitpack.io", Resolver.sonatypeRepo("releases") )
- 
+
 
 libraryDependencies ++= {
   val procVer = "7.4.2"

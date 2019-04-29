@@ -4,10 +4,10 @@
 	<info
 		organisation="root"
 		module="root$sources"
-		revision="13-7fa15279+20190418-1018"
+		revision="14-592b4ad1+20190418-1044"
 		conf="provided"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool, phantom-js-jetty"
-		date="20190418101846"/>
+		date="20190418104413"/>
 	<dependencies>
 	</dependencies>
 </ivy-report>

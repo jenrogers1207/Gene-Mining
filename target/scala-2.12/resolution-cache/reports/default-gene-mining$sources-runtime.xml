@@ -7,7 +7,7 @@
 		revision="0.1"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool, phantom-js-jetty"
-		date="20190418101847"/>
+		date="20190418104413"/>
 	<dependencies>
 		<module organisation="io.scalajs" name="core_sjs0.6_2.12">
 			<revision name="0.4.2" status="release" pubdate="20171014150232" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scalajs-io/scalajs-io" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="67">

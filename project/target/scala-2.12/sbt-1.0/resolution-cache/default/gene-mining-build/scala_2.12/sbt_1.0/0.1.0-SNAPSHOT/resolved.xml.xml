@@ -4,7 +4,7 @@
 		module="gene-mining-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20190418100612"
+		publication="20190418104356"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>

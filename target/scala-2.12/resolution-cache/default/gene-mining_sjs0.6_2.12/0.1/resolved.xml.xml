@@ -4,7 +4,7 @@
 		module="gene-mining_sjs0.6_2.12"
 		revision="0.1"
 		status="integration"
-		publication="20190418102445"
+		publication="20190418103248"
 	>
 		<description>
 		Gene-Mining
@@ -48,5 +48,6 @@
 		<dependency org="com.lihaoyi" name="upickle_sjs0.6_2.12" rev="0.7.1" conf="compile->default(compile)"/>
 		<dependency org="com.lihaoyi" name="scalatags_sjs0.6_2.12" rev="0.6.7" conf="compile->default(compile)"/>
 		<dependency org="com.lihaoyi" name="requests_2.12" rev="0.1.7" conf="compile->default(compile)"/>
+		<dependency org="io.scalajs" name="core_sjs0.6_2.12" rev="0.4.2" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
